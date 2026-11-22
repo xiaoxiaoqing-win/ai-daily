@@ -6,8 +6,11 @@ import sys
 from .core import ROOT, load_json
 from .collect import collect
 from .research import research, task_from_event
+from .config import load_local_env
 
-parser = argparse.ArgumentParser(description="第二号 · AI Daily 自动采集与调研")
+load_local_env()
+
+parser = argparse.ArgumentParser(description="知更 · AI Daily 自动采集与调研")
 subparsers = parser.add_subparsers(dest="command", required=True)
 daily = subparsers.add_parser("collect")
 daily.add_argument("--config", type=Path, default=ROOT / "config/sources.json")

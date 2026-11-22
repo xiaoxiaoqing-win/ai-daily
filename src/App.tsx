@@ -2,6 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import type { FormEvent, ReactNode } from "react";
 import {
   ArrowUpRight,
+  ArrowRight,
+  Bird,
+  House,
+  FileSearch,
   BookOpen,
   CalendarDays,
   Check,
@@ -16,7 +20,6 @@ import {
   ExternalLink,
   FileText,
   Github,
-  Layers3,
   LoaderCircle,
   Menu,
   Plus,
@@ -37,9 +40,9 @@ const repository =
 const repoUrl = `https://github.com/${repository}`;
 const base = import.meta.env.BASE_URL;
 const nav = [
-  { id: "home", label: "首页" },
-  { id: "daily", label: "AI 日报" },
-  { id: "research", label: "深度调研" },
+  { id: "home", label: "阅读概览", icon: House },
+  { id: "daily", label: "AI 日报", icon: BookOpen },
+  { id: "research", label: "深度调研", icon: FileSearch },
 ];
 const sourceLabels: Record<string, string> = {
   all: "全部动态",
@@ -168,33 +171,96 @@ function App() {
     : undefined;
   return (
     <>
+      <a
+        className="skip-link"
+        href="#main"
+        onClick={(event) => {
+          event.preventDefault();
+          const main = document.getElementById("main");
+          main?.focus({ preventScroll: true });
+          main?.scrollIntoView({ block: "start" });
+        }}
+      >
+        跳到正文
+      </a>
+      <aside className={`site-sidebar ${mobileMenu ? "menu-open" : ""}`}>
+        <a className="brand" href="#home" aria-label="知更首页">
+          <Bird size={34} strokeWidth={1.6} />
+          <span>
+            知更<small>ZHIGENG</small>
+          </span>
+        </a>
+        <p className="brand-caption">AI 日报与深度调研</p>
+        <nav id="main-navigation" aria-label="主导航">
+          {nav.map((n) => (
+            <a
+              key={n.id}
+              href={`#${n.id}`}
+              aria-current={route === n.id ? "page" : undefined}
+              className={route === n.id ? "active" : ""}
+            >
+              <n.icon size={19} strokeWidth={1.7} />
+              <span>{n.label}</span>
+              {n.id === "daily" && data && (
+                <small aria-hidden="true">{data.digests.length}</small>
+              )}
+              {n.id === "research" && data && (
+                <small aria-hidden="true">{data.reports.length}</small>
+              )}
+            </a>
+          ))}
+        </nav>
+        <a className="sidebar-create" href="#new">
+          <Plus size={17} />
+          发起一份调研
+        </a>
+        <div className="sidebar-bottom">
+          <div className="sidebar-thought">
+            <Bird size={28} strokeWidth={1.2} />
+            <p>
+              日有所知，
+              <br />
+              思有所进。
+            </p>
+          </div>
+          <a
+            href="#settings"
+            className={`sidebar-settings ${route === "settings" ? "active" : ""}`}
+          >
+            <Settings2 size={18} />
+            <span>信息源与设置</span>
+          </a>
+          <a
+            href={repoUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="sidebar-github"
+          >
+            <Github size={15} />
+            GitHub 项目
+            <ArrowUpRight size={13} />
+          </a>
+        </div>
+      </aside>
       <header className="site-header">
         <div className="header-inner">
-          <a className="brand" href="#home" aria-label="第二号首页">
-            <span className="brand-mark">
-              <Layers3 size={19} strokeWidth={2} />
-            </span>
-            <span>
-              第二号<span className="brand-separator">/</span>
-              <span className="brand-en">DAILY</span>
-            </span>
+          <a className="mobile-brand" href="#home" aria-label="知更首页">
+            <Bird size={26} />
+            知更
           </a>
-          <nav
-            id="main-navigation"
-            className={mobileMenu ? "open" : ""}
-            aria-label="主导航"
-          >
-            {nav.map((n) => (
-              <a
-                key={n.id}
-                href={`#${n.id}`}
-                aria-current={route === n.id ? "page" : undefined}
-                className={route === n.id ? "active" : ""}
-              >
-                {n.label}
-              </a>
-            ))}
-          </nav>
+          <div className="page-context">
+            <span>我的阅读空间</span>
+            <ChevronRight size={14} />
+            <strong>
+              {route.startsWith("read/")
+                ? "正文阅读"
+                : route === "new"
+                  ? "发起调研"
+                  : route === "settings"
+                    ? "信息源与设置"
+                    : nav.find((n) => n.id === route)?.label || "阅读概览"}
+            </strong>
+          </div>
           <div className="header-tools">
             <button
               className="search-button"
@@ -204,17 +270,10 @@ function App() {
               onClick={() => setSearch(true)}
               aria-label="搜索日报与报告"
             >
-              <Search size={15} />
-              <span>搜索内容</span>
+              <Search size={17} />
+              <span>搜索日报、报告…</span>
               <kbd>⌘ K</kbd>
             </button>
-            <a
-              href="#settings"
-              className={`icon-button settings-nav ${route === "settings" ? "active" : ""}`}
-              aria-label="系统设置"
-            >
-              <Settings2 size={18} />
-            </a>
             <button
               className="icon-button mobile-toggle"
               aria-label={mobileMenu ? "收起导航" : "展开导航"}
@@ -222,13 +281,14 @@ function App() {
               aria-controls="main-navigation"
               onClick={() => setMobileMenu(!mobileMenu)}
             >
-              <Menu size={20} />
+              {mobileMenu ? <X size={21} /> : <Menu size={21} />}
             </button>
           </div>
         </div>
       </header>
       <main
         id="main"
+        tabIndex={-1}
         className={route.startsWith("read/") ? "main reading-main" : "main"}
       >
         {demo && (
@@ -287,10 +347,10 @@ function App() {
       <footer className="footer">
         <div>
           <span className="footer-brand">
-            <Layers3 size={15} />
-            第二号
+            <Bird size={17} />
+            知更
           </span>
-          <span>把信息交给分身，把时间留给思考。</span>
+          <span>日有所知，思有所进。</span>
         </div>
         <a href={repoUrl} target="_blank" rel="noreferrer">
           <Github size={15} />在 GitHub 查看项目
@@ -407,45 +467,43 @@ function Home({
   onOpen: (doc: Document) => void;
 }) {
   const latest = data.digests[0];
+  const sourceCount = data.sources.filter((source) => source.enabled).length;
+  const date = latest ? new Date(latest.date + "T12:00:00") : new Date();
   return (
     <>
       <section className="hero">
-        <h1>
-          数字分身
-          <span>
-            第二号<span className="title-period">.</span>
-          </span>
-        </h1>
-        <p>每日追踪 AI 新动向，让好奇心有迹可循。</p>
-        <div className="hero-sources">
-          <span>
-            <Radio size={13} />
-            Follow Builders
-          </span>
-          <i />
-          <span>
-            <Github size={13} />
-            GitHub Trending
-          </span>
-          <i />
-          <span>
-            <Rss size={13} />
-            精选 RSS
-          </span>
+        <div>
+          <h1>
+            每天，<span>知新一点。</span>
+          </h1>
+          <p>读懂 AI 的新变化，把好奇心留给更深的问题。</p>
         </div>
+        <a href="#new" className="button">
+          <Plus size={17} />
+          发起调研
+        </a>
       </section>
+      <div className="overview-meta">
+        <span>
+          <span className="status-dot" />
+          {demo
+            ? "示例阅读空间"
+            : latest
+              ? `最近一期 · ${dateText(latest.date, true)}`
+              : "等待第一期日报"}
+        </span>
+        <span>有来源的阅读，有依据的思考。</span>
+      </div>
       <div className="home-grid">
         <section className="daily-section">
           <div className="section-heading">
             <div>
-              <h2>
-                每日 AI 日报<span className="section-en">Daily briefing</span>
-              </h2>
-              <p>从海量信息中，找到值得关注的变化。</p>
+              <h2>今日阅读</h2>
+              <p>重要的变化，整理在这里。</p>
             </div>
             <a className="text-link" href="#daily">
               全部日报
-              <ChevronRight size={15} />
+              <ArrowUpRight size={15} />
             </a>
           </div>
           <div className="daily-list">
@@ -456,122 +514,233 @@ function Home({
                 onClick={() => onOpen(d)}
               >
                 <div className="digest-meta">
-                  {i === 0 && <span className="tag blue">最新一期</span>}
-                  <span>{dateText(d.date)}</span>
-                  <span className="meta-divider" />
-                  <span>
-                    {d.mode === "demo"
-                      ? "示例内容"
-                      : `${d.itemCount || 0} 条信息`}
+                  <span className="tag blue">
+                    {i === 0 ? "最新一期" : "历史日报"}
                   </span>
-                  {d.mode === "collection" && <Mode mode={d.mode} />}
+                  <Mode mode={d.mode} />
+                  <span>{dateText(d.date)}</span>
                 </div>
-                <div className="digest-title">
-                  <h3>{d.title}</h3>
-                  <ChevronRight size={19} />
+                <div className="edition-body">
+                  {i === 0 && (
+                    <div className="edition-date" aria-hidden="true">
+                      <span>
+                        {date
+                          .toLocaleDateString("en-US", { month: "short" })
+                          .toUpperCase()}
+                      </span>
+                      <strong>{String(date.getDate()).padStart(2, "0")}</strong>
+                      <small>
+                        {date.toLocaleDateString("zh-CN", { weekday: "long" })}
+                      </small>
+                    </div>
+                  )}
+                  <div className="edition-copy">
+                    <div className="digest-title">
+                      <h3>{d.title}</h3>
+                      {i > 0 && <ChevronRight size={18} />}
+                    </div>
+                    <p>{d.summary}</p>
+                  </div>
                 </div>
-                <p>{d.summary}</p>
                 {i === 0 && (
                   <div className="digest-bottom">
                     <span>
-                      <Sparkles size={13} />
-                      {d.mode === "collection"
-                        ? "已整理来源原文"
-                        : d.mode === "demo"
-                          ? "内容与排版示例"
-                          : "为你提炼今日重点"}
+                      {d.mode === "demo"
+                        ? "示例内容"
+                        : `${d.itemCount || 0} 条信息`}
+                      <i />
+                      {d.sourceCount} 个信息源
                     </span>
-                    <span>{d.sourceCount} 个信息源</span>
+                    <span className="read-action">
+                      阅读本期
+                      <ArrowRight size={16} />
+                    </span>
                   </div>
                 )}
               </button>
             ))}
           </div>
-          {!data.digests.length && (
+          {!latest && (
             <Empty title="第一份日报正在路上">
               前往 GitHub Actions 运行 Daily Digest，即可生成第一份日报。
             </Empty>
           )}
           <a className="archive-link" href="#daily">
             <span>
-              <CalendarDays size={14} />
-              浏览历史日报
+              <CalendarDays size={15} />
+              每一天的变化，都值得留存。
             </span>
             <span>
-              共 {data.digests.length} 期<ChevronRight size={13} />
+              浏览 {data.digests.length} 期归档
+              <ChevronRight size={14} />
             </span>
           </a>
         </section>
         <aside className="home-aside">
+          <div className="section-heading">
+            <div>
+              <h2>阅读日历</h2>
+              <p>找回某一天的灵感。</p>
+            </div>
+            <CalendarDays size={19} />
+          </div>
           <Calendar
             dates={data.digests.map((d) => d.date)}
-            onSelect={(date) => {
-              const d = data.digests.find((d) => d.date === date);
+            onSelect={(selected) => {
+              const d = data.digests.find((d) => d.date === selected);
               if (d) onOpen(d);
             }}
           />
-          <div className="aside-note">
-            <span className="note-icon">
-              <Zap size={16} />
-            </span>
-            <div>
-              <h3>每天一点，领先一点。</h3>
-              <p>
-                {demo
-                  ? "配置好信息源，分身就会在每天早晨为你整理好新的阅读清单。"
-                  : `最新采集于 ${data.updatedAt ? dateText(data.updatedAt) : "尚未运行"}，可在信息源设置中查看详情。`}
-              </p>
-              <a href="#settings">
-                管理信息源
-                <ChevronRight size={13} />
-              </a>
-            </div>
-          </div>
         </aside>
       </div>
       <section className="research-section">
         <div className="section-heading">
           <div>
-            <h2>
-              深度调研<span className="section-en">Beyond the headlines</span>
-            </h2>
-            <p>不止于看见，更进一步理解。</p>
+            <h2>再往深处读</h2>
+            <p>从一条信息出发，找到有依据的答案。</p>
           </div>
           <a className="text-link" href="#research">
-            全部报告
-            <ChevronRight size={15} />
+            全部调研
+            <ArrowUpRight size={15} />
           </a>
         </div>
-        <div className="research-grid">
-          {data.reports.slice(0, 2).map((r, i) => (
-            <ReportCard key={r.id} doc={r} index={i} onOpen={() => onOpen(r)} />
+        {data.reports.length > 0 ? (
+          <div className="research-grid">
+            {data.reports.slice(0, 2).map((r, i) => (
+              <ReportCard
+                key={r.id}
+                doc={r}
+                index={i}
+                onOpen={() => onOpen(r)}
+              />
+            ))}
+            <a className="new-report-card" href="#new">
+              <Plus size={24} />
+              <h3>下一个好问题，是什么？</h3>
+              <p>带上主题与资料，让零散信息成为系统的理解。</p>
+              <span className="text-link">
+                发起深度调研
+                <ArrowUpRight size={15} />
+              </span>
+            </a>
+          </div>
+        ) : (
+          <div className="research-invitation">
+            <div className="invitation-copy">
+              <FileSearch size={30} strokeWidth={1.4} />
+              <h3>有个问题，想认真弄明白？</h3>
+              <p>
+                放进文章、链接或可用的视频字幕，
+                <br className="desktop-break" />
+                把一次好奇，沉淀为一份带引用的研究。
+              </p>
+              <a href="#new" className="button">
+                开始第一份调研
+                <ArrowUpRight size={16} />
+              </a>
+            </div>
+            <div className="research-process" aria-label="调研流程">
+              <div>
+                <span>
+                  <FileText size={19} />
+                </span>
+                <strong>带上资料</strong>
+                <small>文章 · 链接 · 原文</small>
+              </div>
+              <ArrowRight size={18} />
+              <div>
+                <span>
+                  <LayersIcon />
+                </span>
+                <strong>梳理证据</strong>
+                <small>提取 · 比较 · 核验</small>
+              </div>
+              <ArrowRight size={18} />
+              <div>
+                <span>
+                  <BookOpen size={19} />
+                </span>
+                <strong>留下理解</strong>
+                <small>结论 · 引用 · 局限</small>
+              </div>
+            </div>
+          </div>
+        )}
+      </section>
+      <section className="sources-section">
+        <div className="section-heading">
+          <div>
+            <h2>好信息，从源头开始</h2>
+            <p>{sourceCount} 个已启用来源，保留每一条原始出处。</p>
+          </div>
+          <a className="text-link" href="#settings">
+            管理信息源
+            <Settings2 size={15} />
+          </a>
+        </div>
+        <div className="source-shelf">
+          {data.sources.slice(0, 4).map((source) => (
+            <a
+              key={source.id}
+              href={source.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className={`source-icon ${source.kind}`}>
+                {source.kind === "github" ? (
+                  <Github size={21} />
+                ) : source.kind === "rss" ? (
+                  <Rss size={21} />
+                ) : (
+                  <Radio size={21} />
+                )}
+              </span>
+              <div>
+                <strong>{source.name}</strong>
+                <small>
+                  <span
+                    className={`status-dot ${source.status === "error" ? "error" : source.status === "ok" && !demo ? "" : "pending"}`}
+                  />
+                  {!source.enabled
+                    ? "已停用"
+                    : demo
+                      ? "示例来源"
+                      : source.status === "ok"
+                        ? `已采集 ${source.count || 0} 条`
+                        : source.status === "error"
+                          ? "采集失败"
+                          : source.status === "empty"
+                            ? "暂无新内容"
+                            : "等待采集"}
+                </small>
+              </div>
+              <ArrowUpRight size={14} />
+            </a>
           ))}
-          <a className="new-report-card" href="#new">
-            <span className="new-report-icon">
-              <Plus size={25} />
-            </span>
-            <h3>下一个好问题，是什么？</h3>
-            <p>
-              给分身一个主题或链接，
-              <br />
-              让零散的信息成为系统的理解。
-            </p>
-            <span className="button small">发起深度调研</span>
-          </a>
         </div>
+        {!data.sources.length && (
+          <p className="source-empty">
+            尚未加载来源记录。
+            <a href="#settings">
+              查看信息源配置
+              <ArrowUpRight size={14} />
+            </a>
+          </p>
+        )}
       </section>
       <div className="bottom-strip">
         <span>
-          <CheckCheck size={17} />
+          <CheckCheck size={16} />
           每一条信息，都有来源可循。
         </span>
-        <span>
-          定时采集 <span>·</span> 智能整理 <span>·</span> 持续沉淀
-        </span>
+        <span>保持好奇，持续知更。</span>
       </div>
-      {latest && <span className="sr-only">最新日报：{latest.title}</span>}
     </>
   );
+}
+
+function LayersIcon() {
+  return <FileSearch size={19} />;
 }
 
 function Calendar({
@@ -668,44 +837,10 @@ function ReportCard({
 }) {
   return (
     <button className="report-card" onClick={onOpen}>
-      <div className={`report-art art-${index % 2}`} aria-hidden="true">
-        {index % 2 === 0 ? (
-          <div className="architecture-art">
-            <div>
-              <span />
-              Application
-              <span />
-            </div>
-            <i />
-            <div className="art-kernel">
-              <Layers3 size={16} />
-              Agent Kernel
-            </div>
-            <i />
-            <div className="art-mini-row">
-              <span>Memory</span>
-              <span>Tools</span>
-              <span>Context</span>
-            </div>
-          </div>
-        ) : (
-          <div className="research-art">
-            <div className="art-doc">
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
-            <div className="art-connect" />
-            <div className="art-insight">
-              <Sparkles size={22} />
-              <span>Insight</span>
-            </div>
-          </div>
-        )}
-        <span className="art-label">
-          {doc.mode === "demo" ? "示例报告" : "深度调研"}
-        </span>
+      <div className={`report-cover cover-${index % 2}`}>
+        <FileSearch size={23} strokeWidth={1.5} />
+        <span>{doc.mode === "demo" ? "示例报告" : "深度调研"}</span>
+        <ArrowUpRight size={19} />
       </div>
       <div className="report-info">
         <div className="report-meta">
@@ -972,7 +1107,7 @@ function Research({
         <div>
           <h3>从阅读，到理解</h3>
           <p>
-            提交主题与来源链接，分身会提取可用正文或字幕，交叉整理证据并标注引用。B
+            提交主题与来源链接，知更会提取可用正文或字幕，交叉整理证据并标注引用。B
             站、YouTube、小红书、公众号均可作为资料来源；受限内容可补充转录或原文。
           </p>
         </div>
@@ -1132,7 +1267,7 @@ function NewResearch() {
       setError("请至少添加一个来源链接、100 字原文，或启用联网检索。");
       return;
     }
-    const body = `## 调研请求\n\n由第二号网页创建。报告生成后会发布到深度调研页面。\n\n\`\`\`json\n${JSON.stringify(task, null, 2)}\n\`\`\``;
+    const body = `## 调研请求\n\n由知更网页创建。报告生成后会发布到深度调研页面。\n\n\`\`\`json\n${JSON.stringify(task, null, 2)}\n\`\`\``;
     const link = `${repoUrl}/issues/new?title=${encodeURIComponent("[Research] " + task.topic)}&body=${encodeURIComponent(body)}`;
     if (link.length > 7000) {
       setError(
@@ -1316,7 +1451,7 @@ function Settings({ data, demo }: { data: Data; demo: boolean }) {
       <div className="page-heading">
         <div>
           <h1>
-            分身工作台<span className="heading-dot">.</span>
+            信息源与设置<span className="heading-dot">.</span>
           </h1>
           <p>让每天的信息收集，按你的节奏运行。</p>
         </div>

@@ -1,1 +1,375 @@
-{"schemaVersion":1,"platform":"web","tokens":{"color":{"canvas":"#f7f8fa","paper":"#ffffff","text":"#232832","secondary":"#596a82","primary":"#2861ee","line":"#e5e8ee"},"radius":{"card":"10px","control":"7px"},"spacing":{"gutter":"40px","columnGap":"27px"}},"authority":"User-provided reference image","surfaces":[{"path":"home","mode":"operate"},{"path":"read","mode":"read"}]}
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T11:51:13.711322+00:00",
+  "title": "Design System: 知更 · ZHIGENG",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0043 265.87)",
+          "oklch(26% 0.0117 265.87)",
+          "oklch(38% 0.0181 265.87)",
+          "oklch(50% 0.0213 265.87)",
+          "oklch(62% 0.0213 265.87)",
+          "oklch(74% 0.0170 265.87)",
+          "oklch(86% 0.0106 265.87)",
+          "oklch(95% 0.0032 265.87)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0057 257.67)",
+          "oklch(26% 0.0156 257.67)",
+          "oklch(38% 0.0241 257.67)",
+          "oklch(50% 0.0284 257.67)",
+          "oklch(62% 0.0284 257.67)",
+          "oklch(74% 0.0227 257.67)",
+          "oklch(86% 0.0142 257.67)",
+          "oklch(95% 0.0043 257.67)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Accent",
+        "tonalRamp": [
+          "oklch(15% 0.0153 263.94)",
+          "oklch(26% 0.0420 263.94)",
+          "oklch(38% 0.0650 263.94)",
+          "oklch(50% 0.0764 263.94)",
+          "oklch(62% 0.0764 263.94)",
+          "oklch(74% 0.0611 263.94)",
+          "oklch(86% 0.0382 263.94)",
+          "oklch(95% 0.0115 263.94)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Accent Hover",
+        "tonalRamp": [
+          "oklch(15% 0.0150 264.55)",
+          "oklch(26% 0.0414 264.55)",
+          "oklch(38% 0.0639 264.55)",
+          "oklch(50% 0.0752 264.55)",
+          "oklch(62% 0.0752 264.55)",
+          "oklch(74% 0.0602 264.55)",
+          "oklch(86% 0.0376 264.55)",
+          "oklch(95% 0.0113 264.55)"
+        ]
+      },
+      "sidebar-bg": {
+        "role": "neutral",
+        "displayName": "Sidebar Bg",
+        "tonalRamp": [
+          "oklch(15% 0.0003 247.84)",
+          "oklch(26% 0.0009 247.84)",
+          "oklch(38% 0.0014 247.84)",
+          "oklch(50% 0.0017 247.84)",
+          "oklch(62% 0.0017 247.84)",
+          "oklch(74% 0.0014 247.84)",
+          "oklch(86% 0.0009 247.84)",
+          "oklch(95% 0.0003 247.84)"
+        ]
+      },
+      "accent-soft": {
+        "role": "secondary",
+        "displayName": "Accent Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0021 261.79)",
+          "oklch(26% 0.0057 261.79)",
+          "oklch(38% 0.0088 261.79)",
+          "oklch(50% 0.0103 261.79)",
+          "oklch(62% 0.0103 261.79)",
+          "oklch(74% 0.0083 261.79)",
+          "oklch(86% 0.0052 261.79)",
+          "oklch(95% 0.0015 261.79)"
+        ]
+      },
+      "selection": {
+        "role": "secondary",
+        "displayName": "Selection",
+        "tonalRamp": [
+          "oklch(15% 0.0035 264.48)",
+          "oklch(26% 0.0096 264.48)",
+          "oklch(38% 0.0148 264.48)",
+          "oklch(50% 0.0174 264.48)",
+          "oklch(62% 0.0174 264.48)",
+          "oklch(74% 0.0140 264.48)",
+          "oklch(86% 0.0087 264.48)",
+          "oklch(95% 0.0026 264.48)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(26% 0.0000 89.88)",
+          "oklch(38% 0.0000 89.88)",
+          "oklch(50% 0.0000 89.88)",
+          "oklch(62% 0.0000 89.88)",
+          "oklch(74% 0.0000 89.88)",
+          "oklch(86% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Canvas",
+        "tonalRamp": [
+          "oklch(15% 0.0006 264.54)",
+          "oklch(26% 0.0016 264.54)",
+          "oklch(38% 0.0024 264.54)",
+          "oklch(50% 0.0029 264.54)",
+          "oklch(62% 0.0029 264.54)",
+          "oklch(74% 0.0023 264.54)",
+          "oklch(86% 0.0014 264.54)",
+          "oklch(95% 0.0004 264.54)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0021 261.79)",
+          "oklch(26% 0.0057 261.79)",
+          "oklch(38% 0.0089 261.79)",
+          "oklch(50% 0.0104 261.79)",
+          "oklch(62% 0.0104 261.79)",
+          "oklch(74% 0.0083 261.79)",
+          "oklch(86% 0.0052 261.79)",
+          "oklch(95% 0.0016 261.79)"
+        ]
+      },
+      "ochre": {
+        "role": "tertiary",
+        "displayName": "Ochre",
+        "tonalRamp": [
+          "oklch(15% 0.0149 75.27)",
+          "oklch(26% 0.0411 75.27)",
+          "oklch(38% 0.0635 75.27)",
+          "oklch(50% 0.0747 75.27)",
+          "oklch(62% 0.0747 75.27)",
+          "oklch(74% 0.0597 75.27)",
+          "oklch(86% 0.0373 75.27)",
+          "oklch(95% 0.0112 75.27)"
+        ]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus",
+        "tonalRamp": [
+          "oklch(15% 0.0154 261.52)",
+          "oklch(26% 0.0424 261.52)",
+          "oklch(38% 0.0656 261.52)",
+          "oklch(50% 0.0771 261.52)",
+          "oklch(62% 0.0771 261.52)",
+          "oklch(74% 0.0617 261.52)",
+          "oklch(86% 0.0386 261.52)",
+          "oklch(95% 0.0116 261.52)"
+        ]
+      },
+      "reading": {
+        "role": "neutral",
+        "displayName": "Reading",
+        "tonalRamp": [
+          "oklch(15% 0.0059 261.91)",
+          "oklch(26% 0.0162 261.91)",
+          "oklch(38% 0.0251 261.91)",
+          "oklch(50% 0.0295 261.91)",
+          "oklch(62% 0.0295 261.91)",
+          "oklch(74% 0.0236 261.91)",
+          "oklch(86% 0.0148 261.91)",
+          "oklch(95% 0.0044 261.91)"
+        ]
+      },
+      "error": {
+        "role": "tertiary",
+        "displayName": "Error",
+        "tonalRamp": [
+          "oklch(15% 0.0240 29.05)",
+          "oklch(26% 0.0660 29.05)",
+          "oklch(38% 0.1020 29.05)",
+          "oklch(50% 0.1200 29.05)",
+          "oklch(62% 0.1200 29.05)",
+          "oklch(74% 0.0960 29.05)",
+          "oklch(86% 0.0600 29.05)",
+          "oklch(95% 0.0180 29.05)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Reading-space greeting",
+        "purpose": "The homepage greeting; mobile overrides follow the responsive layout."
+      },
+      "body": {
+        "displayName": "Sustained reading",
+        "purpose": "Markdown reader prose, 75ch maximum measure."
+      },
+      "date": {
+        "displayName": "Edition date",
+        "purpose": "The pale blue edition spine with tabular numerals."
+      }
+    },
+    "shadows": [
+      {
+        "name": "search-dialog",
+        "value": "0 22px 80px #202b4038",
+        "purpose": "Search overlay only."
+      },
+      {
+        "name": "mobile-navigation",
+        "value": "18px 16px 40px #202b4033",
+        "purpose": "Expanded mobile navigation drawer."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "background 0.18s, color 0.18s, border-color 0.18s",
+        "purpose": "Interactive state changes."
+      },
+      {
+        "name": "reading-arrives",
+        "value": "0.55s cubic-bezier(0.16, 1, 0.3, 1); translateY(6px) to translateY(0)",
+        "purpose": "One visible-by-default homepage greeting entrance."
+      },
+      {
+        "name": "spinner",
+        "value": "1s linear infinite",
+        "purpose": "Loading indicator."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none; scroll-behavior: auto",
+        "purpose": "Applied under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-content-min",
+        "value": "1700px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1200px"
+      },
+      {
+        "name": "single-column-max",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "760px"
+      },
+      {
+        "name": "small-mobile-max",
+        "value": "380px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The blue action used to prepare a research task.",
+      "html": "<button class=\"ds-button ds-primary\">准备调研任务</button>",
+      "css": ".ds-button{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:42px;padding:10px 18px;border:1px solid transparent;border-radius:7px;font-size:13px;font-weight:500;line-height:1.5;cursor:pointer;transition:background .18s,color .18s,border-color .18s;}.ds-button:focus-visible{outline:3px solid var(--focus, #647eac);outline-offset:4px;}.ds-button:disabled{opacity:.55;cursor:default;}.ds-primary{background:var(--accent);color:var(--paper);}.ds-primary:hover{background:var(--accent-hover);}"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined export and supporting actions.",
+      "html": "<button class=\"ds-button ds-secondary\">导出 Markdown</button>",
+      "css": ".ds-button{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:42px;padding:10px 18px;border:1px solid transparent;border-radius:7px;font-size:13px;font-weight:500;line-height:1.5;cursor:pointer;transition:background .18s,color .18s,border-color .18s;}.ds-button:focus-visible{outline:3px solid var(--focus, #647eac);outline-offset:4px;}.ds-button:disabled{opacity:.55;cursor:default;}.ds-secondary{background:var(--paper);color:var(--accent);border-color:var(--line);}.ds-secondary:hover{background:#eef2f9;border-color:#b6c1d5;}"
+    },
+    {
+      "name": "Research field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Topic input, with visible label and the actual form field treatment.",
+      "html": "<label class=\"ds-label\" for=\"ds-topic\">你想研究什么？</label><input class=\"ds-field\" id=\"ds-topic\" placeholder=\"例如：AI Agent 的记忆系统\" />",
+      "css": ".ds-label{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif;display:block;color:var(--ink);font-size:14px;font-weight:550;margin-bottom:12px;}.ds-field{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif;width:100%;max-width:420px;border:1px solid #d9dfe9;border-radius:7px;padding:12px 14px;font-size:13px;line-height:1.8;color:var(--ink);background:#fcfcfe;caret-color:var(--accent);transition:background .18s,border-color .18s;}.ds-field::placeholder{color:#657080;opacity:1;}.ds-field:hover{border-color:#d9dfe9;}.ds-field:focus{border-color:#8b9dc0;background:#fff;}.ds-field:focus-visible{outline:3px solid var(--focus, #647eac);outline-offset:4px;}"
+    },
+    {
+      "name": "Rail navigation",
+      "kind": "nav",
+      "refersTo": "navigation-active",
+      "description": "Current destination uses pale blue in a light neutral shell.",
+      "html": "<nav class=\"ds-rail\" aria-label=\"阅读空间\"><a class=\"ds-nav ds-current\" href=\"#daily\" aria-current=\"page\">每日阅读</a><a class=\"ds-nav\" href=\"#research\">深度调研</a></nav>",
+      "css": ".ds-rail{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif;width:176px;padding:20px;background:var(--sidebar-bg);border-right:1px solid var(--line);display:flex;flex-direction:column;gap:8px;}.ds-nav{display:flex;align-items:center;min-height:47px;padding:0 14px;border-radius:8px;font-size:14px;color:#586377;text-decoration:none;transition:background .18s,color .18s;}.ds-nav:hover{background:#edf0f5;color:var(--accent);}.ds-nav.ds-current{background:var(--selection);color:#425b8c;font-weight:650;}.ds-nav:focus-visible{outline:3px solid var(--focus, #647eac);outline-offset:4px;}"
+    },
+    {
+      "name": "Source filters",
+      "kind": "chip",
+      "refersTo": "filter-selected",
+      "description": "Muted source filters become blue when selected.",
+      "html": "<div class=\"ds-filters\"><button class=\"ds-filter ds-selected\" aria-pressed=\"true\">全部来源</button><button class=\"ds-filter\" aria-pressed=\"false\">GitHub</button><button class=\"ds-filter\" aria-pressed=\"false\">RSS</button></div>",
+      "css": ".ds-filters{display:flex;flex-wrap:wrap;gap:8px;}.ds-filter{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif;border:0;background:transparent;font-size:12px;color:var(--muted);padding:8px 12px;border-radius:6px;cursor:pointer;transition:background .18s,color .18s;}.ds-filter:hover:not(.ds-selected){background:var(--accent-soft);}.ds-filter.ds-selected{background:var(--accent);color:var(--paper);}.ds-filter:focus-visible{outline:3px solid var(--focus, #647eac);outline-offset:4px;}"
+    },
+    {
+      "name": "Digest card",
+      "kind": "card",
+      "refersTo": "digest-card",
+      "description": "A document entry stays flat and responds through its border.",
+      "html": "<button class=\"ds-digest\"><span class=\"ds-meta\">2026年11月22日 · 原文汇编</span><h3>今天，值得读的新变化</h3><p>从来源出发，找到值得继续追问的问题。</p></button>",
+      "css": ".ds-digest{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif;display:block;width:100%;max-width:520px;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:23px 24px;color:var(--ink);cursor:pointer;transition:background .18s,border-color .18s;}.ds-digest:hover{border-color:#a5b2cd;background:#fcfcfe;}.ds-digest:focus-visible{outline:3px solid var(--focus, #647eac);outline-offset:4px;}.ds-meta{font-size:11px;color:var(--muted);}.ds-digest h3{font-size:18px;font-weight:600;line-height:1.65;margin:14px 0 10px;letter-spacing:-.01em;}.ds-digest p{margin:0;font-size:13px;color:var(--muted);line-height:1.95;}"
+    },
+    {
+      "name": "Calendar dates",
+      "kind": "custom",
+      "refersTo": "edition-date",
+      "description": "Published dates are actionable; unavailable dates remain disabled.",
+      "html": "<div class=\"ds-calendar\"><strong>2026年11月</strong><div class=\"ds-days\"><button class=\"ds-day\" disabled>20</button><button class=\"ds-day ds-available\" aria-label=\"阅读11月21日日报\">21</button><button class=\"ds-day ds-available ds-today\" aria-label=\"阅读今天的日报\">22</button></div></div>",
+      "css": ".ds-calendar{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif;max-width:252px;background:#f0f2f6;border-radius:var(--radius);padding:17px;color:var(--ink);}.ds-calendar strong{font-size:12px;font-weight:600;}.ds-days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;margin-top:13px;}.ds-day{border:0;background:transparent;min-height:29px;padding:5px 0;font-size:12px;border-radius:6px;color:#5b6981;font-variant-numeric:tabular-nums;cursor:pointer;transition:background .18s,color .18s;}.ds-day:disabled{color:#6f7a8b;cursor:default;}.ds-available{color:var(--accent);font-weight:600;background:#e0e7f5;}.ds-available:hover,.ds-today{background:var(--accent);color:#fff;}.ds-day:focus-visible{outline:3px solid var(--focus, #647eac);outline-offset:4px;}"
+    },
+    {
+      "name": "Research report",
+      "kind": "card",
+      "refersTo": "digest-card",
+      "description": "Research uses the same paper silhouette with a warm cover strip.",
+      "html": "<button class=\"ds-report\"><span class=\"ds-cover\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 3H20v19H6.5A2.5 2.5 0 0 1 4 19.5v-14A2.5 2.5 0 0 1 6.5 3Z\"/></svg>深度调研</span><span class=\"ds-report-info\"><small>资料整理 · 原文汇编</small><strong>从一个好问题开始</strong><span>保留来源，让思考有所依据。</span></span></button>",
+      "css": ".ds-report{font-family:-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", sans-serif;display:flex;flex-direction:column;padding:0;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;max-width:340px;cursor:pointer;transition:border-color .18s;}.ds-report:hover{border-color:#a5b2cd;}.ds-report:focus-visible{outline:3px solid var(--focus, #647eac);outline-offset:4px;}.ds-cover{display:flex;align-items:center;gap:10px;width:100%;color:#79613e;background:#f2ecdf;padding:18px 22px;font-size:12px;}.ds-report-info{padding:22px;display:flex;flex-direction:column;}.ds-report-info small{font-size:10px;color:var(--muted);}.ds-report-info strong{font-size:17px;line-height:1.7;margin:14px 0 10px;color:var(--ink);}.ds-report-info>span{font-size:12px;color:var(--muted);line-height:1.85;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Public Library Reading Space",
+    "overview": "知更 is a personal AI reading space shaped by contemporary public-library wayfinding. Light neutral navigation gives the collection a stable address; grey-white reading fields, pale blue date markers and restrained blue selection make it easy to move from daily discovery into sourced research.\n\nThe interface is calm, practical and information-rich. Chinese system sans typography, compact metadata and clear document surfaces support both a short daily visit and a longer reading session. The bird wordmark is a lightweight SVG symbol; the identity does not depend on photographic or raster decoration.",
+    "keyCharacteristics": [
+      "Persistent light neutral navigation and grey-white reading surfaces.",
+      "A date spine connects the latest edition to the availability calendar.",
+      "Daily reading and deep research share the same document vocabulary.",
+      "Color and explicit labels communicate source and generation states."
+    ],
+    "rules": [
+      {
+        "name": "Reading Field",
+        "body": "Keep article text and navigation on light surfaces; use restrained blue for actions and selection.",
+        "section": "colors"
+      },
+      {
+        "name": "Quiet Depth",
+        "body": "Use borders and tonal fields for resting content; reserve shadows for overlays.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use low-saturation blue for primary actions and a pale blue field for the active navigation item.",
+      "Do keep date availability, source failures and generation modes explicit.",
+      "Do preserve a visible keyboard focus treatment and reduced-motion behavior.",
+      "Do keep reader prose at its implemented comfortable measure and allow long links and tables to wrap or scroll."
+    ],
+    "donts": [
+      "Don't use a dark forest navigation shell; keep navigation in the light neutral surface system.",
+      "Don't add resting card shadows where borders and tonal fields already establish grouping.",
+      "Don't turn unavailable calendar dates into actionable controls.",
+      "Don't replace real content or collection status with invented activity."
+    ]
+  }
+}

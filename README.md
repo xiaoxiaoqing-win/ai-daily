@@ -1,4 +1,4 @@
-# 第二号 · AI Daily
+# 知更 · AI Daily
 
 AI 日报 + 有来源的深度调研。前端部署到 **GitHub Pages**，**GitHub Actions** 负责定时采集、调用兼容 OpenAI 的模型并发布静态 JSON；不需要常驻服务器。
 
@@ -86,7 +86,9 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-本地运行 AI 功能，先在 shell 中导出环境变量；`.env.example` 仅作模板，Python 不会自动读取 `.env`。不要提交真实 `.env`。
+本地运行 AI 功能，可将 `.env.example` 复制为 `.env.local` 后填写配置，或在 shell 中导出环境变量。Python CLI 自动读取 `.env.local` 和 `.env`，优先级为 shell / Actions Secrets > `.env.local` > `.env`。本地密钥文件已被 Git 忽略，切勿将密钥放进 `VITE_*` 变量或 `public/` 目录。
+
+如果使用本机的兼容网关，`OPENAI_BASE_URL` 需要包含其 OpenAI API 前缀（例如 `http://127.0.0.1:4141/v1`），并使用该网关接受的认证和模型名。`127.0.0.1` 仅在本机可用；GitHub Actions 中需要独立配置云端可访问的接口，不能直接沿用本机地址。
 
 ```sh
 export OPENAI_API_KEY='你的密钥'

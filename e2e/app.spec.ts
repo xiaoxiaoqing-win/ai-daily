@@ -1,5 +1,24 @@
 import { test, expect } from "@playwright/test";
 
+test.beforeEach(async ({ page }) => {
+  // A stable first-run state keeps the reading and search checks independent
+  // of whichever daily collection is currently published in the checkout.
+  await page.route("**/data/index.json", (route) =>
+    route.fulfill({
+      json: {
+        schemaVersion: 1,
+        updatedAt: null,
+        repository: "xiaoxiaoqing-win/ai-daily",
+        collection: { status: "not_run", aiEnabled: false },
+        sources: [],
+        items: [],
+        reports: [],
+        digests: [],
+      },
+    }),
+  );
+});
+
 test("home, reading, archive, source filters and search", async ({
   page,
 }, testInfo) => {
@@ -7,7 +26,7 @@ test("home, reading, archive, source filters and search", async ({
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto("/");
   await expect(
-    page.getByRole("heading", { name: "数字分身第二号." }),
+    page.getByRole("heading", { name: "每天，知新一点。" }),
   ).toBeVisible();
   await expect(page.getByText("当前为示例预览。")).toBeVisible();
   await expect(
@@ -98,7 +117,7 @@ test("research form prepares encoded GitHub task and settings show source config
   });
   await page.goto("/#settings");
   await expect(
-    page.getByRole("heading", { name: "分身工作台." }),
+    page.getByRole("heading", { name: "信息源与设置." }),
   ).toBeVisible();
   await expect(
     page.getByRole("link", { name: "Follow Builders", exact: true }),
@@ -131,7 +150,7 @@ test("load failure has retry and unknown document has recovery", async ({
   await page.unroute("**/data/index.json");
   await page.getByRole("button", { name: "重新加载" }).click();
   await expect(
-    page.getByRole("heading", { name: "数字分身第二号." }),
+    page.getByRole("heading", { name: "每天，知新一点。" }),
   ).toBeVisible();
   await page.goto("/#read/missing");
   await expect(
@@ -218,4 +237,47 @@ test("search returns keyboard focus and mobile menu exposes expanded state", asy
   await expect(
     page.getByRole("heading", { name: "没有找到这篇内容" }),
   ).toBeVisible();
+});
+
+test("skip link preserves form values and reader route while moving keyboard focus", async ({
+  page,
+}) => {
+  await page.goto("/#new");
+  await page.getByLabel("你想研究什么？").fill("Agent 记忆设计");
+  const skip = page.getByRole("link", { name: "跳到正文" });
+  await skip.focus();
+  await page.keyboard.press("Enter");
+  await expect(page).toHaveURL(/#new$/);
+  await expect(page.getByLabel("你想研究什么？")).toHaveValue("Agent 记忆设计");
+  await expect(page.getByRole("main")).toBeFocused();
+  await page.keyboard.press("Tab");
+  await expect(
+    page.getByRole("main").getByRole("link", { name: "查看接入步骤" }),
+  ).toBeFocused();
+  await page.keyboard.press("Tab");
+  await expect(page.getByRole("link", { name: "返回深度调研" })).toBeFocused();
+
+  await page.goto("/");
+  await page
+    .getByRole("button")
+    .filter({
+      has: page.getByRole("heading", {
+        name: "从 Prompt 到 Harness：让 Agent 稳定交付的关键",
+      }),
+    })
+    .click();
+  const readerUrl = page.url();
+  await skip.focus();
+  await page.keyboard.press("Enter");
+  await expect(page).toHaveURL(readerUrl);
+  await expect(
+    page.getByRole("heading", { name: "今日观察", exact: true }),
+  ).toBeVisible();
+  await expect(page.getByRole("main")).toBeFocused();
+  await page.keyboard.press("Tab");
+  await expect(
+    page.getByRole("main").getByRole("link", { name: "查看接入步骤" }),
+  ).toBeFocused();
+  await page.keyboard.press("Tab");
+  await expect(page.getByRole("button", { name: "返回列表" })).toBeFocused();
 });

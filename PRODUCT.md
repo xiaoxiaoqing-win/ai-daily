@@ -1,4 +1,4 @@
-# 第二号 · AI Daily
+# 知更 · ZHIGENG
 
 <!-- impeccable:product-schema 1 -->
 
@@ -18,10 +18,10 @@ Assumption: a Chinese-speaking individual following AI developments and research
 GitHub Pages serves generated JSON and static assets. Actions runs daily at 08:17 Asia/Shanghai and on demand. API credentials exist only in repository Secrets. The website submits research requests as GitHub issues; a repository owner or collaborator authorizes processing through their repository role.
 
 ## Capabilities and Constraints
-Read digests, filter sources, search, browse the calendar, read Markdown research and export reports. Configure sources through a versioned JSON file. Public articles and available video subtitles are extractable; restricted pages require supplied text. Web search is optional through Tavily. Without an AI key, collection still works but is identified as an original-text collection. Hosting destination repository is pending.
+Read digests, filter sources, search, browse the calendar, read Markdown research and export reports. Configure sources through a versioned JSON file. Public articles and available video subtitles are extractable; restricted pages require supplied text. Web search is optional through Tavily. Without an AI key, collection still works but is identified as an original-text collection. The destination repository is `xiaoxiaoqing-win/ai-daily`; deployments must continue to support its GitHub Pages subpath.
 
 ## Brand Commitments
-Reference image: Chinese interface, name 第二号, white and light gray surfaces, blue emphasis, homepage with a compact masthead, daily digest list with calendar, and research report list.
+Name: 知更 / ZHIGENG. Tagline: 日有所知，思有所进. A Chinese-language personal AI reading space where daily reading and deep research have equal importance. The identity uses public-library wayfinding: a light neutral navigation shell, grey-white reading fields and low-saturation blue accents with pale blue selection and restrained warm ochre research accents. A bird symbol accompanies the wordmark as an SVG icon. Clear source availability, citations and comfortable sustained reading are durable brand commitments; the implemented visual system is recorded in DESIGN.md.
 
 ## Product Principles
 - Distinguish generated analysis, collected source material and examples.
