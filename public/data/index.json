@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22T11:08:15.477227+00:00",
-  "repository": "",
+  "updatedAt": "2026-11-22T12:43:49.050231+00:00",
+  "repository": "xiaoxiaoqing-win/ai-daily",
   "digests": [
     {
       "id": "daily-2026-11-22",
       "date": "2026-11-22",
-      "createdAt": "2026-11-22T11:08:49.886066+00:00",
+      "createdAt": "2026-11-22T12:44:22.013149+00:00",
       "mode": "ai",
       "itemCount": 32,
       "sourceCount": 4,
@@ -206,9 +206,9 @@
         "824c03b970f1dc58",
         "701a571706ec6c00"
       ],
-      "title": "AI 日报｜数学证明声明待核验，Agent 技能生态持续扩展",
-      "summary": "黎曼猜想相关证明声明引发讨论，但所给材料不足以确认成立；ChatGPT/Codex 桌面端征集反馈，开源项目聚焦技能与工具接入，免费试用滥用暴露成本风险。[S28][S11][S23][S26]",
-      "content": "## 今日重点\n\n### 黎曼猜想：出现人机协作证明声明，尚不能视为定论\nLevent Alpöge 在被引述的声明中称，自己与 Claude 找到了黎曼猜想的证明，方法还可扩展至广义黎曼猜想，并称已完成无假设的形式化。这是**当事人的证明声明**；所给材料未包含证明全文、形式化验证记录或独立审查结论，不能据此宣布难题已获解决。[S28]\n\n另一条材料引述 Ravi Vakil：Alessandro Masullo 提出了不使用 AI 的广义黎曼猜想证明方案，Brian Conrad 已持续审阅数月并提供反馈，目前仍在吸收意见、完善文本。两条消息应分别看待，不能相互充当验证依据。[S29]\n\n### 免费试用滥用，正在侵蚀 AI 应用的成本边界\n据 Simon Willison 对 ChatPRD 创始人 Claire Vo 视频的转述，有团体循环使用免费试用和促销码，借其 Agent 获取 AI 服务，部分用于转售或商业生产。材料称，Claire 正逐步取消免费试用。这个案例提示：AI 产品的增长入口也可能成为推理成本被外部转嫁的入口，但材料没有给出损失规模。[S26]\n\n## Builder 动态\n\n- **ChatGPT/Codex 桌面端继续迭代。** Thibault Sottiaux 表示团队已在准备下一次较大更新，并征集前一天更新后仍需改进的问题；帖子没有披露下一版功能或发布时间。[S11]\n- **Muru：资深开发者用 AI 辅助构建 Python 应用服务器。** 摘录介绍，mod_wsgi 作者 Graham Dumpleton 正开发基于 Rust 的 Muru，面向 ASGI、WSGI 应用的开发与生产运行，并持续记录架构与工程取舍。目前材料不足以评估其性能或生产成熟度。[S30]\n- **llm-gemini 0.38.1 补齐推理档位支持。** 更新修复了 Gemini 4 Hydrogen、Neon 的 `xhigh` 配置支持。作者展示的单个样例中，Hydrogen 从 `high` 调至 `xhigh` 后，输出由 5,311 增至 31,477 tokens，成本由 3.99 增至 23.61 美分；这说明该样例的质量改善伴随明显成本上升，不代表通用基准结果。[S27]\n\n## 开源趋势\n\n以下是所给仓库简介呈现的方向，**不代表新增发布或热度排名**；材料未提供 Star 增长、采用率及许可证详情。[S13][S14][S17][S23]\n\n- **技能与插件成为 Agent 能力封装方式。** `obra/superpowers` 定位为 Agent 技能框架与软件开发方法；`cursor/plugins` 提供插件规范及官方插件；`google-labs-code/stitch-skills` 则提供对接 Stitch MCP server、遵循 Agent Skills 开放标准的技能库。[S14][S17][S23]\n- **安全与合规知识被整理成可调用流程。** `Claude-BugHunter` 简介列出 82 项技能、15 个斜杠命令及 681 个已披露报告模式；`app-store-compliance` 提供应用商店拒审模式、修复建议及隐私检查。上述数量均为项目自述，不能等同于有效性验证。[S13][S24]\n- **工具与数据接入继续补齐。** `CLI-Anything` 目标是让软件具备 Agent 可用的命令行入口；Firecrawl 将搜索、抓取及访问 550 多个数据提供方整合进一个 API。这些简介体现了让 Agent 能操作软件、获取信息的共同方向。[S15][S18]\n- **Amuse 宣布开源。** Amjad Masad 称该项目由 Replit Missions 构建；当前帖子未说明功能范围、许可证或代码质量。[S9]\n\n## 值得阅读\n\n### Muru 开发记录：经验如何进入 AI 协作流程\n提供的摘录覆盖进程模型、开发环境 HTTPS、发布、容器、Kubernetes、扩缩容及追踪等主题。尤其值得关注作者的判断：AI 可以承担大量表层实现，但判断“哪里还不够好”仍依赖开发者经验。这是比单纯展示生成代码更具体的协作案例。[S30]\n\n### PostgreSQL 19：副本上的“读己之写”\n11 月 19 日的文章介绍了 `WAIT FOR LSN`：应用可让只读副本等待 WAL 回放到指定位置后再查询，以读取刚写入主库的数据；指定超时后，副本未及时追上会报错。它对采用读写分离的应用具有直接工程参考价值，但不是今日新发布的消息。[S25]\n\n## 观察\n\n- **模型增强，不必然意味着人的技术判断退出。** trq212 认为，与模型协作推进前沿本身是一种技术能力，且尚未看到这项能力的收益递减。这属于作者观点；与 Muru 案例对照，可形成一个值得验证的判断：人的价值可能更多集中在任务组织、质量判断与结果验收，而非逐行实现。[S4][S5][S30]\n- **用 GitHub Issues 协调 Agent 群值得跟踪，但案例尚待核实。** Amjad Masad 转述了一名高中生将 GTA6 重新编译至 PC、并用 Issues 协调 Agent 任务的说法。材料没有代码、运行结果或授权信息，不能据此确认移植成功，也不能把此前“一两个月即可完成”的预测当作交付事实。[S12][S3]\n- **安全质疑不能直接写成安全事件。** swyx 对未具名提供方是否“秘密回传数据”提出质问，但材料未给出对象、技术证据或调查结果。目前只能记录为待核实线索，不能认定存在违规数据外传。[S1]"
+      "title": "AI 日报｜黎曼猜想证明声明待核验，Agent 工具链持续细化",
+      "summary": "黎曼猜想相关证明声明引发人机协作讨论，但所给材料未证明其获独立确认；ChatGPT/Codex 桌面端继续迭代，Agent 技能与插件工具增多，Token 滥用暴露产品成本风险。[S28][S11][S13][S17][S26]",
+      "content": "## 今日重点\n\n### 黎曼猜想相关声明引发关注，不能等同于已确认突破\n- **当事人声明**：Simon Willison 摘引 Levent Alpöge 的文字称，后者相信自己与 Claude 找到了黎曼猜想的证明，方法还可扩展至广义黎曼猜想，并称已完成不依赖额外假设的形式化论证。这是被转引的自述，不是材料所能独立确认的数学结论。[S28]\n- **另一条研究线索**：Ravi Vakil 的引文介绍，Alessandro Masullo 也有广义黎曼猜想的候选证明，Brian Conrad 已持续审阅数月并提供反馈；该工作被明确描述为未使用 AI。引文仍将其称为候选证明，而非已获最终确认的成果。[S29]\n- **编辑判断**：讨论应区分“提出证明”“形式化声明”与“获得独立核验”。现有材料不足以确认上述证明成立，也不足以判断两项工作的关系。社交平台已出现将其称为“突破”的评论，报道不宜直接沿用这一确定性表述。[S7][S28][S29]\n\n### Token 滥用正在影响 AI 产品的试用策略\n据 Simon Willison 对 Claire Vo 视频的介绍，ChatPRD 遭遇反复注册免费试用、套用促销码，以及借其 Agent 获取算力或开展其他商业活动的滥用；Claire 正逐步取消免费试用。对 Builder 而言，这个案例提示：试用额度不仅是获客成本，也可能成为被转售或挪用的资源。材料未提供损失规模。[S26]\n\n## Builder 动态\n\n- **ChatGPT/Codex 桌面端继续迭代**：11 月 22 日的帖子称，团队已在准备下一次较大更新，并就前一天的桌面应用更新征集反馈。现有信息没有列出已上线功能或下一版发布时间，不宜据此扩写更新清单。[S11]\n- **Muru：AI 辅助开发 Python 应用服务器**：据介绍，mod_wsgi 发起者 Graham Dumpleton 正使用 AI 辅助构建 Rust 服务器 Muru，目标是支持 ASGI、WSGI 应用的开发与生产运行。他持续公开架构和开发过程，涉及 worker、发布、容器、扩缩容及追踪等主题；材料未提供性能对比或成熟度验证。[S30]\n- **Amuse 宣布开源**：Amjad Masad 发帖称，由 Replit Missions 构建的 Amuse 已开源。所给文本没有项目功能、许可证或部署方式，暂只能确认这项开源声明。[S9]\n\n## 开源趋势\n\n以下依据仓库简介整理；所给材料没有 Star 增量、下载量或使用数据，因此不能据此判断热度排名。\n\n| 方向 | 项目与具体看点 |\n| --- | --- |\n| 安全技能 | **Claude-BugHunter**：简介列出 82 项技能、15 个斜杠命令，以及覆盖 24 类核心漏洞的 681 个已披露报告模式，面向漏洞挖掘与外部红队工作。[S13] |\n| 开发方法与扩展 | **superpowers** 自述为 Agent 技能框架与软件开发方法；**cursor/plugins** 提供 Cursor 插件规范及官方插件。[S14][S17] |\n| 软件接口 Agent 化 | **CLI-Anything** 以让软件具备面向 Agent 的命令行接口为目标；这是项目定位，不能理解为已适配所有软件。[S15] |\n| 跨工具技能 | **stitch-skills** 面向 Stitch MCP server，简介称遵循 Agent Skills 开放标准，适配多种编码 Agent。[S23] |\n| 数据接入 | **Firecrawl** 将搜索、抓取和数据访问整合到一个 API，简介称可访问 550 多个数据提供方；实际覆盖与服务条件未在材料中展开。[S18] |\n| 垂直工作流 | **diagram-design** 提供 45 类图表的 HTML、SVG 设计能力；**app-store-compliance** 将商店拒审模式、隐私检查和提交前检查整理为手册与 Agent 技能。[S21][S24] |\n\n**趋势判断**：这批项目的共同方向，是把开发方法、工具接口和领域检查项封装成 Agent 可调用的组件，而不只是发布独立聊天产品。这是对本批样本的归纳，不代表整个开源生态的统计结论。[S13][S14][S15][S23][S24]\n\n## 值得阅读\n\n1. **Muru 开发记录：经验如何参与 AI 编程。** 摘录强调，即使 AI 承担大量表层工作，判断“哪里还不够好”仍依赖开发者积累。适合关注 AI 辅助工程实践、而非只看生成速度的读者。[S30]\n2. **PostgreSQL 19 的 `WAIT FOR LSN`。** 11 月 19 日的文章介绍，通过等待备库回放到指定日志位置，让后续查询读到此前在主库完成的写入；还说明了可选超时的行为。这是早于本期主要动态的工程阅读补充。[S25]\n3. **llm-gemini 0.38.1：推理档位与成本。** 作者称此次修复补上部分模型的 `xhigh` 设置；其示例中，同一模型从 `high` 切换至 `xhigh` 后，输出 Token 从 5,311 增至 31,477，费用从 3.99 美分增至 23.61 美分。这只是单个示例，不足以证明更高档位对所有任务都更划算。[S27]\n\n## 观察\n\n- **人机协作能力仍值得单独评估。** trq212 的连续帖子认为，与模型合作推动前沿本身就是技术能力，并表示尚未看到这项能力的收益递减。这是作者观点；它与 Muru 开发记录中强调人的质量判断相呼应，但不能替代生产率实测。[S4][S5][S6][S30]\n- **多 Agent 协作出现可跟踪的组织线索。** Amjad Masad 转述一名高中生尝试让 GTA6 在 PC 上运行，并强调通过 GitHub Issues 协调 Agent 群。值得继续观察的是任务拆分与验收机制；材料没有代码、演示或独立验证，不能确认移植进度与效果。[S12]\n- **供应商数据回传疑问尚缺证据。** swyx 发帖质疑某些提供方是否在秘密回传数据，但文本没有指明提供方、回传内容或技术证据。目前只能记录为待核实质疑，不能据此认定存在隐私违规。[S1]"
     }
   ],
   "reports": [],
@@ -223,7 +223,7 @@
       "excerpt": "is there any possible benign explanation why these providers were secretly phoning home? because wtf https://t.co/UesBgBsnGi",
       "author": "Swyx",
       "publishedAt": "2026-11-21T14:26:26.000Z",
-      "collectedAt": "2026-11-22T11:08:13.966979+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519367+00:00",
       "likes": 250,
       "handle": "swyx"
     },
@@ -237,7 +237,7 @@
       "excerpt": "Been using this for about half of my work with my software factory. Best experience I have had so far across both desktop mobile and cloud. https://t.co/J9VZL0CjmQ",
       "author": "Garry Tan",
       "publishedAt": "2026-11-21T14:43:07.000Z",
-      "collectedAt": "2026-11-22T11:08:13.967264+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519691+00:00",
       "likes": 724,
       "handle": "garrytan"
     },
@@ -251,7 +251,7 @@
       "excerpt": "Given AI and all the GTA VI hate, how long before a vibe coded hobbyist PC port with all the hated design flaws removed?\n\nCould literally be a month or two with enough tokens.",
       "author": "Garry Tan",
       "publishedAt": "2026-11-21T14:53:39.000Z",
-      "collectedAt": "2026-11-22T11:08:13.967252+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519678+00:00",
       "likes": 815,
       "handle": "garrytan"
     },
@@ -265,7 +265,7 @@
       "excerpt": "yes, Claude is doing a lot of the technical work. and yes, maybe future models will one-shot \"prove the Riemann hypothesis\" or \"make javascript a static language\"\n\nbut I believe collaborating with models to push the frontier is a deeply technical skill in its own right",
       "author": "Thariq",
       "publishedAt": "2026-11-21T20:33:01.000Z",
-      "collectedAt": "2026-11-22T11:08:13.967168+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519586+00:00",
       "likes": 294,
       "handle": "trq212"
     },
@@ -279,7 +279,7 @@
       "excerpt": "it seems to me that as models get more powerful, the skill of working with them becomes more and more important, and I have not seen diminishing returns on that skill yet\n\nwe have many many more problems to solve",
       "author": "Thariq",
       "publishedAt": "2026-11-21T20:33:02.000Z",
-      "collectedAt": "2026-11-22T11:08:13.967153+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519571+00:00",
       "likes": 219,
       "handle": "trq212"
     },
@@ -293,7 +293,7 @@
       "excerpt": "I fear we are too quick to disintermediate ourselves, and by doing so we do both ourselves and the models disservice.",
       "author": "Thariq",
       "publishedAt": "2026-11-21T20:33:02.000Z",
-      "collectedAt": "2026-11-22T11:08:13.967137+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519549+00:00",
       "likes": 188,
       "handle": "trq212"
     },
@@ -307,7 +307,7 @@
       "excerpt": "This post nails why we why we should take the Riemann Hypothesis breakthrough very seriously, even beyond math. We’re entering an era where solving problems will look very different from how we solved them in the past.\n\n“This is not theory-building in the usual sense. It is something much weirder and more alien. The best human mathematicians know how to build theory, painstakingly, to reach a goal. But no human brain, on its own, is capable of creating a wormhole that requires a 25,000 page long tour through existing infrastructure with no obvious or realistic connection to the goal. But huge credit to Levent here: I think no current AI, on its own, is capable of this either.”\n\nIt used to be the case that to solve a particular problem - code, life sciences, math, cyber, engineering, and so on - you were ultimately bound by how much information an individual or team could retain and understand about the space. More information or more team members don’t always help, because it gets harder to connect the dots or coordinate amongst everyone. AI changes that completely. \n\nFor the first time ever we can decouple the human context limits and ability to work through information from our ability to drive productivity or discoveries. This is likely not just a small increase in the kinds of discoveries we can drive, but a qualitative shift in human output. \n\nNow every single form of prior art, insight, past research, past decision, or unrelated breakthrough, can be used for the discovery or creation of something new. This is useful for anything from cybersecurity to life sciences research. Agents will be able to correlate entirely unrelated work to a separate project; scan every bit of data in your enterprise for solving a problem; and so on. \n\nThe solutions may not be as elegant",
       "author": "Aaron Levie",
       "publishedAt": "2026-11-21T21:25:19.000Z",
-      "collectedAt": "2026-11-22T11:08:13.967228+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519650+00:00",
       "likes": 560,
       "handle": "levie"
     },
@@ -321,7 +321,7 @@
       "excerpt": "You can just automate your work and it’s so easy tbh https://t.co/6BexpmRbgS",
       "author": "Garry Tan",
       "publishedAt": "2026-11-21T22:14:00.000Z",
-      "collectedAt": "2026-11-22T11:08:13.967240+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519664+00:00",
       "likes": 528,
       "handle": "garrytan"
     },
@@ -335,7 +335,7 @@
       "excerpt": "Amuse, built by Replit Missions, is open source! https://t.co/n7NeLwXfs3",
       "author": "Amjad Masad",
       "publishedAt": "2026-11-21T23:03:33.000Z",
-      "collectedAt": "2026-11-22T11:08:13.967197+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519619+00:00",
       "likes": 171,
       "handle": "amasad"
     },
@@ -349,7 +349,7 @@
       "excerpt": "Going to check out this threads thing",
       "author": "Thibault Sottiaux",
       "publishedAt": "2026-11-21T23:04:42.000Z",
-      "collectedAt": "2026-11-22T11:08:13.967038+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519435+00:00",
       "likes": 2376,
       "handle": "thsottiaux"
     },
@@ -363,7 +363,7 @@
       "excerpt": "Team is already preparing another big update, but how are things since yesterday’s update to the ChatGPT/Codex desktop app? What still requires attention and is not quite there? https://t.co/1X8M5JwL77",
       "author": "Thibault Sottiaux",
       "publishedAt": "2026-11-22T02:03:58.000Z",
-      "collectedAt": "2026-11-22T11:08:13.967013+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519406+00:00",
       "likes": 2158,
       "handle": "thsottiaux"
     },
@@ -377,7 +377,7 @@
       "excerpt": "A high school kid is recompiling the GTA6 to work on PC.\n\nWhat’s more interesting is how they’re github issues to coordinate tasks across agent swarms.\n\nA new model for open source? https://t.co/16FgzS9kft",
       "author": "Amjad Masad",
       "publishedAt": "2026-11-22T03:31:39.000Z",
-      "collectedAt": "2026-11-22T11:08:13.967184+00:00",
+      "collectedAt": "2026-11-22T12:43:47.519602+00:00",
       "likes": 401,
       "handle": "amasad"
     },
@@ -390,10 +390,10 @@
       "url": "https://github.com/elementalsouls/Claude-BugHunter",
       "excerpt": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.472744+00:00",
-      "collectedAt": "2026-11-22T11:08:15.472960+00:00",
+      "publishedAt": "2026-11-22T12:43:49.042361+00:00",
+      "collectedAt": "2026-11-22T12:43:49.042744+00:00",
       "language": "Python",
-      "stars": "16,739"
+      "stars": "16,868"
     },
     {
       "id": "8c6014a36ca90e3f",
@@ -404,10 +404,10 @@
       "url": "https://github.com/obra/superpowers",
       "excerpt": "An agentic skills framework & software development methodology that works.",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.473169+00:00",
-      "collectedAt": "2026-11-22T11:08:15.473294+00:00",
+      "publishedAt": "2026-11-22T12:43:49.043088+00:00",
+      "collectedAt": "2026-11-22T12:43:49.043300+00:00",
       "language": "Shell",
-      "stars": "323,778"
+      "stars": "323,820"
     },
     {
       "id": "5dd922e14c0ccf9b",
@@ -418,10 +418,10 @@
       "url": "https://github.com/HKUDS/CLI-Anything",
       "excerpt": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.473456+00:00",
-      "collectedAt": "2026-11-22T11:08:15.473561+00:00",
+      "publishedAt": "2026-11-22T12:43:49.043563+00:00",
+      "collectedAt": "2026-11-22T12:43:49.043737+00:00",
       "language": "Python",
-      "stars": "62,372"
+      "stars": "62,419"
     },
     {
       "id": "b03e856411c0697d",
@@ -432,10 +432,10 @@
       "url": "https://github.com/jingyaogong/minimind",
       "excerpt": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.473707+00:00",
-      "collectedAt": "2026-11-22T11:08:15.473804+00:00",
+      "publishedAt": "2026-11-22T12:43:49.043994+00:00",
+      "collectedAt": "2026-11-22T12:43:49.044187+00:00",
       "language": "Python",
-      "stars": "68,359"
+      "stars": "68,390"
     },
     {
       "id": "a50d216def4cada3",
@@ -446,10 +446,10 @@
       "url": "https://github.com/cursor/plugins",
       "excerpt": "Cursor plugin specification and official plugins",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.473948+00:00",
-      "collectedAt": "2026-11-22T11:08:15.474043+00:00",
+      "publishedAt": "2026-11-22T12:43:49.044438+00:00",
+      "collectedAt": "2026-11-22T12:43:49.044601+00:00",
       "language": "TypeScript",
-      "stars": "18,243"
+      "stars": "18,268"
     },
     {
       "id": "e9dbf459bd01dca3",
@@ -460,10 +460,10 @@
       "url": "https://github.com/firecrawl/firecrawl",
       "excerpt": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.474187+00:00",
-      "collectedAt": "2026-11-22T11:08:15.474282+00:00",
+      "publishedAt": "2026-11-22T12:43:49.044859+00:00",
+      "collectedAt": "2026-11-22T12:43:49.045020+00:00",
       "language": "TypeScript",
-      "stars": "206,538"
+      "stars": "206,589"
     },
     {
       "id": "9251c307f3bced37",
@@ -474,10 +474,10 @@
       "url": "https://github.com/nginx/nginx",
       "excerpt": "The official NGINX Open Source repository.",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.474426+00:00",
-      "collectedAt": "2026-11-22T11:08:15.474521+00:00",
+      "publishedAt": "2026-11-22T12:43:49.045290+00:00",
+      "collectedAt": "2026-11-22T12:43:49.045455+00:00",
       "language": "C",
-      "stars": "32,800"
+      "stars": "32,812"
     },
     {
       "id": "d151114122a96cf9",
@@ -488,10 +488,10 @@
       "url": "https://github.com/openvinotoolkit/openvino",
       "excerpt": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.474667+00:00",
-      "collectedAt": "2026-11-22T11:08:15.474764+00:00",
+      "publishedAt": "2026-11-22T12:43:49.045702+00:00",
+      "collectedAt": "2026-11-22T12:43:49.045861+00:00",
       "language": "C++",
-      "stars": "12,008"
+      "stars": "12,016"
     },
     {
       "id": "9c939c7199afd9a6",
@@ -502,10 +502,10 @@
       "url": "https://github.com/cathrynlavery/diagram-design",
       "excerpt": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.474947+00:00",
-      "collectedAt": "2026-11-22T11:08:15.475065+00:00",
+      "publishedAt": "2026-11-22T12:43:49.046184+00:00",
+      "collectedAt": "2026-11-22T12:43:49.046374+00:00",
       "language": "HTML",
-      "stars": "70,026"
+      "stars": "70,061"
     },
     {
       "id": "b88590c43555a909",
@@ -516,10 +516,10 @@
       "url": "https://github.com/mvanhorn/last30days-skill",
       "excerpt": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.475208+00:00",
-      "collectedAt": "2026-11-22T11:08:15.475303+00:00",
+      "publishedAt": "2026-11-22T12:43:49.046621+00:00",
+      "collectedAt": "2026-11-22T12:43:49.046780+00:00",
       "language": "Python",
-      "stars": "72,317"
+      "stars": "72,369"
     },
     {
       "id": "c87cd13d69aef691",
@@ -530,10 +530,10 @@
       "url": "https://github.com/google-labs-code/stitch-skills",
       "excerpt": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.475455+00:00",
-      "collectedAt": "2026-11-22T11:08:15.475550+00:00",
+      "publishedAt": "2026-11-22T12:43:49.047037+00:00",
+      "collectedAt": "2026-11-22T12:43:49.047214+00:00",
       "language": "TypeScript",
-      "stars": "11,669"
+      "stars": "11,718"
     },
     {
       "id": "11418a0ccfe2dccc",
@@ -544,10 +544,10 @@
       "url": "https://github.com/mjmirza/app-store-compliance",
       "excerpt": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 111 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
       "author": "",
-      "publishedAt": "2026-11-22T11:08:15.475731+00:00",
-      "collectedAt": "2026-11-22T11:08:15.475850+00:00",
+      "publishedAt": "2026-11-22T12:43:49.047514+00:00",
+      "collectedAt": "2026-11-22T12:43:49.047703+00:00",
       "language": "Shell",
-      "stars": "3,656"
+      "stars": "3,699"
     },
     {
       "id": "1df80ba4eb1bc779",
@@ -559,7 +559,7 @@
       "excerpt": "PostgreSQL 19 Released Most years PostgreSQL ships a new release in September, but this year's release came two months later thanks mainly to the flurry of issues that the PostgreSQL team needed to address as part of the ongoing AI-reported vulnerability apocalypse. This release was definitely worth the wait. My favorite new feature is this one: For applications that send reads to standbys, PostgreSQL 19 adds \"read-your-writes\" consistency with the new WAIT FOR LSN command. A session on a standby can use WAIT FOR LSN to wait until the standby has replayed the write-ahead log (WAL) up to a specific log sequence number (LSN) before running a query, so the application can read data it just wrote on the primary. In practice, that looks like this: UPDATE movie SET genre = 'Dramatic' WHERE genre = 'Drama';\nSELECT pg_current_wal_insert_lsn(); That returns a value like 0/0306EE20 . Store that somewhere (a signed cookie would work) such that on a subsequent request your application can do: WAIT FOR LSN '0/0306EE20' WITH (TIMEOUT '0.1s');\nSELECT * FROM movie WHERE genre = 'Drama'; The timeout is optional - if you provide one you'll get an error if the replica you are talking to doesn't catch up within the specified time. I first encountered this pattern in Wikipedia , which has a hand-rolled version of this built against MySQL replication: In addition to this, MediaWiki attempts to ensure that the user sees events occurring on the wiki in chronological order. A few seconds of lag can be tolerated, as long as the user sees a consistent picture from subsequent requests. This is done by saving the primary binlog position in the session, and then at the start of each request, waiting for the replica to catch up to that position before doing any reads from it. Here's the relevant Medi",
       "author": "Simon Willison",
       "publishedAt": "2026-11-19T20:43:57+00:00",
-      "collectedAt": "2026-11-22T11:08:14.159274+00:00"
+      "collectedAt": "2026-11-22T12:43:47.813104+00:00"
     },
     {
       "id": "3f7f7cffebe4ba59",
@@ -571,7 +571,7 @@
       "excerpt": "Token fraud is here and it’s BAD (YouTube) Claire Vo runs ChatPRD , an AI platform that helps product managers \"turn an idea into a spec\". The product has been live since the GPT-4 era, and Claire has been building it in public for much of that time. In this YouTube video (see also the accompanying Twitter post ) Claire describes the flood of token fraud she has seen from groups abusing the product's free trial, sometimes just to get free AI usage but often to resell tokens or run other commercial enterprises on top of the ChatPRD agent. I am funding a international Roblox and Fortnite map studio. They run a loop of free trials and promo codes and then tunnel to my agent and use it to build Roblox and Fortnite maps. Apparently one of the common prompts Claire saw running through her agent involved SVGs of pelicans riding bicycles! Presumably the token scammers are using that to help sniff the underlying models - different model families have a definite signature, and I've used it like this in the past to try and guess the identity of stealth preview models on platforms like OpenRouter. Claire is winding down her free trials entirely, which sadly looks like the right decision in the face of this abuse. Tags: youtube , ai , generative-ai , llms , pelican-riding-a-bicycle , ai-misuse",
       "author": "Simon Willison",
       "publishedAt": "2026-11-20T02:49:57+00:00",
-      "collectedAt": "2026-11-22T11:08:14.158598+00:00"
+      "collectedAt": "2026-11-22T12:43:47.811427+00:00"
     },
     {
       "id": "f54713977487b6ec",
@@ -583,7 +583,7 @@
       "excerpt": "Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level. I missed that when I added those models to the llm-gemini plugin, which is now fixed in this dot release. The xhigh setting for Hydrogen makes a significant difference. I updated my Gemini 4 comparison grid - note how Hydrogen at high used 5,311 output tokens and cost 3.99 cents, but the same model at xhigh used 31,477 output tokens, cost 23.61 cents, and produced a pelican that's competitive with Gemini 4 Neon: Tags: gemini , llm , llm-reasoning , pelican-riding-a-bicycle , ai , llms , google , generative-ai",
       "author": "Simon Willison",
       "publishedAt": "2026-11-20T03:01:57+00:00",
-      "collectedAt": "2026-11-22T11:08:14.158192+00:00"
+      "collectedAt": "2026-11-22T12:43:47.805280+00:00"
     },
     {
       "id": "7220e54bdf8a93f9",
@@ -595,7 +595,7 @@
       "excerpt": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Claude and I have also formalized the arguments without assumptions. It is natural to feel that this is an end, in my case a loss of a principal guiding light, but what I saw during the course of progress so amazed me that I believe it is one dawn across science of something far greater. [...] Claude and I have had a great time together with such breadth in recent months, but this time Claude far outpaced me near the finish line. No, Claude flew, and danced, and sparkled near that finish line. — Levent Alpöge , alpo.ge/remark.pdf Tags: anthropic , claude , generative-ai , mathematics , ai , llms , levent-alpoge",
       "author": "Simon Willison",
       "publishedAt": "2026-11-20T16:30:48+00:00",
-      "collectedAt": "2026-11-22T11:08:14.157671+00:00"
+      "collectedAt": "2026-11-22T12:43:47.804246+00:00"
     },
     {
       "id": "0d8e213cc0d8372d",
@@ -607,7 +607,7 @@
       "excerpt": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it seems best to put out the current draft. — Ravi Vakil , Hurried Announcement: Alessandro Masullo GRH Tags: mathematics",
       "author": "Simon Willison",
       "publishedAt": "2026-11-20T19:21:49+00:00",
-      "collectedAt": "2026-11-22T11:08:14.157294+00:00"
+      "collectedAt": "2026-11-22T12:43:47.803524+00:00"
     },
     {
       "id": "aaa55aaf59895092",
@@ -619,7 +619,7 @@
       "excerpt": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production. As he did with wrapture , he's been publishing an extraordinarily detailed account of the project as he works on it - as part of his development process. Here's everything he's published so far, all in the last three weeks: 2026-11-04 — Twenty years of mod_wsgi, and what comes next 2026-11-05 — A first look at Muru 2026-11-07 — Muru: looking inside the workers 2026-11-08 — Muru: how it fits together 2026-11-09 — Muru: import once, fork many 2026-11-10 — Muru: HTTPS in development 2026-11-11 — Muru: WSGI and ASGI together 2026-11-11 — AI as a lifestyle choice 2026-11-12 — Muru: releases, not restarts 2026-11-13 — Muru: canaries without a service mesh 2026-11-14 — Muru: a better tenant in a container 2026-11-15 — Muru: working with Kubernetes, not around it 2026-11-16 — Muru: scaling from what the workers report 2026-11-17 — Muru: scaling to zero 2026-11-18 — Muru: overlays on a schedule 2026-11-19 — Muru: noticing and responding 2026-11-20 — Muru: a toolbar on every page 2026-11-21 — Muru: tracing in the toolbar That post about AI as a lifestyle choice is particularly worth a read: The AI may be doing a lot of the work on the surface, but deciding what isn't good enough yet is still down to me, and twenty years of getting things wrong with mod_wsgi turns out to be useful for that. I am prepared to put in the hard work to keep polishing Muru until it is something I would trust, and something you would too. Tags: graham-dumpleton , modwsgi , python , wsgi , ai , ru",
       "author": "Simon Willison",
       "publishedAt": "2026-11-21T23:56:28+00:00",
-      "collectedAt": "2026-11-22T11:08:14.145583+00:00"
+      "collectedAt": "2026-11-22T12:43:47.763312+00:00"
     },
     {
       "id": "824c03b970f1dc58",
@@ -631,7 +631,7 @@
       "excerpt": "",
       "author": "Hugging Face Blog",
       "publishedAt": "2026-11-20T00:00:00+00:00",
-      "collectedAt": "2026-11-22T11:08:14.489579+00:00"
+      "collectedAt": "2026-11-22T12:43:47.932378+00:00"
     },
     {
       "id": "701a571706ec6c00",
@@ -643,7 +643,7 @@
       "excerpt": "",
       "author": "Hugging Face Blog",
       "publishedAt": "2026-11-20T00:00:00+00:00",
-      "collectedAt": "2026-11-22T11:08:14.489598+00:00"
+      "collectedAt": "2026-11-22T12:43:47.932416+00:00"
     }
   ],
   "sources": [
@@ -655,7 +655,7 @@
       "enabled": true,
       "status": "ok",
       "count": 12,
-      "lastCheckedAt": "2026-11-22T11:08:13.967401+00:00",
+      "lastCheckedAt": "2026-11-22T12:43:47.519834+00:00",
       "message": "采集成功"
     },
     {
@@ -666,7 +666,7 @@
       "enabled": true,
       "status": "ok",
       "count": 12,
-      "lastCheckedAt": "2026-11-22T11:08:15.476892+00:00",
+      "lastCheckedAt": "2026-11-22T12:43:49.049451+00:00",
       "message": "采集成功"
     },
     {
@@ -677,7 +677,7 @@
       "enabled": true,
       "status": "ok",
       "count": 6,
-      "lastCheckedAt": "2026-11-22T11:08:14.173187+00:00",
+      "lastCheckedAt": "2026-11-22T12:43:47.875335+00:00",
       "message": "采集成功"
     },
     {
@@ -688,7 +688,7 @@
       "enabled": true,
       "status": "ok",
       "count": 2,
-      "lastCheckedAt": "2026-11-22T11:08:14.499763+00:00",
+      "lastCheckedAt": "2026-11-22T12:43:47.954733+00:00",
       "message": "采集成功"
     }
   ],
@@ -696,6 +696,6 @@
     "status": "ok",
     "message": "4/4 个来源完成采集",
     "aiEnabled": true,
-    "lastAttemptAt": "2026-11-22T11:08:15.477234+00:00"
+    "lastAttemptAt": "2026-11-22T12:43:49.050246+00:00"
   }
 }
