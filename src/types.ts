@@ -1,0 +1,59 @@
+export type Reference = { id: string; title: string; url: string };
+export type Document = {
+  id: string;
+  title: string;
+  summary: string;
+  content: string;
+  date: string;
+  createdAt: string;
+  mode: "ai" | "collection" | "demo";
+  sourceCount: number;
+  references: Reference[];
+  itemCount?: number;
+  itemIds?: string[];
+  topic?: string;
+  methods?: string[];
+  failures?: { url: string; message: string }[];
+};
+export type Item = {
+  id: string;
+  sourceId: string;
+  source: string;
+  kind: string;
+  title: string;
+  url: string;
+  excerpt: string;
+  author: string;
+  publishedAt: string | null;
+  collectedAt: string;
+  likes?: number;
+  handle?: string;
+  language?: string;
+  stars?: string;
+};
+export type Source = {
+  id: string;
+  name: string;
+  kind: string;
+  url: string;
+  enabled: boolean;
+  status?: string;
+  count?: number;
+  lastCheckedAt?: string;
+  message?: string;
+};
+export type Data = {
+  schemaVersion: number;
+  updatedAt: string | null;
+  repository: string;
+  digests: Document[];
+  reports: Document[];
+  items: Item[];
+  sources: Source[];
+  collection: {
+    status: string;
+    message?: string;
+    aiEnabled?: boolean;
+    aiError?: string;
+  };
+};

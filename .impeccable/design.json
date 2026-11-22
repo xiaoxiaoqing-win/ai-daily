@@ -1,0 +1,1 @@
+{"schemaVersion":1,"platform":"web","tokens":{"color":{"canvas":"#f7f8fa","paper":"#ffffff","text":"#232832","secondary":"#596a82","primary":"#2861ee","line":"#e5e8ee"},"radius":{"card":"10px","control":"7px"},"spacing":{"gutter":"40px","columnGap":"27px"}},"authority":"User-provided reference image","surfaces":[{"path":"home","mode":"operate"},{"path":"read","mode":"read"}]}

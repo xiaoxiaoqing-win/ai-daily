@@ -1,0 +1,35 @@
+{
+  "timezone": "Asia/Shanghai",
+  "lookback_hours": 72,
+  "max_items_per_source": 12,
+  "sources": [
+    {
+      "id": "builders",
+      "name": "Follow Builders",
+      "kind": "builders",
+      "url": "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
+      "enabled": true
+    },
+    {
+      "id": "github",
+      "name": "GitHub Trending",
+      "kind": "github",
+      "url": "https://github.com/trending?since=daily",
+      "enabled": true
+    },
+    {
+      "id": "simon",
+      "name": "Simon Willison",
+      "kind": "rss",
+      "url": "https://simonwillison.net/atom/everything/",
+      "enabled": true
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face Blog",
+      "kind": "rss",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "enabled": true
+    }
+  ]
+}

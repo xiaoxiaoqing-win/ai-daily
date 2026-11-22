@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": null,
+  "repository": "xiaoxiaoqing-win/ai-daily",
+  "digests": [
+    {
+      "id": "demo-daily-2026-11-22",
+      "date": "2026-11-22",
+      "createdAt": "2026-11-22T00:17:00Z",
+      "title": "从 Prompt 到 Harness：让 Agent 稳定交付的关键",
+      "summary": "模型能力之外，任务拆分、工具边界与验证闭环，正在成为构建可靠 Agent 的重要部分。",
+      "content": "## 今日观察\n\n这是一份用于展示信息结构的示例日报，并非当天新闻或真实模型分析。接入数据后，分身会把已采集的资料汇总到这里。\n\n### 先建立验证闭环\n\n给任务明确输入、预期产物和验收条件，能帮助定位流程在哪一步偏离预期。工具输出、过程日志和最终产物都需要保留，以便回溯。\n\n### 保持来源可追溯\n\n每条信息都应保留原文链接和原始日期。无法公开读取的资料，要标注限制并补充原文，不能将标题视为已阅读全文的证据。\n\n### 给下一次决策留下线索\n\n日报用于发现变化，深度调研用于理解机制。把一个具体问题和它的证据一起保存，会比无限扩大的收藏夹更容易重新使用。\n\n## 值得继续追问\n\n- 这条信息对当前任务有什么直接影响？\n- 关键结论有没有足够的来源支撑？\n- 哪些判断仍需要下一轮实验验证？",
+      "mode": "demo",
+      "sourceCount": 3,
+      "itemCount": 3,
+      "itemIds": ["demo-builder", "demo-github", "demo-rss"],
+      "references": [
+        {
+          "id": "S1",
+          "title": "Agent 的工具调用与上下文设计（示例引用）",
+          "url": "https://platform.openai.com/docs/guides/function-calling"
+        },
+        {
+          "id": "S2",
+          "title": "GitHub Actions 官方文档（示例引用）",
+          "url": "https://docs.github.com/en/actions"
+        }
+      ]
+    },
+    {
+      "id": "demo-daily-2026-11-21",
+      "date": "2026-11-21",
+      "createdAt": "2026-11-21T00:17:00Z",
+      "title": "把知识留在本地：记忆与上下文的设计取舍",
+      "summary": "长期记忆不等于无限堆叠上下文。围绕可检索、可更新和可追溯，重新思考 Agent 的知识系统。",
+      "content": "## 今日观察\n\n这是一份用于展示信息结构的示例日报，并非当天新闻或真实模型分析。接入数据后，分身会把已采集的资料汇总到这里。\n\n### 先建立验证闭环\n\n给任务明确输入、预期产物和验收条件，能帮助定位流程在哪一步偏离预期。工具输出、过程日志和最终产物都需要保留，以便回溯。\n\n### 保持来源可追溯\n\n每条信息都应保留原文链接和原始日期。无法公开读取的资料，要标注限制并补充原文，不能将标题视为已阅读全文的证据。\n\n### 给下一次决策留下线索\n\n日报用于发现变化，深度调研用于理解机制。把一个具体问题和它的证据一起保存，会比无限扩大的收藏夹更容易重新使用。\n\n## 值得继续追问\n\n- 这条信息对当前任务有什么直接影响？\n- 关键结论有没有足够的来源支撑？\n- 哪些判断仍需要下一轮实验验证？",
+      "mode": "demo",
+      "sourceCount": 3,
+      "itemCount": 3,
+      "itemIds": ["demo-builder", "demo-github", "demo-rss"],
+      "references": [
+        {
+          "id": "S1",
+          "title": "Agent 的工具调用与上下文设计（示例引用）",
+          "url": "https://platform.openai.com/docs/guides/function-calling"
+        },
+        {
+          "id": "S2",
+          "title": "GitHub Actions 官方文档（示例引用）",
+          "url": "https://docs.github.com/en/actions"
+        }
+      ]
+    },
+    {
+      "id": "demo-daily-2026-11-20",
+      "date": "2026-11-20",
+      "createdAt": "2026-11-20T00:17:00Z",
+      "title": "让信息流变成工作流：从每日阅读到持续研究",
+      "summary": "把信息采集、筛选与记录连接起来，让有价值的发现能够在下一次决策中被重新找到。",
+      "content": "## 今日观察\n\n这是一份用于展示信息结构的示例日报，并非当天新闻或真实模型分析。接入数据后，分身会把已采集的资料汇总到这里。\n\n### 先建立验证闭环\n\n给任务明确输入、预期产物和验收条件，能帮助定位流程在哪一步偏离预期。工具输出、过程日志和最终产物都需要保留，以便回溯。\n\n### 保持来源可追溯\n\n每条信息都应保留原文链接和原始日期。无法公开读取的资料，要标注限制并补充原文，不能将标题视为已阅读全文的证据。\n\n### 给下一次决策留下线索\n\n日报用于发现变化，深度调研用于理解机制。把一个具体问题和它的证据一起保存，会比无限扩大的收藏夹更容易重新使用。\n\n## 值得继续追问\n\n- 这条信息对当前任务有什么直接影响？\n- 关键结论有没有足够的来源支撑？\n- 哪些判断仍需要下一轮实验验证？",
+      "mode": "demo",
+      "sourceCount": 3,
+      "itemCount": 3,
+      "itemIds": ["demo-builder", "demo-github", "demo-rss"],
+      "references": [
+        {
+          "id": "S1",
+          "title": "Agent 的工具调用与上下文设计（示例引用）",
+          "url": "https://platform.openai.com/docs/guides/function-calling"
+        },
+        {
+          "id": "S2",
+          "title": "GitHub Actions 官方文档（示例引用）",
+          "url": "https://docs.github.com/en/actions"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "id": "demo-agent-os",
+      "date": "2026-11-21",
+      "createdAt": "2026-11-21T08:00:00Z",
+      "mode": "demo",
+      "topic": "Agent 系统架构",
+      "title": "Agent 的操作系统：从工具调用到系统架构",
+      "summary": "以应用、运行内核与基础设施三个层次，梳理 Agent 的上下文、工具与记忆如何协同工作。",
+      "sourceCount": 2,
+      "references": [
+        {
+          "id": "S1",
+          "title": "Agent 的工具调用与上下文设计（示例引用）",
+          "url": "https://platform.openai.com/docs/guides/function-calling"
+        },
+        {
+          "id": "S2",
+          "title": "GitHub Actions 官方文档（示例引用）",
+          "url": "https://docs.github.com/en/actions"
+        }
+      ],
+      "content": "## 核心问题\n\n当一个 Agent 不再只回答问题，而需要连续调用工具、保留状态并交付结果时，我们该如何组织它的运行系统？这份示例用三层结构帮助理解问题，并不声称某一实现是行业标准。\n\n## 一个可讨论的三层模型\n\n| 层次 | 负责什么 | 需要回答的问题 |\n| --- | --- | --- |\n| 应用层 | 接收目标，组织任务 | 用户要什么，如何验收？ |\n| 运行层 | 上下文、工具、状态与调度 | 下一步调用什么，失败后如何恢复？ |\n| 基础设施层 | 模型服务、数据存储与执行环境 | 数据在哪里，调用是否可观测？ |\n\n### 上下文是一种有限资源\n\n保留所有历史，并不必然改善每一次判断。为当前步骤选择相关资料、记录来源与时间，并将最终成果写入持久存储，能让后续工作更易追溯。\n\n### 工具边界需要明确\n\n工具接口需要描述输入、输出和可能的失败。涉及写入的操作，应通过明确的验证条件决定是否完成，而不是只依赖一段表示成功的文字。\n\n## 实践建议\n\n1. 从一个能验收的小任务开始，先跑通完整闭环。\n2. 为每次工具调用保留结构化状态。\n3. 将长期资料与当前任务上下文分开管理。\n4. 明确记录无法提取的来源，不让缺失证据悄悄变成肯定结论。\n\n## 局限与待验证问题\n\n本文是概念与排版示例，未对具体框架进行实测。三层划分是一种分析方式，实际系统应根据任务复杂度选择实现。"
+    },
+    {
+      "id": "demo-research-workflow",
+      "date": "2026-11-20",
+      "createdAt": "2026-11-20T08:00:00Z",
+      "mode": "demo",
+      "topic": "多媒体研究工作流",
+      "title": "从一段视频，到一份可以复用的研究",
+      "summary": "让字幕、文章与不同观点形成证据链。多媒体调研的关键，是保留提取过程与判断边界。",
+      "sourceCount": 2,
+      "references": [
+        {
+          "id": "S1",
+          "title": "Agent 的工具调用与上下文设计（示例引用）",
+          "url": "https://platform.openai.com/docs/guides/function-calling"
+        },
+        {
+          "id": "S2",
+          "title": "GitHub Actions 官方文档（示例引用）",
+          "url": "https://docs.github.com/en/actions"
+        }
+      ],
+      "content": "## 从一个明确的问题开始\n\n“总结这段视频”和“比较这段视频中的方案与其他方法的适用条件”，对应不同的研究任务。先定义希望得到的答案，才能判断需要补充哪些来源。\n\n## 建立可追溯的资料集合\n\n公开字幕、文章正文与用户补充的转录，都可以进入同一个资料集合。每份材料保留标题、链接和提取方式。字幕不包含视频画面，不能据此声称已经验证演示效果。\n\n## 从摘录走向交叉验证\n\n对重要结论，应寻找独立来源或实验记录，标明一致与分歧。如果仅有一段来源，报告需要明确其覆盖范围，而不是让篇幅代替证据。\n\n| 环节 | 建议保留的记录 |\n| --- | --- |\n| 提取 | 来源链接、方式、失败原因 |\n| 分析 | 支撑每个重要判断的证据 |\n| 综合 | 结论、分歧、应用条件 |\n| 归档 | Markdown、引用与生成时间 |\n\n## 让报告服务于下一次行动\n\n研究不只是一份摘要。给出一个能够执行、能够验证的后续步骤，会让它更容易被重新使用。\n\n## 局限\n\n此报告是流程示例，不是对某段真实视频的研究。平台登录、字幕缺失与抓取限制都可能降低覆盖范围，应在真实报告中逐项记录。"
+    }
+  ],
+  "items": [
+    {
+      "id": "demo-builder",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "构建 Agent 时，验证应该成为工作流的一部分",
+      "url": "https://github.com/zarazhangrui/follow-builders",
+      "excerpt": "这是一条排版示例，并非真实 Builder 发言。真实动态会保留作者、发布时间和原文链接。",
+      "author": "示例 Builder",
+      "handle": "example",
+      "publishedAt": "2026-11-22T00:00:00Z",
+      "collectedAt": "2026-11-22T00:17:00Z"
+    },
+    {
+      "id": "demo-github",
+      "sourceId": "github",
+      "source": "GitHub Trending",
+      "kind": "github",
+      "title": "开源项目将在这里展示",
+      "url": "https://github.com/trending",
+      "excerpt": "真实采集后，这里展示 GitHub 当日趋势项目、项目描述与开发语言。当前仅演示页面结构。",
+      "author": "",
+      "language": "Python",
+      "publishedAt": "2026-11-22T00:17:00Z",
+      "collectedAt": "2026-11-22T00:17:00Z"
+    },
+    {
+      "id": "demo-rss",
+      "sourceId": "simon",
+      "source": "RSS 订阅",
+      "kind": "rss",
+      "title": "订阅中的好文章，不再错过",
+      "url": "https://simonwillison.net/",
+      "excerpt": "真实采集后，这里保留 RSS / Atom 原始条目的标题、摘要和发布日期。",
+      "author": "示例订阅",
+      "publishedAt": "2026-11-22T00:00:00Z",
+      "collectedAt": "2026-11-22T00:17:00Z"
+    }
+  ],
+  "sources": [
+    {
+      "id": "builders",
+      "name": "Follow Builders",
+      "kind": "builders",
+      "url": "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
+      "enabled": true
+    },
+    {
+      "id": "github",
+      "name": "GitHub Trending",
+      "kind": "github",
+      "url": "https://github.com/trending?since=daily",
+      "enabled": true
+    },
+    {
+      "id": "simon",
+      "name": "Simon Willison",
+      "kind": "rss",
+      "url": "https://simonwillison.net/atom/everything/",
+      "enabled": true
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face Blog",
+      "kind": "rss",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "enabled": true
+    }
+  ],
+  "collection": {
+    "status": "not_run",
+    "message": "示例预览"
+  }
+}
