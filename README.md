@@ -16,7 +16,9 @@ AI 日报 + 有来源的深度调研。前端部署到 **GitHub Pages**，**GitH
 2. 仓库 **Settings → Pages → Build and deployment → Source → GitHub Actions**。
 3. **Settings → Secrets and variables → Actions → New repository secret**，添加下表配置。密钥不能放进源码、Issue、`VITE_*` 或网页表单。
 4. **Actions → Deploy Pages → Run workflow**。后续向 `main` 推送代码会自动部署。
-5. **Actions → Daily Digest → Run workflow** 生成第一期，之后每天北京时间 **08:17** 自动更新。Actions 调度可能延迟；长期不活跃的公开仓库定时任务可能被 GitHub 停用，需到 Actions 恢复。
+5. **Actions → Daily Digest → Run workflow** 生成第一期，之后每天北京时间 **08:17** 正常采集，**08:47、09:17、10:17** 自动补查。每次都先读取最新主分支：当天已有正式日报（AI 总结或原文汇编）就跳过，不安装采集依赖、不采集、不调用模型，也不重复发布。示例与空正文不算正式日报。所有生成任务共用并发锁，避免补跑重叠调用。
+
+手动运行默认也会跳过当天已有日报；确实需要重新生成时，在 **Run workflow** 勾选 `force`，这可能再次消耗 API 额度。AI 调用失败后已生成的原文汇编也算当天已生成，自动补查不会反复尝试模型；需要重试时显式强制运行。GitHub 调度仍可能延迟或丢弃，兜底只能减少漏跑，无法保证准点；长期不活跃的公开仓库定时任务可能被停用，需到 Actions 恢复。
 
 预计网址：`https://xiaoxiaoqing-win.github.io/ai-daily/`。构建时从 `github.repository` 自动识别仓库，支持仓库子路径和 `<用户名>.github.io` 根站点，使用 hash 路由避免刷新 404。
 

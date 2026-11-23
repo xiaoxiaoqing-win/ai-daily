@@ -15,7 +15,7 @@ Aggregate Follow Builders, GitHub Trending and configurable RSS subscriptions in
 Assumption: a Chinese-speaking individual following AI developments and researching multimedia material.
 
 ## Operating Context
-GitHub Pages serves generated JSON and static assets. Actions runs daily at 08:17 Asia/Shanghai and on demand. API credentials exist only in repository Secrets. The website submits research requests as GitHub issues; a repository owner or collaborator authorizes processing through their repository role.
+GitHub Pages serves generated JSON and static assets. Actions runs daily at 08:17 Asia/Shanghai, with catch-up checks at 08:47, 09:17 and 10:17, and on demand. Every run checks the latest default branch under the shared generation lock: a completed real digest for the local date skips collection, model calls and publication. This includes original-text collections; only an explicit manual force overrides the guard. API credentials exist only in repository Secrets. The website submits research requests as GitHub issues; a repository owner or collaborator authorizes processing through their repository role.
 
 ## Capabilities and Constraints
 Read digests, filter sources, search, browse the calendar, read Markdown research and export reports. Configure sources through a versioned JSON file. Public articles and available video subtitles are extractable; restricted pages require supplied text. Web search is optional through Tavily. Without an AI key, collection still works but is identified as an original-text collection. The destination repository is `xiaoxiaoqing-win/ai-daily`; deployments must continue to support its GitHub Pages subpath.

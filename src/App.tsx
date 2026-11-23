@@ -1575,7 +1575,9 @@ function Settings({ data, demo }: { data: Data; demo: boolean }) {
             <CalendarDays size={19} />
             <span>
               <strong>每日自动采集</strong>
-              <small>北京时间 08:17 · GitHub 调度可能延迟</small>
+              <small>
+                北京时间 08:17 · 08:47 / 09:17 / 10:17 补查，当天已有日报则跳过
+              </small>
             </span>
             <a
               href={`${repoUrl}/edit/main/.github/workflows/daily.yml`}
