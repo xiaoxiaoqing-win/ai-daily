@@ -1,202 +1,53 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T01:42:46.899392+00:00",
+  "updatedAt": "2026-11-23T02:04:31.294897+00:00",
   "repository": "xiaoxiaoqing-win/ai-daily",
   "digests": [
     {
       "id": "daily-2026-11-23",
       "date": "2026-11-23",
-      "createdAt": "2026-11-23T01:43:18.220193+00:00",
+      "createdAt": "2026-11-23T02:04:42.531554+00:00",
+      "collectedAt": "2026-11-23T02:04:30.668110+00:00",
       "mode": "ai",
-      "itemCount": 30,
-      "sourceCount": 3,
+      "itemCount": 5,
+      "sourceCount": 2,
       "references": [
         {
           "id": "S1",
-          "title": "is there any possible benign explanation why these providers were secretly phoning home? because wtf https://t",
-          "url": "https://x.com/swyx/status/2124147427313861009"
+          "title": "Tracer-Cloud / opensre",
+          "url": "https://github.com/Tracer-Cloud/opensre"
         },
         {
           "id": "S2",
-          "title": "Been using this for about half of my work with my software factory. Best experience I have had so far across b",
-          "url": "https://x.com/garrytan/status/2124151626286170609"
+          "title": "toeverything / AFFiNE",
+          "url": "https://github.com/toeverything/AFFiNE"
         },
         {
           "id": "S3",
-          "title": "Given AI and all the GTA VI hate, how long before a vibe coded hobbyist PC port with all the hated design flaw",
-          "url": "https://x.com/garrytan/status/2124154280450134231"
+          "title": "XiaoYouChR / Ghost-Downloader-3",
+          "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3"
         },
         {
           "id": "S4",
-          "title": "yes, Claude is doing a lot of the technical work. and yes, maybe future models will one-shot \"prove the Rieman",
-          "url": "https://x.com/trq212/status/2124239684536840682"
+          "title": "zhouxiaoka / autoclip",
+          "url": "https://github.com/zhouxiaoka/autoclip"
         },
         {
           "id": "S5",
-          "title": "it seems to me that as models get more powerful, the skill of working with them becomes more and more importan",
-          "url": "https://x.com/trq212/status/2124239686482923553"
-        },
-        {
-          "id": "S6",
-          "title": "I fear we are too quick to disintermediate ourselves, and by doing so we do both ourselves and the models diss",
-          "url": "https://x.com/trq212/status/2124239688013914132"
-        },
-        {
-          "id": "S7",
-          "title": "This post nails why we why we should take the Riemann Hypothesis breakthrough very seriously, even beyond math",
-          "url": "https://x.com/levie/status/2124252844710887549"
-        },
-        {
-          "id": "S8",
-          "title": "You can just automate your work and it’s so easy tbh https://t.co/6BexpmRbgS",
-          "url": "https://x.com/garrytan/status/2124265097313046867"
-        },
-        {
-          "id": "S9",
-          "title": "Amuse, built by Replit Missions, is open source! https://t.co/n7NeLwXfs3",
-          "url": "https://x.com/amasad/status/2124277564596519355"
-        },
-        {
-          "id": "S10",
-          "title": "Going to check out this threads thing",
-          "url": "https://x.com/thsottiaux/status/2124277855131664869"
-        },
-        {
-          "id": "S11",
-          "title": "Team is already preparing another big update, but how are things since yesterday’s update to the ChatGPT/Codex",
-          "url": "https://x.com/thsottiaux/status/2124322968499282388"
-        },
-        {
-          "id": "S12",
-          "title": "A high school kid is recompiling the GTA6 to work on PC.",
-          "url": "https://x.com/amasad/status/2124345037408686228"
-        },
-        {
-          "id": "S13",
-          "title": "elementalsouls / Claude-BugHunter",
-          "url": "https://github.com/elementalsouls/Claude-BugHunter"
-        },
-        {
-          "id": "S14",
-          "title": "obra / superpowers",
-          "url": "https://github.com/obra/superpowers"
-        },
-        {
-          "id": "S15",
-          "title": "HKUDS / CLI-Anything",
-          "url": "https://github.com/HKUDS/CLI-Anything"
-        },
-        {
-          "id": "S16",
-          "title": "jingyaogong / minimind",
-          "url": "https://github.com/jingyaogong/minimind"
-        },
-        {
-          "id": "S17",
-          "title": "cursor / plugins",
-          "url": "https://github.com/cursor/plugins"
-        },
-        {
-          "id": "S18",
-          "title": "firecrawl / firecrawl",
-          "url": "https://github.com/firecrawl/firecrawl"
-        },
-        {
-          "id": "S19",
-          "title": "nginx / nginx",
-          "url": "https://github.com/nginx/nginx"
-        },
-        {
-          "id": "S20",
-          "title": "openvinotoolkit / openvino",
-          "url": "https://github.com/openvinotoolkit/openvino"
-        },
-        {
-          "id": "S21",
-          "title": "cathrynlavery / diagram-design",
-          "url": "https://github.com/cathrynlavery/diagram-design"
-        },
-        {
-          "id": "S22",
-          "title": "mvanhorn / last30days-skill",
-          "url": "https://github.com/mvanhorn/last30days-skill"
-        },
-        {
-          "id": "S23",
-          "title": "google-labs-code / stitch-skills",
-          "url": "https://github.com/google-labs-code/stitch-skills"
-        },
-        {
-          "id": "S24",
-          "title": "mjmirza / app-store-compliance",
-          "url": "https://github.com/mjmirza/app-store-compliance"
-        },
-        {
-          "id": "S25",
-          "title": "Token fraud is here and it’s BAD (YouTube)",
-          "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/"
-        },
-        {
-          "id": "S26",
-          "title": "llm-gemini 0.38.1",
-          "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/"
-        },
-        {
-          "id": "S27",
-          "title": "Quoting Levent Alpöge",
-          "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/"
-        },
-        {
-          "id": "S28",
-          "title": "Quoting Ravi Vakil",
-          "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/"
-        },
-        {
-          "id": "S29",
-          "title": "Muru",
-          "url": "https://simonwillison.net/2026/Nov/21/muru/"
-        },
-        {
-          "id": "S30",
           "title": "Select Styling Specimens",
           "url": "https://simonwillison.net/2026/Nov/22/select-styling/"
         }
       ],
       "itemIds": [
-        "484224855d62e9bf",
-        "03cbe74195720cd7",
-        "527b6dd3bc1a026d",
-        "8359377ba6478ae9",
-        "276b170070f203e2",
-        "274bf30f1dbd03dc",
-        "033a930cbc1930a4",
-        "9cf9f6e6d6ea97ca",
-        "3d67bb9a4ee51a69",
-        "c9ca55b6e4c03932",
-        "606dbc101a3fd674",
-        "9172979b44653d8d",
-        "f6c3adbf52c79b31",
-        "8c6014a36ca90e3f",
-        "5dd922e14c0ccf9b",
-        "b03e856411c0697d",
-        "a50d216def4cada3",
-        "e9dbf459bd01dca3",
-        "9251c307f3bced37",
-        "d151114122a96cf9",
-        "9c939c7199afd9a6",
-        "b88590c43555a909",
-        "c87cd13d69aef691",
-        "11418a0ccfe2dccc",
-        "3f7f7cffebe4ba59",
-        "f54713977487b6ec",
-        "7220e54bdf8a93f9",
-        "0d8e213cc0d8372d",
-        "aaa55aaf59895092",
+        "83475f57615f5d10",
+        "f5d3eec6056dbbd5",
+        "f1a82f8367a76cdd",
+        "ce3bf530c35576de",
         "71ff2ee8bf23be9b"
       ],
-      "title": "AI 日报｜11月23日：数学证明声明待验证，Agent 工具链持续扩展",
-      "summary": "人机协作证明黎曼猜想的声明引发讨论，但材料未提供验证结论；ChatGPT/Codex 桌面端征集更新反馈，Agent 技能生态扩展，免费试用的 Token 滥用风险值得关注。[S27][S11][S23][S25]",
-      "content": "## 今日重点\n\n### 黎曼猜想证明声明引发关注，不能等同于问题已解决\n\nSimon Willison 摘录的 Levent Alpöge 声明称，他与 Claude 合作发现了黎曼猜想的证明，方法还可延伸至广义黎曼猜想，并称已完成不依赖假设的形式化论证。**这些是当事人的主张；所给材料未包含证明全文、形式化产物或独立验证结论，不能据此宣布猜想已获证明。**[S27]\n\n另一则摘录中，Ravi Vakil 介绍了 Alessandro Masullo 的广义黎曼猜想候选证明，称 Brian Conrad 已持续审阅数月并提供反馈，且该工作没有使用 AI。这是另一项候选证明工作，不构成对 Alpöge 声明的交叉验证。[S28]\n\n讨论的另一焦点是人机协作方式：Aaron Levie 将其解读为跨越人类信息处理限制的潜在变化；另一组帖子则强调，与模型协作推进前沿本身仍是一项技术能力。**这些属于观点与推断，而非证明有效性或科研生产率提升的实证结果。**[S7][S4][S5][S6]\n\n## Builder 动态\n\n- **ChatGPT/Codex 桌面端继续迭代。**11月22日的帖子称，团队正在准备另一次较大更新，并征集上一轮更新后仍需改进的问题。材料未披露具体功能、版本号和下一次发布时间。[S11]\n- **llm-gemini 0.38.1 补齐推理档位支持。**该版本修复了 Gemini 4 Hydrogen、Neon 的 `xhigh` 设置支持。作者给出的 Hydrogen 单次示例中，从 `high` 切换至 `xhigh` 后，输出由 5,311 Token 增至 31,477 Token，费用由 3.99 美分增至 23.61 美分；这说明该示例的资源消耗显著增加，不代表所有任务都有同等收益。[S26]\n- **GitHub Issues 被用于协调 Agent 群体。**Amjad Masad 的帖子称，一个高中生正在尝试将 GTA6 重新编译至 PC，并用 Issues 分配 Agent 任务。材料未提供可运行成果或完成度验证；值得跟踪的是任务协调方式，而非把移植视作已经完成。[S12]\n\n## 开源趋势\n\n以下信息来自发布帖与仓库简介，不代表已审阅代码、许可证或验证效果。\n\n- **技能框架与插件规范成为工具层重点。**`obra/superpowers` 定位于 Agent 技能框架与软件开发方法论；`cursor/plugins` 提供 Cursor 插件规范及官方插件；`google-labs-code/stitch-skills` 称遵循 Agent Skills 开放标准，面向 Stitch MCP 与多种编码 Agent。[S14][S17][S23]\n- **专业任务被封装为可复用技能。**`Claude-BugHunter` 简介列出 82 项技能、15 个斜杠命令及 681 个已披露报告模式；`diagram-design` 面向编码助手提供 45 类图表的 HTML、SVG 设计；`app-store-compliance` 将应用商店拒审模式、隐私检查和提交前检查整理为开放手册与 Agent 技能。[S13][S21][S24]\n- **Agent 的软件与数据入口继续扩展。**`CLI-Anything` 以让软件具备 Agent 原生接口为目标；Firecrawl 简介称可通过一个 API 搜索、抓取并访问 550 多个数据提供方。前者是项目目标，后者是项目自述，材料未提供覆盖与效果测试。[S15][S18]\n- **Amuse 宣布开源。**Amjad Masad 称该项目由 Replit Missions 构建，但所给帖子没有披露功能、许可证或技术细节。[S9]\n\n**趋势判断：**这批项目呈现出从通用编码助手向技能、接口和领域工作流扩展的方向；但材料没有 Star 增长、下载量或活跃用户数据，不能据此判断采用率或热度排名。[S13][S14][S15][S17][S23][S24]\n\n## 值得阅读\n\n### Muru：资深开发者如何为 AI 辅助工程设定标准\n\nSimon Willison 介绍了 mod_wsgi 发起者 Graham Dumpleton 的新项目 Muru：一款 AI 辅助开发、面向 Python ASGI/WSGI 应用的 Rust 服务器。其开发记录涉及进程模型、开发环境 HTTPS、金丝雀发布、Kubernetes、扩缩容与可观测性，适合观察 AI 如何参与持续性的基础设施工程，而非只看一次性代码演示。材料没有给出性能基准或生产可靠性验证。[S29]\n\n### Select Styling Specimens：让模型生成可比较的设计样本\n\n作者让 Claude Fable 5.2 制作展示 HTML `select` 样式的页面，再通过试验选择 CSS 方案。这个案例的参考价值在于把模型用于生成可比较的候选样本，再由开发者选择；文中展示不等于覆盖所有桌面与移动浏览器的兼容性测试。[S30]\n\n## 观察\n\n### 免费试用正在暴露 Token 转售与代理滥用风险\n\n据 Simon Willison 对 Claire Vo 视频的转述，ChatPRD 遭遇利用免费试用、促销码获取模型用量的滥用，其中部分用于转售或支撑外部商业活动；Claire 因此正在取消免费试用。材料没有提供损失金额、滥用比例或独立审计数据。[S25]\n\n**编辑观察：**对 AI 产品而言，免费额度不仅是获客成本，也可能成为被转售的算力入口。该案例提示 Builder 在设计试用机制时，将额度限制、异常使用识别和单位经济性一并纳入评估；这是基于案例的风险推断，并非适用于所有产品的统一结论。[S25]"
+      "title": "AI 日报：视频剪辑自动化与 CI/CD Agent",
+      "summary": "本次新增关注 AutoClip 的长视频再利用流程、OpenSRE 的 CI/CD 可靠性定位，以及借助 Claude 制作表单样式对照页的实践。项目均未提供发布时间，不视为今日发布。[S1][S4][S5]",
+      "content": "## 今日重点\n\n### AutoClip：从长视频到短视频发布素材\n\nAutoClip 是一款开源 AI 视频剪辑桌面工具。项目介绍称，输入链接后，可将播客、访谈、课程等长视频自动剪成短视频，并生成字幕、封面和发布文案，面向抖音、小红书、TikTok、Reels 与 YouTube Shorts 等平台。[S4]\n\n值得关注的是，它的功能范围不止剪辑，还覆盖内容再利用与发布素材准备。不过，现有资料仅为项目简介，无法确认剪辑质量、平台适配效果或实际使用成本。[S4]\n\n## Builder 动态\n\n### OpenSRE：面向 CI/CD 可靠性的开源 Agent\n\nOpenSRE 将自身定位为服务于 CI/CD 可靠性的开源 Agent。新增资料未说明其具体任务、集成方式或自主执行边界，因此目前适合作为工程自动化方向的观察项目，尚不足以判断落地能力。[S1]\n\n## 值得阅读\n\n### 用 Claude 构建 HTML 下拉框样式对照页\n\nSimon Willison 在 11 月 22 日的文章中记录：由于不满意 HTML `<select>` 在不同浏览器中的默认外观，他让 Claude Fable 5.2 制作展示多种样式方案的页面，并计划在桌面与移动浏览器中截图比较。[S5]\n\n经过实验，他偏好的方案使用 `appearance: none` 移除原生外观，再配置边框、内边距与 SVG 背景箭头。这提供了一个具体的 AI 辅助前端工作流：先生成可比较的样例，再通过浏览器检查选择方案；不能据此认定所有浏览器的兼容性已获验证。[S5]\n\n## 观察\n\n本次新增项目中，AutoClip 指向内容生产自动化，OpenSRE 指向工程可靠性自动化，体现了两种不同的 Agent／AI 工具应用方向；仅凭这两条简介，不能推断行业整体趋势。[S1][S4]\n\n上述两个 GitHub 项目均未提供发布时间，本期仅作新增收录，不将其表述为今日创建或发布。[S1][S4]"
     },
     {
       "id": "daily-2026-11-22",
@@ -408,6 +259,74 @@
   ],
   "reports": [],
   "items": [
+    {
+      "id": "83475f57615f5d10",
+      "sourceId": "github",
+      "source": "GitHub Trending",
+      "kind": "github",
+      "title": "Tracer-Cloud / opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "excerpt": "The open-source agent for CI/CD reliability.",
+      "author": "",
+      "publishedAt": null,
+      "collectedAt": "2026-11-23T02:04:30.944326+00:00",
+      "language": "Python",
+      "stars": "14,442"
+    },
+    {
+      "id": "f5d3eec6056dbbd5",
+      "sourceId": "github",
+      "source": "GitHub Trending",
+      "kind": "github",
+      "title": "toeverything / AFFiNE",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "excerpt": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+      "author": "",
+      "publishedAt": null,
+      "collectedAt": "2026-11-23T02:04:30.944664+00:00",
+      "language": "TypeScript",
+      "stars": "76,855"
+    },
+    {
+      "id": "f1a82f8367a76cdd",
+      "sourceId": "github",
+      "source": "GitHub Trending",
+      "kind": "github",
+      "title": "XiaoYouChR / Ghost-Downloader-3",
+      "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+      "excerpt": "The only downloader you need. 下载器的集大成者。",
+      "author": "",
+      "publishedAt": null,
+      "collectedAt": "2026-11-23T02:04:30.944925+00:00",
+      "language": "Python",
+      "stars": "15,209"
+    },
+    {
+      "id": "ce3bf530c35576de",
+      "sourceId": "github",
+      "source": "GitHub Trending",
+      "kind": "github",
+      "title": "zhouxiaoka / autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "excerpt": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "author": "",
+      "publishedAt": null,
+      "collectedAt": "2026-11-23T02:04:30.945193+00:00",
+      "language": "Python",
+      "stars": "13,501"
+    },
+    {
+      "id": "71ff2ee8bf23be9b",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "Select Styling Specimens",
+      "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
+      "excerpt": "Tool: Select Styling Specimens I got frustrated at how HTML <select> boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Build an HTML page that shows all of the ways a select box can be styled, I plan to take screenshots in every desktop and mobile browser After some experimentation I've decided my favorite CSS for select boxes is this: select { appearance : none ; color : # 1f2933 ; padding : 0.5 em 2.25 em 0.5 em 0.75 em ; border : 1 px solid # c4cbd3 ; border-radius : 6 px ; background : # fff url ( \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23667085' stroke-width='1.5'/%3E%3C/svg%3E\" ) no-repeat right 0.75 em center / 0.75 em ; } Here's what that looks like in the three browsers: Tags: tools , css , html",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-22T19:45:06+00:00",
+      "collectedAt": "2026-11-23T02:04:31.182730+00:00"
+    },
     {
       "id": "484224855d62e9bf",
       "sourceId": "builders",
@@ -805,18 +724,6 @@
       "collectedAt": "2026-11-23T01:42:46.421999+00:00"
     },
     {
-      "id": "71ff2ee8bf23be9b",
-      "sourceId": "simon",
-      "source": "Simon Willison",
-      "kind": "rss",
-      "title": "Select Styling Specimens",
-      "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
-      "excerpt": "Tool: Select Styling Specimens I got frustrated at how HTML <select> boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Build an HTML page that shows all of the ways a select box can be styled, I plan to take screenshots in every desktop and mobile browser After some experimentation I've decided my favorite CSS for select boxes is this: select { appearance : none ; color : # 1f2933 ; padding : 0.5 em 2.25 em 0.5 em 0.75 em ; border : 1 px solid # c4cbd3 ; border-radius : 6 px ; background : # fff url ( \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23667085' stroke-width='1.5'/%3E%3C/svg%3E\" ) no-repeat right 0.75 em center / 0.75 em ; } Here's what that looks like in the three browsers: Tags: tools , css , html",
-      "author": "Simon Willison",
-      "publishedAt": "2026-11-22T19:45:06+00:00",
-      "collectedAt": "2026-11-23T01:42:46.419811+00:00"
-    },
-    {
       "id": "1df80ba4eb1bc779",
       "sourceId": "simon",
       "source": "Simon Willison",
@@ -860,10 +767,13 @@
       "kind": "builders",
       "url": "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
       "enabled": true,
-      "status": "ok",
-      "count": 12,
-      "lastCheckedAt": "2026-11-23T01:42:46.300067+00:00",
-      "message": "采集成功"
+      "status": "empty",
+      "count": 0,
+      "lastCheckedAt": "2026-11-23T02:04:30.709601+00:00",
+      "message": "新增 0 条；跳过历史重复 12 条、上期前旧内容 11 条",
+      "fetchedCount": 23,
+      "duplicateCount": 12,
+      "olderItemCount": 11
     },
     {
       "id": "github",
@@ -872,9 +782,12 @@
       "url": "https://github.com/trending?since=daily",
       "enabled": true,
       "status": "ok",
-      "count": 12,
-      "lastCheckedAt": "2026-11-23T01:42:46.898601+00:00",
-      "message": "采集成功"
+      "count": 4,
+      "lastCheckedAt": "2026-11-23T02:04:30.945207+00:00",
+      "message": "新增 4 条；跳过历史重复 12 条、上期前旧内容 0 条",
+      "fetchedCount": 16,
+      "duplicateCount": 12,
+      "olderItemCount": 0
     },
     {
       "id": "simon",
@@ -883,9 +796,12 @@
       "url": "https://simonwillison.net/atom/everything/",
       "enabled": true,
       "status": "ok",
-      "count": 6,
-      "lastCheckedAt": "2026-11-23T01:42:46.482675+00:00",
-      "message": "采集成功"
+      "count": 1,
+      "lastCheckedAt": "2026-11-23T02:04:31.246681+00:00",
+      "message": "新增 1 条；跳过历史重复 5 条、上期前旧内容 0 条",
+      "fetchedCount": 6,
+      "duplicateCount": 5,
+      "olderItemCount": 0
     },
     {
       "id": "huggingface",
@@ -895,14 +811,21 @@
       "enabled": true,
       "status": "empty",
       "count": 0,
-      "lastCheckedAt": "2026-11-23T01:42:46.754810+00:00",
-      "message": "时间窗口内暂无新内容"
+      "lastCheckedAt": "2026-11-23T02:04:31.294434+00:00",
+      "message": "时间窗口内暂无新内容",
+      "fetchedCount": 0,
+      "duplicateCount": 0,
+      "olderItemCount": 0
     }
   ],
   "collection": {
     "status": "ok",
-    "message": "4/4 个来源完成采集",
+    "message": "4/4 个来源完成采集；新增 5 条，跳过历史重复 29 条、上期前旧内容 11 条",
     "aiEnabled": true,
-    "lastAttemptAt": "2026-11-23T01:42:46.899414+00:00"
+    "lastAttemptAt": "2026-11-23T02:04:31.294914+00:00",
+    "date": "2026-11-23",
+    "newItemCount": 5,
+    "duplicateCount": 29,
+    "olderItemCount": 11
   }
 }
