@@ -6,6 +6,7 @@ export type Document = {
   content: string;
   date: string;
   createdAt: string;
+  collectedAt?: string;
   mode: "ai" | "collection" | "demo";
   sourceCount: number;
   references: Reference[];
@@ -52,6 +53,10 @@ export type Data = {
   sources: Source[];
   collection: {
     status: string;
+    date?: string;
+    newItemCount?: number;
+    duplicateCount?: number;
+    olderItemCount?: number;
     message?: string;
     aiEnabled?: boolean;
     aiError?: string;

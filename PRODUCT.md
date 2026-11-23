@@ -26,5 +26,6 @@ Name: 知更 / ZHIGENG. Tagline: 日有所知，思有所进. A Chinese-language
 ## Product Principles
 - Distinguish generated analysis, collected source material and examples.
 - Preserve citations and expose failed or stale sources.
+- Summarize incremental evidence only: exclude links already covered in earlier real editions and dated material older than the prior collection. With no new evidence, do not call the model or fabricate another edition; show the latest check state.
 - Keep credentials outside the browser and repository content.
 - Support repeatable deployment to a repository subpath.

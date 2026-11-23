@@ -19,6 +19,63 @@ test.beforeEach(async ({ page }) => {
   );
 });
 
+test("no-new-items check is shown without inventing another daily edition", async ({
+  page,
+}) => {
+  const today = new Date().toLocaleDateString("sv-SE", {
+    timeZone: "Asia/Shanghai",
+  });
+  const yesterday = new Date(Date.now() - 86400000).toLocaleDateString(
+    "sv-SE",
+    { timeZone: "Asia/Shanghai" },
+  );
+  await page.route("**/data/index.json", (route) =>
+    route.fulfill({
+      json: {
+        schemaVersion: 1,
+        updatedAt: new Date().toISOString(),
+        repository: "xiaoxiaoqing-win/ai-daily",
+        collection: {
+          status: "ok",
+          aiEnabled: true,
+          date: today,
+          newItemCount: 0,
+          duplicateCount: 12,
+        },
+        sources: [],
+        items: [],
+        reports: [],
+        digests: [
+          {
+            id: "previous",
+            date: yesterday,
+            createdAt: yesterday + "T00:00:00Z",
+            mode: "ai",
+            title: "上一期日报",
+            summary: "保留已有内容",
+            content: "已有正文",
+            sourceCount: 1,
+            itemCount: 1,
+            references: [],
+          },
+        ],
+      },
+    }),
+  );
+  await page.goto("/");
+  await expect(page.getByRole("status")).toContainText(
+    "本次采集暂无新增，未调用模型",
+  );
+  await expect(
+    page.getByRole("heading", { name: "上一期日报", exact: true }),
+  ).toBeVisible();
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBeTruthy();
+});
+
 test("home, reading, archive, source filters and search", async ({
   page,
 }, testInfo) => {

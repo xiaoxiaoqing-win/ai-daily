@@ -469,6 +469,12 @@ function Home({
   const latest = data.digests[0];
   const sourceCount = data.sources.filter((source) => source.enabled).length;
   const date = latest ? new Date(latest.date + "T12:00:00") : new Date();
+  const noUpdatesToday =
+    !demo &&
+    data.collection.status !== "error" &&
+    data.collection.newItemCount === 0 &&
+    data.collection.date ===
+      new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Shanghai" });
   return (
     <>
       <section className="hero">
@@ -483,6 +489,14 @@ function Home({
           发起调研
         </a>
       </section>
+      {noUpdatesToday && (
+        <div className="reader-notice" role="status">
+          本次采集暂无新增，未调用模型，保留最近一期日报。
+          {data.collection.status === "partial" && (
+            <span>部分来源读取失败，可在信息源与设置中查看。</span>
+          )}
+        </div>
+      )}
       <div className="overview-meta">
         <span>
           <span className="status-dot" />
