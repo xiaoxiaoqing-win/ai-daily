@@ -1,8 +1,126 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T02:04:31.294897+00:00",
+  "updatedAt": "2026-11-24T09:59:48.458391+00:00",
   "repository": "xiaoxiaoqing-win/ai-daily",
   "digests": [
+    {
+      "id": "daily-2026-11-24",
+      "date": "2026-11-24",
+      "createdAt": "2026-11-24T10:00:17.838192+00:00",
+      "collectedAt": "2026-11-24T09:59:46.799248+00:00",
+      "mode": "ai",
+      "itemCount": 17,
+      "sourceCount": 3,
+      "references": [
+        {
+          "id": "S1",
+          "title": "they cut the scene in Hitchhiker's Guide where the computer follows 42 with 500 million pages of Lean",
+          "url": "https://x.com/trq212/status/2124767804247379968"
+        },
+        {
+          "id": "S2",
+          "title": "I asked Fable to study all my https://t.co/3Z4NESzNKd coding sessions and decide whether Opus or Gemini Neon i",
+          "url": "https://x.com/rauchg/status/2124880074168242369"
+        },
+        {
+          "id": "S3",
+          "title": "Jensen!",
+          "url": "https://x.com/sama/status/2124887162206495228"
+        },
+        {
+          "id": "S4",
+          "title": "This is really really good: https://t.co/LcWViyLKii",
+          "url": "https://x.com/sama/status/2124894264564092952"
+        },
+        {
+          "id": "S5",
+          "title": "Inside OpenAI, dots are quickly becoming the primary way to get things done. We have dots building the dots sy",
+          "url": "https://x.com/thsottiaux/status/2124923055072043052"
+        },
+        {
+          "id": "S6",
+          "title": "Zero data retention (ZDR) with Enterprise Frontier Safeguards (EFS) is now in public beta for eligible busines",
+          "url": "https://x.com/claudeai/status/2124929944530587712"
+        },
+        {
+          "id": "S7",
+          "title": "A year ago we launched Opus 4.5, the first model to write 100% of my code.",
+          "url": "https://x.com/bcherny/status/2124961485801836573"
+        },
+        {
+          "id": "S8",
+          "title": "There’s now one way to connect your tools to Claude, teach it a new skill, or do both.",
+          "url": "https://x.com/claudeai/status/2124970294523945328"
+        },
+        {
+          "id": "S9",
+          "title": "You should feel a significant jump in quality of answers on ChatGPT once rolled out to you.",
+          "url": "https://x.com/thsottiaux/status/2124998553856844186"
+        },
+        {
+          "id": "S10",
+          "title": "The man is severely underpaid. https://t.co/tPp4K55neH",
+          "url": "https://x.com/amasad/status/2125001371472871659"
+        },
+        {
+          "id": "S11",
+          "title": "Great meeting with VP @JDVance on Friday to discuss American AI leadership, cybersecurity, and modernizing our",
+          "url": "https://x.com/amasad/status/2125008810041610359"
+        },
+        {
+          "id": "S12",
+          "title": "Worth listening to if you're curious what goes on in the minds of the people at OpenAI who are obsessively try",
+          "url": "https://x.com/thsottiaux/status/2125027477877887231"
+        },
+        {
+          "id": "S13",
+          "title": "Ladybird's first alpha release",
+          "url": "https://simonwillison.net/2026/Nov/23/ladybird/"
+        },
+        {
+          "id": "S14",
+          "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+          "url": "https://simonwillison.net/2026/Nov/23/glm-54/"
+        },
+        {
+          "id": "S15",
+          "title": "datasette-agent 0.7a1",
+          "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/"
+        },
+        {
+          "id": "S16",
+          "title": "datasette-charts 0.2a0",
+          "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/"
+        },
+        {
+          "id": "S17",
+          "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+          "url": "https://huggingface.co/blog/allenai/robotrack"
+        }
+      ],
+      "itemIds": [
+        "33f00f730386c3d9",
+        "e484474d2e1e6fcf",
+        "4468b5b972f7cd58",
+        "07248e650a52c566",
+        "cd9a5c62786cfded",
+        "04445a2ed34d4d6d",
+        "b988371c093e7df4",
+        "bcbec71eecd12311",
+        "503e7841485bef74",
+        "710d6f7384f57f18",
+        "01cc303bd2d9f647",
+        "247af0ec6a8f6c59",
+        "981d6178a1cb2235",
+        "105d2dd6f5d647be",
+        "3d5981388f51900a",
+        "07fffdf07c77b17b",
+        "eb2701ff66febea2"
+      ],
+      "title": "AI 日报｜Claude 整合插件生态，GLM-5.4 采用循环 Transformer",
+      "summary": "Claude 推进插件整合、交付工具与企业安全能力；GLM-5.4 采用循环 Transformer，但据资料尚未开放权重；Datasette 打通对话制图与面板状态联动。[S6][S7][S8][S14][S16]",
+      "content": "## 今日重点\n\n### Claude：连接器与技能合并为插件\n\nClaude 官方宣布将 connectors 与 skills 统一为 plugins，用于连接工具、扩展技能，或同时完成两者。插件已面向 Free、Pro、Max、Ultra 套餐开放，Team 与 Enterprise 将随后支持；官方称可浏览的插件超过 10,000 个。这里的数量是官方披露的目录规模，不代表插件质量或使用量。[S8]\n\n企业端另有两项更新：\n- **Claude Ship 测试版**：11 月 23 日宣布面向 Team 和 Enterprise 推出。发布者将其定位于改善代码生成之后的 PR 交付环节，但本次材料未披露具体功能、权限边界或效果数据。[S7]\n- **零数据保留与安全防护结合**：支持零数据保留（ZDR）的 Enterprise Frontier Safeguards（EFS）面向符合条件的企业进入公开测试。官方称，该机制可跨多次请求识别滥用，同时兼容 ZDR，并与超过 100 家客户共同开发；具体实现方式未在所给材料中展开。[S6]\n\n### GLM-5.4：以循环层增加计算深度\n\n据 Simon Willison 的介绍，Z.ai 的 GLM-5.4 已可使用，是该实验室首个采用循环 Transformer 架构的模型：让一组共享权重的层迭代运行，以不增加参数量的方式加深计算。**这说明了架构思路，并不直接证明性能优于其他模型**；本次材料没有提供可比较的评测结果。[S14]\n\n接入方面，作者测试时需订阅 Coding Plan，普通 API 暂不能访问该模型；Coding Plan 密钥可通过 OpenAI 兼容的 Responses API 使用。文章同时指出，GLM-5.4 当时尚未开放权重，因此不宜将其归为开源模型发布。[S14]\n\n## Builder 动态\n\n### Datasette：对话生成图表，并跟随用户操作更新上下文\n\n11 月 24 日发布的 **datasette-charts 0.2a0** 接入 Datasette Agent：用户可在聊天中指定数据表并要求制图，图表既能内嵌展示，也能在侧边面板的图表构建器中打开。演示中，用户在面板切换数据后，Agent 能在后续问答中识别并解释新的图表内容。[S16]\n\n配套的 **datasette-agent 0.7a1** 改进了 iframe 侧边面板的 URL 片段导航，以便与通过 fragment hash 表达交互状态的插件更深入地集成，并修复图表插件相关问题。这组更新的看点不只是“聊天生成图表”，而是对话与可视化界面之间的状态衔接。[S15][S16]\n\n### OpenAI 内部使用 dots 构建 dots\n\nOpenAI 的 Thibault Sottiaux 表示，dots 正迅速成为内部完成工作的主要方式之一，且已有 dots 参与构建 dots 系统本身。这是一则内部使用情况的陈述；材料没有解释其完整产品形态、开放范围，也没有量化生产力收益。[S5]\n\n## 观察\n\n### 个性化模型评估值得借鉴，但不能外推为通用排名\n\nGuillermo Rauch 称，他让 Fable 分析自己的编程会话，在 Opus 与 Gemini Neon 之间做选择，结果选中了 Neon。这提供了一个实用思路：以个人真实工作记录作为选型依据。但材料未给出评分标准、样本范围或复现实验，因此结果只能视为其个人工作流下的评估，不能据此判定模型整体优劣。[S2]\n\n### ChatGPT 质量提升仍需等待实际验证\n\nSottiaux 预告，相关更新逐步推送后，用户应能感到 ChatGPT 回答质量显著提升，并提及简化应用、提速及融合聊天与工作的投入。这属于产品方向与效果预期；本次材料没有给出具体模型版本、完整上线时间或评测数据，不宜写成已向所有用户兑现的改进。[S9]"
+    },
     {
       "id": "daily-2026-11-23",
       "date": "2026-11-23",
@@ -259,6 +377,234 @@
   ],
   "reports": [],
   "items": [
+    {
+      "id": "33f00f730386c3d9",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "they cut the scene in Hitchhiker's Guide where the computer follows 42 with 500 million pages of Lean",
+      "url": "https://x.com/trq212/status/2124767804247379968",
+      "excerpt": "they cut the scene in Hitchhiker's Guide where the computer follows 42 with 500 million pages of Lean",
+      "author": "Thariq",
+      "publishedAt": "2026-11-23T07:31:35.000Z",
+      "collectedAt": "2026-11-24T09:59:46.828907+00:00",
+      "likes": 10567,
+      "handle": "trq212"
+    },
+    {
+      "id": "e484474d2e1e6fcf",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "I asked Fable to study all my https://t.co/3Z4NESzNKd coding sessions and decide whether Opus or Gemini Neon i",
+      "url": "https://x.com/rauchg/status/2124880074168242369",
+      "excerpt": "I asked Fable to study all my https://t.co/3Z4NESzNKd coding sessions and decide whether Opus or Gemini Neon is best. Think of it as a 'personal eval'.\n\nIt picked Neon. Google being so, so back seems widely (and wildly) under-discussed. https://t.co/W6s4WZPvnU",
+      "author": "Guillermo Rauch",
+      "publishedAt": "2026-11-23T14:57:42.000Z",
+      "collectedAt": "2026-11-24T09:59:46.829027+00:00",
+      "likes": 1792,
+      "handle": "rauchg"
+    },
+    {
+      "id": "4468b5b972f7cd58",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Jensen!",
+      "url": "https://x.com/sama/status/2124887162206495228",
+      "excerpt": "Jensen!",
+      "author": "Sam Altman",
+      "publishedAt": "2026-11-23T15:25:52.000Z",
+      "collectedAt": "2026-11-24T09:59:46.829319+00:00",
+      "likes": 84928,
+      "handle": "sama"
+    },
+    {
+      "id": "07248e650a52c566",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "This is really really good: https://t.co/LcWViyLKii",
+      "url": "https://x.com/sama/status/2124894264564092952",
+      "excerpt": "This is really really good: https://t.co/LcWViyLKii",
+      "author": "Sam Altman",
+      "publishedAt": "2026-11-23T15:54:05.000Z",
+      "collectedAt": "2026-11-24T09:59:46.829307+00:00",
+      "likes": 4032,
+      "handle": "sama"
+    },
+    {
+      "id": "cd9a5c62786cfded",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Inside OpenAI, dots are quickly becoming the primary way to get things done. We have dots building the dots sy",
+      "url": "https://x.com/thsottiaux/status/2124923055072043052",
+      "excerpt": "Inside OpenAI, dots are quickly becoming the primary way to get things done. We have dots building the dots system. https://t.co/5YtdTspKBk",
+      "author": "Thibault Sottiaux",
+      "publishedAt": "2026-11-23T17:48:30.000Z",
+      "collectedAt": "2026-11-24T09:59:46.828589+00:00",
+      "likes": 2649,
+      "handle": "thsottiaux"
+    },
+    {
+      "id": "04445a2ed34d4d6d",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Zero data retention (ZDR) with Enterprise Frontier Safeguards (EFS) is now in public beta for eligible busines",
+      "url": "https://x.com/claudeai/status/2124929944530587712",
+      "excerpt": "Zero data retention (ZDR) with Enterprise Frontier Safeguards (EFS) is now in public beta for eligible businesses. It looks for misuse across many requests while remaining compatible with ZDR.\n\nWe developed it with over 100 customers.\n\nRead more: https://t.co/M8riFzHDPY https://t.co/eOonILkHt3",
+      "author": "Claude",
+      "publishedAt": "2026-11-23T18:15:52.000Z",
+      "collectedAt": "2026-11-24T09:59:46.829364+00:00",
+      "likes": 5070,
+      "handle": "claudeai"
+    },
+    {
+      "id": "b988371c093e7df4",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "A year ago we launched Opus 4.5, the first model to write 100% of my code.",
+      "url": "https://x.com/bcherny/status/2124961485801836573",
+      "excerpt": "A year ago we launched Opus 4.5, the first model to write 100% of my code.\n\nShipping PRs hasn’t caught up, so today we’re launching Claude Ship in beta for Team and Enterprise. I use it all day every day and can’t imagine shipping without it. https://t.co/IfK0Oua6rZ",
+      "author": "Boris Cherny",
+      "publishedAt": "2026-11-23T20:21:12.000Z",
+      "collectedAt": "2026-11-24T09:59:46.828522+00:00",
+      "likes": 5943,
+      "handle": "bcherny"
+    },
+    {
+      "id": "bcbec71eecd12311",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "There’s now one way to connect your tools to Claude, teach it a new skill, or do both.",
+      "url": "https://x.com/claudeai/status/2124970294523945328",
+      "excerpt": "There’s now one way to connect your tools to Claude, teach it a new skill, or do both.\n\nConnectors and skills come together as plugins. Live on Free, Pro, Max, and Ultra plans, with Team and Enterprise coming soon.\n\nBrowse 10,000+ plugins: https://t.co/gSwpY9HDPY https://t.co/K78lwls8qh",
+      "author": "Claude",
+      "publishedAt": "2026-11-23T20:56:12.000Z",
+      "collectedAt": "2026-11-24T09:59:46.829333+00:00",
+      "likes": 6717,
+      "handle": "claudeai"
+    },
+    {
+      "id": "503e7841485bef74",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "You should feel a significant jump in quality of answers on ChatGPT once rolled out to you.",
+      "url": "https://x.com/thsottiaux/status/2124998553856844186",
+      "excerpt": "You should feel a significant jump in quality of answers on ChatGPT once rolled out to you.\n\nTogether with all the investments we are making across simplifying the app, making it faster and merging chat & work, it's going to be quite the improvement in day to day experience by the end of the year.",
+      "author": "Thibault Sottiaux",
+      "publishedAt": "2026-11-23T22:48:30.000Z",
+      "collectedAt": "2026-11-24T09:59:46.828559+00:00",
+      "likes": 4241,
+      "handle": "thsottiaux"
+    },
+    {
+      "id": "710d6f7384f57f18",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "The man is severely underpaid. https://t.co/tPp4K55neH",
+      "url": "https://x.com/amasad/status/2125001371472871659",
+      "excerpt": "The man is severely underpaid. https://t.co/tPp4K55neH",
+      "author": "Amjad Masad",
+      "publishedAt": "2026-11-23T22:59:42.000Z",
+      "collectedAt": "2026-11-24T09:59:46.828938+00:00",
+      "likes": 1498,
+      "handle": "amasad"
+    },
+    {
+      "id": "01cc303bd2d9f647",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Great meeting with VP @JDVance on Friday to discuss American AI leadership, cybersecurity, and modernizing our",
+      "url": "https://x.com/amasad/status/2125008810041610359",
+      "excerpt": "Great meeting with VP @JDVance on Friday to discuss American AI leadership, cybersecurity, and modernizing our nation’s software infrastructure.\n\nWe also discussed an issue close to my heart: American leadership in open-weight AI. \n\nOur allies want sovereign AI and are increasingly looking to Chinese open models. At home, American startups need a competitive model ecosystem.\n\nAmerica could win the frontier AI race and still lose the global AI ecosystem.\n\nVery happy to see Jensen back at Nvidia. He’s been one of the most important champions of American open-weight AI.",
+      "author": "Amjad Masad",
+      "publishedAt": "2026-11-23T23:29:15.000Z",
+      "collectedAt": "2026-11-24T09:59:46.828924+00:00",
+      "likes": 1852,
+      "handle": "amasad"
+    },
+    {
+      "id": "247af0ec6a8f6c59",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Worth listening to if you're curious what goes on in the minds of the people at OpenAI who are obsessively try",
+      "url": "https://x.com/thsottiaux/status/2125027477877887231",
+      "excerpt": "Worth listening to if you're curious what goes on in the minds of the people at OpenAI who are obsessively trying to patch all the flaws in OSS software and infrastructure we all rely on https://t.co/afNTCaRewj",
+      "author": "Thibault Sottiaux",
+      "publishedAt": "2026-11-24T00:43:26.000Z",
+      "collectedAt": "2026-11-24T09:59:46.828538+00:00",
+      "likes": 1510,
+      "handle": "thsottiaux"
+    },
+    {
+      "id": "981d6178a1cb2235",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "Ladybird's first alpha release",
+      "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+      "excerpt": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, or code brought in from Ladybird's even more ambitious predecessor project SerenityOS . This morning the Ladybird project released their first alpha , which means you can now install the browser (on macOS or Linux) without having to compile it yourself! I've been trying it out today, and it's very impressive. It feels fast, the UI is lightweight and intuitive, and most of the websites I've tried to load in it have worked as they should. It looks like this (showing my video-compressor tool): Here's the process tree after I opened six tabs in one window and another tab in a second window (generated by this script , thanks Claude): Ladybird (72925) [240 MB]\n└── Hub (72926) [61 MB]\n ├── RequestServer (72927) [29 MB]\n ├── ProcessReaper (72928) [1 MB]\n ├── Compositor (72930) [123 MB]\n ├── RequestServer (72953) [36 MB]\n ├── WebContent (72984) [819 MB]\n ├── MediaServer (73006) [118 MB]\n ├── VideoDecoderServer (73007) [20 MB]\n ├── WebContent (73052) [144 MB]\n ├── WebContent (73057) [73 MB]\n ├── WebContent (73073) [166 MB]\n ├── WebContent (73094) [70 MB]\n ├── WebContent (73112) [116 MB]\n ├── RequestServer (73113) [27 MB]\n └── WebContent (73185) [60 MB] Ladybird runs different tabs in different processes, an isolation mechanism used by most browsers (well, technically Chrome uses a process-per-site). I tried Ladybird against several of my more advanced tool examples - like the video-compr",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-23T21:46:35+00:00",
+      "collectedAt": "2026-11-24T09:59:47.161318+00:00"
+    },
+    {
+      "id": "105d2dd6f5d647be",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+      "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
+      "excerpt": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, which they describe like this: In a standard Transformer, each layer runs once per forward pass. In a Loop Transformer, a group of weight-shared layers runs for multiple iterations, refining the hidden states from the previous pass. This gives us a deeper network without increasing the parameter count. This is the second mention of looped transformers I've seen in the past week - the first was Inkling 2 Mini from Thinking Machines Lab on November 20th, who said: Inkling 2 Mini is a looped transformer, running the middle layers of the model three times for every token. This allows the model to apply more reasoning and reach the right answer with fewer tokens, especially on tasks such as agentic coding that depend on reasoning quality. GLM 5.4 is not (yet?) available as open weights. I tried it out using the Z.ai API, for which I had to sign up for their Coding Plan subscription because 5.4 cannot currently be accessed through the regular API. It turns out both coding plan and regular API share the same OpenAI-compatible Responses API (at https://api.z.ai/api/v1 ), and the API key for the coding plan worked with that and gave me access to the new model. I built a llm-glm plugin , then realized that llm-zai by Tommy Hughes already exists! I've shipped mine purely because llm-zai doesn't yet support the new model, but I'll likely retire mine once that plugin catches up. Here are pelicans for GLM-5.4 on low, high, and max. This is the max one: I realized I never ran pelicans for GLM-5.3, so here those are for the same effort levels. They look similar in quality to 5.4. It's interesting how GLM 5",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-23T23:40:49+00:00",
+      "collectedAt": "2026-11-24T09:59:47.158355+00:00"
+    },
+    {
+      "id": "3d5981388f51900a",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "datasette-agent 0.7a1",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
+      "excerpt": "Release: datasette-agent 0.7a1 I small improvement to Datasette Agent : chat sessions can open an iframe side panel, and that panel can then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Datasette plugins that update fragment hashes when the user interacts with the plugin in a way that changes state. I built this in order to fix some bugs with the much more exciting datasette-charts 0.2a0 release . Tags: datasette-agent , datasette",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-24T03:45:57+00:00",
+      "collectedAt": "2026-11-24T09:59:47.156549+00:00"
+    },
+    {
+      "id": "07fffdf07c77b17b",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "datasette-charts 0.2a0",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
+      "excerpt": "Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will create one for you using the same underlying chart suggestion and generation tools. Here's a demo video, recorded on agent.datasette.io where you can sign in with GitHub to try the plugin yourself: Download the video (MP4) I prompt Datasette Agent to \"Use #stats to show sqlite-utils downloads over time as a chart\" - where typing \"#stats\" opens a table search box. It shows me a chart inline in the chat, and when I click \"Open in the chart builder\" it opens the chart in a panel along with the table page. I use the table page to switch to a chart of \"datasette\", then when I ask the agent \"what does the chart show?\" it notices that I changed the content in the panel and describes the new Datasette chart to me. Here's a Markdown export of the chat from the video. Tags: datasette-agent , datasette , visualization",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-24T04:24:29+00:00",
+      "collectedAt": "2026-11-24T09:59:47.155961+00:00"
+    },
+    {
+      "id": "eb2701ff66febea2",
+      "sourceId": "huggingface",
+      "source": "Hugging Face Blog",
+      "kind": "rss",
+      "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+      "url": "https://huggingface.co/blog/allenai/robotrack",
+      "excerpt": "",
+      "author": "Hugging Face Blog",
+      "publishedAt": "2026-11-23T17:20:37+00:00",
+      "collectedAt": "2026-11-24T09:59:47.057809+00:00"
+    },
     {
       "id": "83475f57615f5d10",
       "sourceId": "github",
@@ -767,13 +1113,13 @@
       "kind": "builders",
       "url": "https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json",
       "enabled": true,
-      "status": "empty",
-      "count": 0,
-      "lastCheckedAt": "2026-11-23T02:04:30.709601+00:00",
-      "message": "新增 0 条；跳过历史重复 12 条、上期前旧内容 11 条",
-      "fetchedCount": 23,
-      "duplicateCount": 12,
-      "olderItemCount": 11
+      "status": "ok",
+      "count": 12,
+      "lastCheckedAt": "2026-11-24T09:59:46.829429+00:00",
+      "message": "新增 12 条；跳过历史重复 0 条、上期前旧内容 0 条",
+      "fetchedCount": 41,
+      "duplicateCount": 0,
+      "olderItemCount": 0
     },
     {
       "id": "github",
@@ -781,12 +1127,12 @@
       "kind": "github",
       "url": "https://github.com/trending?since=daily",
       "enabled": true,
-      "status": "ok",
-      "count": 4,
-      "lastCheckedAt": "2026-11-23T02:04:30.945207+00:00",
-      "message": "新增 4 条；跳过历史重复 12 条、上期前旧内容 0 条",
+      "status": "empty",
+      "count": 0,
+      "lastCheckedAt": "2026-11-24T09:59:48.457516+00:00",
+      "message": "新增 0 条；跳过历史重复 16 条、上期前旧内容 0 条",
       "fetchedCount": 16,
-      "duplicateCount": 12,
+      "duplicateCount": 16,
       "olderItemCount": 0
     },
     {
@@ -796,12 +1142,12 @@
       "url": "https://simonwillison.net/atom/everything/",
       "enabled": true,
       "status": "ok",
-      "count": 1,
-      "lastCheckedAt": "2026-11-23T02:04:31.246681+00:00",
-      "message": "新增 1 条；跳过历史重复 5 条、上期前旧内容 0 条",
-      "fetchedCount": 6,
-      "duplicateCount": 5,
-      "olderItemCount": 0
+      "count": 4,
+      "lastCheckedAt": "2026-11-24T09:59:47.214311+00:00",
+      "message": "新增 4 条；跳过历史重复 2 条、上期前旧内容 1 条",
+      "fetchedCount": 7,
+      "duplicateCount": 2,
+      "olderItemCount": 1
     },
     {
       "id": "huggingface",
@@ -809,23 +1155,23 @@
       "kind": "rss",
       "url": "https://huggingface.co/blog/feed.xml",
       "enabled": true,
-      "status": "empty",
-      "count": 0,
-      "lastCheckedAt": "2026-11-23T02:04:31.294434+00:00",
-      "message": "时间窗口内暂无新内容",
-      "fetchedCount": 0,
+      "status": "ok",
+      "count": 1,
+      "lastCheckedAt": "2026-11-24T09:59:47.081069+00:00",
+      "message": "新增 1 条；跳过历史重复 0 条、上期前旧内容 1 条",
+      "fetchedCount": 2,
       "duplicateCount": 0,
-      "olderItemCount": 0
+      "olderItemCount": 1
     }
   ],
   "collection": {
     "status": "ok",
-    "message": "4/4 个来源完成采集；新增 5 条，跳过历史重复 29 条、上期前旧内容 11 条",
+    "message": "4/4 个来源完成采集；新增 17 条，跳过历史重复 18 条、上期前旧内容 2 条",
     "aiEnabled": true,
-    "lastAttemptAt": "2026-11-23T02:04:31.294914+00:00",
-    "date": "2026-11-23",
-    "newItemCount": 5,
-    "duplicateCount": 29,
-    "olderItemCount": 11
+    "lastAttemptAt": "2026-11-24T09:59:48.458410+00:00",
+    "date": "2026-11-24",
+    "newItemCount": 17,
+    "duplicateCount": 18,
+    "olderItemCount": 2
   }
 }
