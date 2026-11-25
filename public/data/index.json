@@ -1,8 +1,114 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24T09:59:48.458391+00:00",
+  "updatedAt": "2026-11-25T08:43:35.759176+00:00",
   "repository": "xiaoxiaoqing-win/ai-daily",
   "digests": [
+    {
+      "id": "daily-2026-11-25",
+      "date": "2026-11-25",
+      "createdAt": "2026-11-25T08:44:00.703917+00:00",
+      "collectedAt": "2026-11-25T08:43:35.048759+00:00",
+      "mode": "ai",
+      "itemCount": 15,
+      "sourceCount": 3,
+      "references": [
+        {
+          "id": "S1",
+          "title": "I've been using Gemini 4 Neon and @antigravity all weekend and made a free video course on how you can get the",
+          "url": "https://x.com/petergyang/status/2125246815884984398"
+        },
+        {
+          "id": "S2",
+          "title": "YC is the YC for hard tech https://t.co/NWlfp6U19R",
+          "url": "https://x.com/garrytan/status/2125258221946630432"
+        },
+        {
+          "id": "S3",
+          "title": "Unlike say electricity, token demand grows in step functions as we find ways to put more compute to use on beh",
+          "url": "https://x.com/amasad/status/2125287538911072753"
+        },
+        {
+          "id": "S4",
+          "title": "Really excited about this one. MCP servers can now ship with their own skills, so Claude Code knows how to use",
+          "url": "https://x.com/bcherny/status/2125292098165612585"
+        },
+        {
+          "id": "S5",
+          "title": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at",
+          "url": "https://x.com/thsottiaux/status/2125299248782778588"
+        },
+        {
+          "id": "S6",
+          "title": "https://t.co/SY2X7f40c5",
+          "url": "https://x.com/thsottiaux/status/2125299436964479474"
+        },
+        {
+          "id": "S7",
+          "title": "Sign up for ChatGPT Business: https://t.co/2WH7P7Yx7L",
+          "url": "https://x.com/thsottiaux/status/2125299467691987445"
+        },
+        {
+          "id": "S8",
+          "title": "The main reason https://t.co/3Z4NESzNKd is a CLI (in this day and age!) is that it's a thin wrapper around 𝚕𝚒𝚋",
+          "url": "https://x.com/rauchg/status/2125320020666565096"
+        },
+        {
+          "id": "S9",
+          "title": "Good stuff https://t.co/tqfvBrVMo7",
+          "url": "https://x.com/rauchg/status/2125330925324300725"
+        },
+        {
+          "id": "S10",
+          "title": "America can build the best frontier models and still lose the global AI race. Which is why Jensen’s return mat",
+          "url": "https://x.com/amasad/status/2125353849057853876"
+        },
+        {
+          "id": "S11",
+          "title": "3B local Muse 🤯 https://t.co/psL7dzZOiu",
+          "url": "https://x.com/amasad/status/2125414100692041797"
+        },
+        {
+          "id": "S12",
+          "title": "What a year this has been! Time to reflect and do a blog post over the holidays.",
+          "url": "https://x.com/steipete/status/2125422797304549672"
+        },
+        {
+          "id": "S13",
+          "title": "GPT 6.2 Astra Solves a Historical Mystery",
+          "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/"
+        },
+        {
+          "id": "S14",
+          "title": "Three LLM inflection points in twelve months",
+          "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/"
+        },
+        {
+          "id": "S15",
+          "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+          "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance"
+        }
+      ],
+      "itemIds": [
+        "58fd90693e61a1e3",
+        "eba9ec35606e6813",
+        "c1a93bfcd299de2d",
+        "ccc4778de14b2a4b",
+        "db48cba50a17569f",
+        "eb4acf2718c2cb14",
+        "84803ae5b78d77ef",
+        "cdba51beb7f0a87b",
+        "0a22afa1455406cb",
+        "401aa0a9d0ef6845",
+        "afcead320c658906",
+        "97ee69128146c458",
+        "7eea171611f31c8f",
+        "5e8eba5b15ac6044",
+        "6a28e842b3bf4bfd"
+      ],
+      "title": "AI 日报｜11月25日：MCP 配套技能与 Agent 工作流演进",
+      "summary": "MCP 服务可携带技能供 Claude Code 使用；ChatGPT Business 提供限时权益。[S4][S5] 本期还关注多 Agent 实践、历史研究案例及开放模型的全球采用讨论。[S1][S13][S10]",
+      "content": "## 今日重点\n\n### MCP 服务可自带技能\nBoris Cherny 表示，MCP 服务器现在可以随附自身的 skills，让 Claude Code 开箱即知如何使用这些服务。新增条目未提供配置方式、兼容范围或具体示例。[S4]\n\n### ChatGPT Business 提供限时权益\nThibault Sottiaux 宣布，面向 ChatGPT Business 团队提供一次“banked reset”，以及截至 12 月 31 日不额外收费的 fast mode。原帖未解释重置机制、额度及具体适用条件，不宜据此理解为无限量使用。[S5]\n\n## Builder 动态\n\n- **Antigravity 多 Agent 实践教程**：Peter Yang 分享了一门免费、17 分钟的视频课程，介绍 Gemini 4 Neon 与 Antigravity 的组合。他称 Orchestrator 和 `/swarm` 适合多 Agent 规划与构建，曾同时运行 42 个 Agent；`/grill-me` 可通过追问澄清需求。有关远程控制优于 Claude Code 的说法属于其个人体验，并非独立评测结论。[S1]\n- **把编程 Agent 做成可嵌入内核**：Guillermo Rauch 解释，其提及工具采用 CLI，是因为它只是 `libfx` 的薄封装；目标是构建尽可能小且智能的编程 Agent 内核，嵌入浏览器、服务器、移动端和桌面等环境。这是设计目标，条目没有证明这些平台均已得到支持。[S8]\n- **OC 的维护重心转向可靠性**：Peter Steinberger 表示，OC 已在专业消费者和企业采用中找到定位，近期主要投入速度、可靠性与安全性，同时提及新记忆系统及即将到来的 OpenClaw ID。他也强调了维护可靠、免费开源软件的工作量与情绪压力。采用情况与功能评价均为作者自述，未附量化数据。[S12]\n\n## 值得阅读\n\n### 历史研究中的“提出线索—档案核验”案例\nSimon Willison 转述历史学教授 Mark Humphries 的案例：GPT-6.2 Astra 据称在 22 分钟内，为耶鲁大学 Beinecke 图书馆收藏的一本匿名 1808 年素描册识别作者，并提出一份纸质档案来源作为验证线索；据该案例叙述，后续查验支持了其假设。[S13]\n\n**阅读价值**在于模型不仅给出归属判断，还指向可进一步核查的史料。不过，这仍是单个案例报告，不能据此推断模型处理历史归属问题的普遍准确率；现有摘录也不足以复核完整证据链。[S13]\n\n### 编程 Agent 何时开始真正省时间？\nWillison 在《十二个月里的三个 LLM 拐点》中回顾自己的使用变化：他认为，Claude Opus 4.5 让 Claude Code 从需要频繁纠正的工具，变成处理多数日常编程问题时能够带来明确提速的助手。这是个人经验判断，不是统一基准测试。[S14]\n\n所给摘录只展开了文章开头，无法据此完整概括标题中的三个拐点。[S14]\n\n## 观察\n\n- **Token 需求可能随 Agent 工作方式阶梯式增长**：Amjad Masad 提出，从自动补全、聊天到 Agent、长时自主 Agent 和群体协作，每次工具框架创新都会打开更大的潜在消耗空间，但用户找到实际用途存在滞后。这是一种需求增长假说，条目未提供用量或收入数据验证。[S3]\n- **开放模型竞争也关乎部署控制权**：Masad 认为，各国对本土基础设施和自主控制的需求，会影响模型、芯片及技术栈的全球采用；开放模型因此具有战略意义。这篇观点帖适合用来观察“前沿能力”之外的竞争维度，但不能当作各国采购趋势已被证实的结论。[S10]"
+    },
     {
       "id": "daily-2026-11-24",
       "date": "2026-11-24",
@@ -377,6 +483,210 @@
   ],
   "reports": [],
   "items": [
+    {
+      "id": "58fd90693e61a1e3",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "I've been using Gemini 4 Neon and @antigravity all weekend and made a free video course on how you can get the",
+      "url": "https://x.com/petergyang/status/2125246815884984398",
+      "excerpt": "I've been using Gemini 4 Neon and @antigravity all weekend and made a free video course on how you can get the most out of this combo.\n\nSome takeaways:\n\n1. Orchestrator and /swarm are very useful for planning and building with multiple agents. At one point, I had 42 agents running at once.\n\n2. /grill-me is a great built-in skill that gets Antigravity to ask clarifying questions to help you flesh out the plan first.\n\n3. Remote control is better than Claude Code's because every thread is active by default. I show you how to add Antigravity to your phone home screen to run this in the video.\n\n📌 Watch my full 17-minute Antigravity course here: https://t.co/lmfSTiVBsm",
+      "author": "Peter Yang",
+      "publishedAt": "2026-11-24T15:15:00.000Z",
+      "collectedAt": "2026-11-25T08:43:35.410783+00:00",
+      "likes": 580,
+      "handle": "petergyang"
+    },
+    {
+      "id": "eba9ec35606e6813",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "YC is the YC for hard tech https://t.co/NWlfp6U19R",
+      "url": "https://x.com/garrytan/status/2125258221946630432",
+      "excerpt": "YC is the YC for hard tech https://t.co/NWlfp6U19R",
+      "author": "Garry Tan",
+      "publishedAt": "2026-11-24T16:00:20.000Z",
+      "collectedAt": "2026-11-25T08:43:35.410949+00:00",
+      "likes": 315,
+      "handle": "garrytan"
+    },
+    {
+      "id": "c1a93bfcd299de2d",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Unlike say electricity, token demand grows in step functions as we find ways to put more compute to use on beh",
+      "url": "https://x.com/amasad/status/2125287538911072753",
+      "excerpt": "Unlike say electricity, token demand grows in step functions as we find ways to put more compute to use on behalf of a single user.\n\nauto-complete -> chat -> agent -> long-running autonomous agents -> swarms\n\nEach harness innovation unlocks an order of magnitude more potential token consumption.\n\nBut then there’s a lag between these new tools and users figuring out what to do with them.",
+      "author": "Amjad Masad",
+      "publishedAt": "2026-11-24T17:56:49.000Z",
+      "collectedAt": "2026-11-25T08:43:35.410882+00:00",
+      "likes": 215,
+      "handle": "amasad"
+    },
+    {
+      "id": "ccc4778de14b2a4b",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Really excited about this one. MCP servers can now ship with their own skills, so Claude Code knows how to use",
+      "url": "https://x.com/bcherny/status/2125292098165612585",
+      "excerpt": "Really excited about this one. MCP servers can now ship with their own skills, so Claude Code knows how to use them out of the box. https://t.co/Z0TQVOfGTz",
+      "author": "Boris Cherny",
+      "publishedAt": "2026-11-24T18:14:56.000Z",
+      "collectedAt": "2026-11-25T08:43:35.410675+00:00",
+      "likes": 5102,
+      "handle": "bcherny"
+    },
+    {
+      "id": "db48cba50a17569f",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at",
+      "url": "https://x.com/thsottiaux/status/2125299248782778588",
+      "excerpt": "To all the ChatGPT Business teams out there. We have two small things for you, a banked reset and fast mode at no extra charge through Dec 31. Have fun!",
+      "author": "Thibault Sottiaux",
+      "publishedAt": "2026-11-24T18:43:21.000Z",
+      "collectedAt": "2026-11-25T08:43:35.410728+00:00",
+      "likes": 5295,
+      "handle": "thsottiaux"
+    },
+    {
+      "id": "eb4acf2718c2cb14",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "https://t.co/SY2X7f40c5",
+      "url": "https://x.com/thsottiaux/status/2125299436964479474",
+      "excerpt": "https://t.co/SY2X7f40c5",
+      "author": "Thibault Sottiaux",
+      "publishedAt": "2026-11-24T18:44:06.000Z",
+      "collectedAt": "2026-11-25T08:43:35.410711+00:00",
+      "likes": 320,
+      "handle": "thsottiaux"
+    },
+    {
+      "id": "84803ae5b78d77ef",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Sign up for ChatGPT Business: https://t.co/2WH7P7Yx7L",
+      "url": "https://x.com/thsottiaux/status/2125299467691987445",
+      "excerpt": "Sign up for ChatGPT Business: https://t.co/2WH7P7Yx7L",
+      "author": "Thibault Sottiaux",
+      "publishedAt": "2026-11-24T18:44:13.000Z",
+      "collectedAt": "2026-11-25T08:43:35.410694+00:00",
+      "likes": 167,
+      "handle": "thsottiaux"
+    },
+    {
+      "id": "cdba51beb7f0a87b",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "The main reason https://t.co/3Z4NESzNKd is a CLI (in this day and age!) is that it's a thin wrapper around 𝚕𝚒𝚋",
+      "url": "https://x.com/rauchg/status/2125320020666565096",
+      "excerpt": "The main reason https://t.co/3Z4NESzNKd is a CLI (in this day and age!) is that it's a thin wrapper around 𝚕𝚒𝚋𝚏𝚡.\n\nThe goal is to produce the smallest and most intelligent coding agent kernel, that's embeddable on any surface:  browsers, servers, mobile, desktop, OS, ADEs… https://t.co/L51jXUhdBY https://t.co/ksrRsLFHu3",
+      "author": "Guillermo Rauch",
+      "publishedAt": "2026-11-24T20:05:54.000Z",
+      "collectedAt": "2026-11-25T08:43:35.410923+00:00",
+      "likes": 237,
+      "handle": "rauchg"
+    },
+    {
+      "id": "0a22afa1455406cb",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Good stuff https://t.co/tqfvBrVMo7",
+      "url": "https://x.com/rauchg/status/2125330925324300725",
+      "excerpt": "Good stuff https://t.co/tqfvBrVMo7",
+      "author": "Guillermo Rauch",
+      "publishedAt": "2026-11-24T20:49:13.000Z",
+      "collectedAt": "2026-11-25T08:43:35.410909+00:00",
+      "likes": 248,
+      "handle": "rauchg"
+    },
+    {
+      "id": "401aa0a9d0ef6845",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "America can build the best frontier models and still lose the global AI race. Which is why Jensen’s return mat",
+      "url": "https://x.com/amasad/status/2125353849057853876",
+      "excerpt": "America can build the best frontier models and still lose the global AI race. Which is why Jensen’s return matters far beyond Nvidia.\n\nGovernments around the world want sovereign AI: models they can run on their own soil, on their own infrastructure, under their own control.\n\nIf American companies won’t meet that demand, Chinese companies will. Countries will start with Chinese models, then adopt Chinese infrastructure and chips. Having the smartest model won’t mean much if most of the world runs on someone else’s stack.\n\nWe’ve seen a version of this play out with Huawei. China understood that supplying the world’s telecom infrastructure creates lasting strategic influence. Once a country builds its networks around your equipment, it also builds technical expertise, supplier relationships, and future investment around it. Replacing that equipment becomes expensive and disruptive (the US government is now trying to finance replacement operations but it’s been difficult).\n\nThat’s why Jensen’s backing of the American open-model ecosystem is so important. Open models give startups the freedom to compete and give countries a reason to build on American technology.\n\nWe need both frontier leadership and global adoption. Open models are essential to getting both. https://t.co/f34FKKbljl",
+      "author": "Amjad Masad",
+      "publishedAt": "2026-11-24T22:20:19.000Z",
+      "collectedAt": "2026-11-25T08:43:35.410869+00:00",
+      "likes": 633,
+      "handle": "amasad"
+    },
+    {
+      "id": "afcead320c658906",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "3B local Muse 🤯 https://t.co/psL7dzZOiu",
+      "url": "https://x.com/amasad/status/2125414100692041797",
+      "excerpt": "3B local Muse 🤯 https://t.co/psL7dzZOiu",
+      "author": "Amjad Masad",
+      "publishedAt": "2026-11-25T02:19:44.000Z",
+      "collectedAt": "2026-11-25T08:43:35.410855+00:00",
+      "likes": 186,
+      "handle": "amasad"
+    },
+    {
+      "id": "97ee69128146c458",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "What a year this has been! Time to reflect and do a blog post over the holidays.",
+      "url": "https://x.com/steipete/status/2125422797304549672",
+      "excerpt": "What a year this has been! Time to reflect and do a blog post over the holidays.\n\nOC is in a great place, we found a niche in prosumer and enterprise adoption. The multiplayer team feature is best in class.\n\nShipping reliable and free open source is also really really hard, and waking up to countless user complaints every day is an emotional challenge. I’m glad the team is taking over most of the work these days.\n\nWe mostly been focussing on the boring part of ensuring things are fast, reliable and secure, with the exception of the new memory system and soon OpenClaw ID. \n\nTo many more years!",
+      "author": "Peter Steinberger",
+      "publishedAt": "2026-11-25T02:54:17.000Z",
+      "collectedAt": "2026-11-25T08:43:35.411120+00:00",
+      "likes": 590,
+      "handle": "steipete"
+    },
+    {
+      "id": "7eea171611f31c8f",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "GPT 6.2 Astra Solves a Historical Mystery",
+      "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/",
+      "excerpt": "GPT 6.2 Astra Solves a Historical Mystery Here's an interesting case-study in using GPT-6.2 Astra for historical research, from history professor Mark Humphries: With only minimal prompting, GPT-6.2 Astra was able to autonomously identify the creator of an anonymous 1808 sketchbook held at Yale’s Beinecke Library . It did so extremely quickly (in just 22 minutes), using publicly available primary and secondary sources. To do so, it discovered a little known source in a paper archive, predicted that it would prove its hypothesis if examined and, in the end, it did. Not only that, but this new source turns out to be a major find on its own that will be of significant interest to both Canadian and fur trade historians. Here's the digitized sketchbook . Astra found a diary reference reference to a visit by the vicomte de Chabot dated five days before a date mentioned in the sketchbook at a nearby river, and suggested that Chabot's journal of his travels (only available by order from Cleveland State University) might confirm that the sketchbook was his work. Are historians due for a round of Deep Blue ? Mark thinks it will be mild: But if the experience of mathematics is any guide, we can also anticipate that sometime next spring or summer we’ll face a sort of crisis of confidence as we struggle to understand how to respond to agentic systems that can do things human historians cannot. To be fair, that crisis will almost certainly be less profound for us than it is for math. The problem in mathematics, of course, is that solving hard math problems was the whole game. Historians, on the other hand, constantly reinterpret the past in light of an evolving present; we don’t chase a single universal truth. We also (in the ideal at least) write books and articles that are closer t",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-24T16:53:59+00:00",
+      "collectedAt": "2026-11-25T08:43:35.314842+00:00"
+    },
+    {
+      "id": "5e8eba5b15ac6044",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "Three LLM inflection points in twelve months",
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+      "excerpt": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model. In the Opus 4.5 announcement, Anthropic said: Testers noted that Claude Opus 4.5 handles ambiguity and reasons about tradeoffs without hand-holding. They told us that, when pointed at a complex, multi-system bug, Opus 4.5 figures out the fix. They said that tasks that were near-impossible for Sonnet 4.5 just a few weeks ago are now within reach. This held up. Claude Code was 9 months old at that point, having been introduced alongside Claude 3.7 Sonnet on February 24th, 2025. Opus 4.5 was the first model I had used with Claude Code where the default result was generally the right thing. I hadn't been using Claude Code as a daily driver because it didn't feel reliable enough - I had to correct it often enough that it didn't feel like a clear accelerant. The new Opus changed that. For most of the coding problems I faced on a daily basis, Opus would get them right . It was clearly faster than working through the problems myself. Also in November, OpenAI released GPT-5.1 Instant, GPT-5.1 Thinking, GPT-5.1-Codex, and GPT-5.1-Codex-Max. These had a similar effect on their Codex coding agent: it became reliably useful for many of my coding tasks. The timing was convenient, because the December holidays were upon us. A lot of people, myself included, spent Decem",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-24T23:02:07+00:00",
+      "collectedAt": "2026-11-25T08:43:35.313693+00:00"
+    },
+    {
+      "id": "6a28e842b3bf4bfd",
+      "sourceId": "huggingface",
+      "source": "Hugging Face Blog",
+      "kind": "rss",
+      "title": "Microduck Obstacle Avoidance: A Sim2Real Workflow with Isaac Lab and Newton",
+      "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+      "excerpt": "",
+      "author": "Hugging Face Blog",
+      "publishedAt": "2026-11-24T16:34:13+00:00",
+      "collectedAt": "2026-11-25T08:43:35.464839+00:00"
+    },
     {
       "id": "33f00f730386c3d9",
       "sourceId": "builders",
@@ -1115,11 +1425,11 @@
       "enabled": true,
       "status": "ok",
       "count": 12,
-      "lastCheckedAt": "2026-11-24T09:59:46.829429+00:00",
-      "message": "新增 12 条；跳过历史重复 0 条、上期前旧内容 0 条",
-      "fetchedCount": 41,
+      "lastCheckedAt": "2026-11-25T08:43:35.411213+00:00",
+      "message": "新增 12 条；跳过历史重复 0 条、上期前旧内容 1 条",
+      "fetchedCount": 34,
       "duplicateCount": 0,
-      "olderItemCount": 0
+      "olderItemCount": 1
     },
     {
       "id": "github",
@@ -1129,7 +1439,7 @@
       "enabled": true,
       "status": "empty",
       "count": 0,
-      "lastCheckedAt": "2026-11-24T09:59:48.457516+00:00",
+      "lastCheckedAt": "2026-11-25T08:43:35.758449+00:00",
       "message": "新增 0 条；跳过历史重复 16 条、上期前旧内容 0 条",
       "fetchedCount": 16,
       "duplicateCount": 16,
@@ -1142,11 +1452,11 @@
       "url": "https://simonwillison.net/atom/everything/",
       "enabled": true,
       "status": "ok",
-      "count": 4,
-      "lastCheckedAt": "2026-11-24T09:59:47.214311+00:00",
-      "message": "新增 4 条；跳过历史重复 2 条、上期前旧内容 1 条",
-      "fetchedCount": 7,
-      "duplicateCount": 2,
+      "count": 2,
+      "lastCheckedAt": "2026-11-25T08:43:35.392946+00:00",
+      "message": "新增 2 条；跳过历史重复 5 条、上期前旧内容 1 条",
+      "fetchedCount": 8,
+      "duplicateCount": 5,
       "olderItemCount": 1
     },
     {
@@ -1157,21 +1467,21 @@
       "enabled": true,
       "status": "ok",
       "count": 1,
-      "lastCheckedAt": "2026-11-24T09:59:47.081069+00:00",
-      "message": "新增 1 条；跳过历史重复 0 条、上期前旧内容 1 条",
-      "fetchedCount": 2,
-      "duplicateCount": 0,
+      "lastCheckedAt": "2026-11-25T08:43:35.484394+00:00",
+      "message": "新增 1 条；跳过历史重复 1 条、上期前旧内容 1 条",
+      "fetchedCount": 3,
+      "duplicateCount": 1,
       "olderItemCount": 1
     }
   ],
   "collection": {
     "status": "ok",
-    "message": "4/4 个来源完成采集；新增 17 条，跳过历史重复 18 条、上期前旧内容 2 条",
+    "message": "4/4 个来源完成采集；新增 15 条，跳过历史重复 22 条、上期前旧内容 3 条",
     "aiEnabled": true,
-    "lastAttemptAt": "2026-11-24T09:59:48.458410+00:00",
-    "date": "2026-11-24",
-    "newItemCount": 17,
-    "duplicateCount": 18,
-    "olderItemCount": 2
+    "lastAttemptAt": "2026-11-25T08:43:35.759197+00:00",
+    "date": "2026-11-25",
+    "newItemCount": 15,
+    "duplicateCount": 22,
+    "olderItemCount": 3
   }
 }
