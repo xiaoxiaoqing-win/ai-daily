@@ -1,8 +1,132 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-25T08:43:35.759176+00:00",
+  "updatedAt": "2026-11-26T08:29:00.896573+00:00",
   "repository": "xiaoxiaoqing-win/ai-daily",
   "digests": [
+    {
+      "id": "daily-2026-11-26",
+      "date": "2026-11-26",
+      "createdAt": "2026-11-26T08:29:33.898341+00:00",
+      "collectedAt": "2026-11-26T08:28:59.281088+00:00",
+      "mode": "ai",
+      "itemCount": 18,
+      "sourceCount": 3,
+      "references": [
+        {
+          "id": "S1",
+          "title": "I think this clip of Nick Bostrom is quite under-appreciated",
+          "url": "https://x.com/garrytan/status/2125580632814412155"
+        },
+        {
+          "id": "S2",
+          "title": "Median growth is 10x",
+          "url": "https://x.com/garrytan/status/2125592156027101584"
+        },
+        {
+          "id": "S3",
+          "title": "We’re now testing Private Inference, our latest offering as part of OpenAI Private Intelligence, with a small",
+          "url": "https://x.com/sama/status/2125638790593274259"
+        },
+        {
+          "id": "S4",
+          "title": "I don't think I'd heard the word \"hyperstitioning\" before, but it's a good one. https://t.co/0I1yz7jivU",
+          "url": "https://x.com/sama/status/2125639418849714280"
+        },
+        {
+          "id": "S5",
+          "title": "Gemini does local voices and local accents, just added 66 more, def check out 🇺🇸 🇬🇧 🇮🇳 🇮🇩 🇰🇷 🇧🇷 https://t.co/h",
+          "url": "https://x.com/joshwoodward/status/2125641468421546107"
+        },
+        {
+          "id": "S6",
+          "title": "huh, so Google finally built an MCP and is now forbidding clis like gog unless you pay them more? classy https",
+          "url": "https://x.com/steipete/status/2125654555262431248"
+        },
+        {
+          "id": "S7",
+          "title": "Large scale software migration is now viable provided you can verify the results.",
+          "url": "https://x.com/amasad/status/2125664998454366305"
+        },
+        {
+          "id": "S8",
+          "title": "I've joined OpenAI!",
+          "url": "https://x.com/trq212/status/2125675533761671405"
+        },
+        {
+          "id": "S9",
+          "title": "probably a good time to come clean and say I'm level 5 in WoW",
+          "url": "https://x.com/trq212/status/2125680562677653743"
+        },
+        {
+          "id": "S10",
+          "title": "📈 @GeminiApp on a roll right now! People are putting it to work to finish all kinds of tasks. Share some of yo",
+          "url": "https://x.com/joshwoodward/status/2125740026915152382"
+        },
+        {
+          "id": "S11",
+          "title": "I asked Claude to populate a Civilization-style game map with real data from the US. Opus 5.5 downloaded and p",
+          "url": "https://x.com/karpathy/status/2125779541952246039"
+        },
+        {
+          "id": "S12",
+          "title": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for mos",
+          "url": "https://x.com/thsottiaux/status/2125784147889393806"
+        },
+        {
+          "id": "S13",
+          "title": "datasette-charts 0.3a0",
+          "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/"
+        },
+        {
+          "id": "S14",
+          "title": "Quoting Scott Aaronson",
+          "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/"
+        },
+        {
+          "id": "S15",
+          "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+          "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/"
+        },
+        {
+          "id": "S16",
+          "title": "An Indic Voice Agent with CUGA",
+          "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga"
+        },
+        {
+          "id": "S17",
+          "title": "Where scientists draw the line on AI agents",
+          "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents"
+        },
+        {
+          "id": "S18",
+          "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+          "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin"
+        }
+      ],
+      "itemIds": [
+        "5e6034bffec91371",
+        "1639c63e30726153",
+        "4d3a52fafc02205f",
+        "609096ded54bdbab",
+        "7b11eeb95fb81e7e",
+        "a5fdab2519936fe6",
+        "61c3c1371500cd4c",
+        "5dc1e61f2e27bf66",
+        "cf83b70f335359f0",
+        "4f98beeb275aebf6",
+        "80a5faea6e0af9ba",
+        "faceade3f221c37e",
+        "9685432920849ecf",
+        "3c53fbfc405d080f",
+        "d44a29290b4311e2",
+        "0077e07924e43bf7",
+        "88bd06d7e0e9b82f",
+        "3d2697b636d74b83"
+      ],
+      "title": "AI 日报｜11月26日：OpenAI 测试隐私推理，长时编程案例落地",
+      "summary": "OpenAI 小范围测试 Private Inference，并修正 GPT-6.2 用量折扣错误；Karpathy 展示长时数据编程案例，Gemini 新增66种本地语音与口音选项。[S3][S12][S11][S5]",
+      "content": "## 今日重点\n\n### OpenAI 小范围测试 Private Inference\nSam Altman 表示，OpenAI 正与少量客户测试 Private Inference，该产品属于 OpenAI Private Intelligence。他同时称，ZDR 配合 Private Safety Processing，可在不向 OpenAI 人员开放底层内容的情况下进行自动安全审查。[S3]\n\n**值得关注：**隐私保护可能扩大前沿模型可承接的企业工作范围，但当前条目未披露具体技术架构、定价、普遍开放时间或独立验证结果，不能据此推断所有处理环节的隐私边界。[S3]\n\n### GPT-6.2 修正计费错误，同样工作将消耗更多套餐额度\nOpenAI 的 Thibault Sottiaux 表示，GPT-6.2 上线时的计费错误，使多数用户的 Astra 和 Sol 用量获得了不正确的折扣，目前已修复。按其披露，相比上周，用户使用 GPT-6.2 Astra 和 Sol 将分别快40%和25%触及额度上限；其他模型不受影响，历史差额不追收。[S12]\n\n官方还将为 Go、Plus、Pro 和 Business 用户各补发一次可留存的额度重置。这里披露的是**套餐额度消耗变化**，并非宣布订阅价格上涨；依赖这两个模型运行固定工作流的用户，需要重新评估额度预算。[S12]\n\n## Builder 动态\n\n### Karpathy 展示约7小时完成的美国数据地图\nKarpathy 分享了一个使用 Claude Code 桌面端、Opus 5.5 medium 档并开启 ultracode 构建的项目：将美国公共数据整理成《文明》风格的地图。据其描述，任务耗时约7小时，生成约4.5万行代码，整合31个真实数据源，并统一到25公里六边形网格。[S11]\n\n项目包含19种数据视图、524个都会区的城市视图，以及覆盖3,100多个县的数据探索功能。其意义不只是生成界面，而是展示了模型连续执行数据下载、解析、空间对齐与交互开发的能力。不过，这仍是作者自述的单个案例；作者明确提到遗漏了部分州和地区，不能将其视为完整性或数据准确性已获验证的产品。[S11]\n\n### Gemini 扩充本地语音与口音选项\nJosh Woodward 表示，Gemini 新增66种本地语音与口音选项。条目没有列出完整清单、地区可用性或接口支持范围，因此不宜将其解读为新增66种语言。[S5]\n\n### datasette-charts 0.3a0 增加图表标注\nSimon Willison 发布的版本说明显示，datasette-charts 0.3a0 支持为图表添加线条、阴影区域和标签，并可通过图表构建界面调整；安装 Datasette Agent 后，也可让智能体生成带标注的图表。对数据分析应用而言，这是把图表生成进一步推进到解释性表达的一项具体更新。[S13]\n\n### Thariq 宣布从 Anthropic 转投 OpenAI\nThariq 在个人帖文中宣布加入 OpenAI，并回顾了在 Anthropic 的经历。条目未披露其新职位、所属团队或具体职责，因此目前只能确认这项本人宣布的人员流动，不能据此判断产品或组织调整。[S8]\n\n## 值得阅读与观察\n\n### 大规模软件迁移：关键条件是结果可验证\nAmjad Masad 提出，只要能够验证结果，大规模软件迁移如今已具可行性，并强调其对老化关键基础设施的重要性。这是一项判断，而非条目中已被案例或指标证实的结论；对 Builder 的启发是，评估迁移自动化时，应把验证能力与代码生成能力一起考察。[S7]\n\n### SQLite 远程快照复制：不必先在本地腾出完整副本空间\nSimon Willison 介绍，sqlite3_rsync 可通过 SSH 将 SQLite 数据库快照复制到另一台机器，无须先在源机器创建完整本地副本，也支持通过页哈希比较减少重复传输。这对磁盘空间紧张的实例备份尤其有用。[S15]\n\n**时间边界：**这不是新发布的工具。来源说明，其已于2024年10月作为实验功能加入 SQLite 3.47.0，并在2025年5月的3.50.0中增强；本次新增的是介绍文章。[S15]"
+    },
     {
       "id": "daily-2026-11-25",
       "date": "2026-11-25",
@@ -483,6 +607,246 @@
   ],
   "reports": [],
   "items": [
+    {
+      "id": "5e6034bffec91371",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "I think this clip of Nick Bostrom is quite under-appreciated",
+      "url": "https://x.com/garrytan/status/2125580632814412155",
+      "excerpt": "I think this clip of Nick Bostrom is quite under-appreciated \n\nHe inverts “if anyone builds it everyone dies” to “if nobody builds it everyone dies” and posits superintelligence as poised to extend lives to 1200 to 1400 years https://t.co/SYv676pPVQ https://t.co/LX0ggeaiOr",
+      "author": "Garry Tan",
+      "publishedAt": "2026-11-25T13:21:28.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435320+00:00",
+      "likes": 1966,
+      "handle": "garrytan"
+    },
+    {
+      "id": "1639c63e30726153",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Median growth is 10x",
+      "url": "https://x.com/garrytan/status/2125592156027101584",
+      "excerpt": "Median growth is 10x \n\nLook at this stat and tell me AI is not helping new startups grow faster than they ever have https://t.co/mGKQCNe7ZA https://t.co/eayH5wmVgl",
+      "author": "Garry Tan",
+      "publishedAt": "2026-11-25T14:07:16.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435310+00:00",
+      "likes": 399,
+      "handle": "garrytan"
+    },
+    {
+      "id": "4d3a52fafc02205f",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "We’re now testing Private Inference, our latest offering as part of OpenAI Private Intelligence, with a small",
+      "url": "https://x.com/sama/status/2125638790593274259",
+      "excerpt": "We’re now testing Private Inference, our latest offering as part of OpenAI Private Intelligence, with a small group of customers.\n\nStronger privacy protections will make frontier AI useful for a lot more work, and business privacy is important for a healthy ecosystem. Reach out to @shekar4x if interested!\n\n(Also, ZDR with Private Safety Processing enables automated safety reviews without giving OpenAI personnel access to the underlying content.)",
+      "author": "Sam Altman",
+      "publishedAt": "2026-11-25T17:12:34.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435450+00:00",
+      "likes": 7997,
+      "handle": "sama"
+    },
+    {
+      "id": "609096ded54bdbab",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "I don't think I'd heard the word \"hyperstitioning\" before, but it's a good one. https://t.co/0I1yz7jivU",
+      "url": "https://x.com/sama/status/2125639418849714280",
+      "excerpt": "I don't think I'd heard the word \"hyperstitioning\" before, but it's a good one. https://t.co/0I1yz7jivU",
+      "author": "Sam Altman",
+      "publishedAt": "2026-11-25T17:15:04.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435439+00:00",
+      "likes": 5245,
+      "handle": "sama"
+    },
+    {
+      "id": "7b11eeb95fb81e7e",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Gemini does local voices and local accents, just added 66 more, def check out 🇺🇸 🇬🇧 🇮🇳 🇮🇩 🇰🇷 🇧🇷 https://t.co/h",
+      "url": "https://x.com/joshwoodward/status/2125641468421546107",
+      "excerpt": "Gemini does local voices and local accents, just added 66 more, def check out 🇺🇸 🇬🇧 🇮🇳 🇮🇩 🇰🇷 🇧🇷 https://t.co/h4FJ6t5F5M",
+      "author": "Josh Woodward",
+      "publishedAt": "2026-11-25T17:23:13.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435097+00:00",
+      "likes": 482,
+      "handle": "joshwoodward"
+    },
+    {
+      "id": "a5fdab2519936fe6",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "huh, so Google finally built an MCP and is now forbidding clis like gog unless you pay them more? classy https",
+      "url": "https://x.com/steipete/status/2125654555262431248",
+      "excerpt": "huh, so Google finally built an MCP and is now forbidding clis like gog unless you pay them more? classy https://t.co/TnaqUMbpG9",
+      "author": "Peter Steinberger",
+      "publishedAt": "2026-11-25T18:15:13.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435389+00:00",
+      "likes": 1023,
+      "handle": "steipete"
+    },
+    {
+      "id": "61c3c1371500cd4c",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Large scale software migration is now viable provided you can verify the results.",
+      "url": "https://x.com/amasad/status/2125664998454366305",
+      "excerpt": "Large scale software migration is now viable provided you can verify the results.\n\nThis is exceptionally important given the aging software systems running critical infrastructure. https://t.co/SOg7AEmMGT https://t.co/TaZ5gbzuFa",
+      "author": "Amjad Masad",
+      "publishedAt": "2026-11-25T18:56:43.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435234+00:00",
+      "likes": 548,
+      "handle": "amasad"
+    },
+    {
+      "id": "5dc1e61f2e27bf66",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "I've joined OpenAI!",
+      "url": "https://x.com/trq212/status/2125675533761671405",
+      "excerpt": "I've joined OpenAI!\n\nI'm very proud of my time at Anthropic, and I'll continue to root for my former colleagues. Both companies have important roles to play in the future.\n\nThere is a tremendous amount of work ahead of us to bring AI to the world, and it will demand the very best of all of us. I felt that I could personally contribute the most to this effort at OpenAI.\n\nI believe this is one of the great strengths of Silicon Valley, the flow of ideas and people.\n\nI'm excited to join a team I've long admired, building incredible AI products for over a billion people, and to work alongside friends like @_catwu, @thsottiaux, @ajambrosino, @sharifshameem, @jxnlco and many others to push the frontier forward.\n\nMore than anything, I hope to make your experience of using AI just a little bit better.\n\nI am once again at your service.\n\nThariq",
+      "author": "Thariq",
+      "publishedAt": "2026-11-25T19:38:35.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435223+00:00",
+      "likes": 25330,
+      "handle": "trq212"
+    },
+    {
+      "id": "cf83b70f335359f0",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "probably a good time to come clean and say I'm level 5 in WoW",
+      "url": "https://x.com/trq212/status/2125680562677653743",
+      "excerpt": "probably a good time to come clean and say I'm level 5 in WoW",
+      "author": "Thariq",
+      "publishedAt": "2026-11-25T19:58:34.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435212+00:00",
+      "likes": 2948,
+      "handle": "trq212"
+    },
+    {
+      "id": "4f98beeb275aebf6",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "📈 @GeminiApp on a roll right now! People are putting it to work to finish all kinds of tasks. Share some of yo",
+      "url": "https://x.com/joshwoodward/status/2125740026915152382",
+      "excerpt": "📈 @GeminiApp on a roll right now! People are putting it to work to finish all kinds of tasks. Share some of your favorites!",
+      "author": "Josh Woodward",
+      "publishedAt": "2026-11-25T23:54:51.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435085+00:00",
+      "likes": 538,
+      "handle": "joshwoodward"
+    },
+    {
+      "id": "80a5faea6e0af9ba",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "I asked Claude to populate a Civilization-style game map with real data from the US. Opus 5.5 downloaded and p",
+      "url": "https://x.com/karpathy/status/2125779541952246039",
+      "excerpt": "I asked Claude to populate a Civilization-style game map with real data from the US. Opus 5.5 downloaded and parse a ton of public data and 7 hours and 45K lines of code later... it works :)\n\n- 31 real data sources including Census, BEA, BLS, EIA, NOAA, USGS, DoD, NPS, FAA, FEMA, CDC...\n- Real elevation, land cover, GDP, jobs, power plants, mines, ports, airports, bases, parks, universities, freight flows, disasters; all reconciled onto one 25 km hex grid.\n- The data is converted into Civilization language, e.g. Gold yield is GDP. A city's districts are its real industry specializations: San Jose gets a Campus, Detroit is \"Motor city\". Its citizens are its real workforce: 1 in 4 San Jose workers are engineers, coders or scientists, against 1 in 14 nationally. Wonders are chosen by published rules, such as national parks by visitor numbers and universities by R&D spending, etc etc.\n- 19 lenses (income, degrees, faith, disasters…), a City View for 524 metros, and nine advisors plus an Explorer. The Explorer turns any column for any of 3,100+ counties into a table and scatter plot, linked to the map.\n- Claude decided to skip a few states and territories sry\n- Built using Claude Code desktop app, Opus 5.5 on medium and turning on ultracode.\n\nIt's deployed here: https://t.co/QMhmafXMj5 and the \"?\" has the source link too. I don't exactly know where I was going with this but it's really fun to browse and play with. Possibly it can be expanded or built into a game. I only have half of my weekly Claude quote left though so someone else will have to take over :D. Claude also made a trailer:",
+      "author": "Andrej Karpathy",
+      "publishedAt": "2026-11-26T02:31:52.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435013+00:00",
+      "likes": 9223,
+      "handle": "karpathy"
+    },
+    {
+      "id": "faceade3f221c37e",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for mos",
+      "url": "https://x.com/thsottiaux/status/2125784147889393806",
+      "excerpt": "We made a billing mistake at launch of GPT-6.2 that incorrectly discounted GPT-6.2 Astra and Sol usage for most users. \n\nWe’ve fixed this now, so the same work will use more of your plan’s usage allowance. Comparing to last week, you will reach your limits 40% faster on GPT-6.2 Astra and 25% faster on Sol. You should still see these go further in usage compared to 6 Astra and 6.1 Sol. Other models weren’t affected, and we won’t charge you for the difference on past usage.\n\nAs a small token to apologize for the mistake, we’ll be adding one banked reset for everyone on Go, Plus, Pro, and Business.",
+      "author": "Thibault Sottiaux",
+      "publishedAt": "2026-11-26T02:50:10.000Z",
+      "collectedAt": "2026-11-26T08:28:59.435119+00:00",
+      "likes": 9460,
+      "handle": "thsottiaux"
+    },
+    {
+      "id": "9685432920849ecf",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "datasette-charts 0.3a0",
+      "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+      "excerpt": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in Datasette Lite , where you can tweak the annotations using the chart builder UI: If you also install Datasette Agent the agent can build annotated charts for you. Here's what I got on the agent.datasette.io demo for this prompt: Show a chart comparing Simon's tagged content about LLMs with his tagged content about Datasette, with annotations Tags: datasette , visualization , datasette-charts",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-25T18:16:50+00:00",
+      "collectedAt": "2026-11-26T08:28:59.432768+00:00"
+    },
+    {
+      "id": "3c53fbfc405d080f",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "Quoting Scott Aaronson",
+      "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+      "excerpt": "It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondwater, or Galileo first training his telescope on the stars. That might give you some idea of how our resolution into the complexity-theoretic universe, and the whole universe of mathematical truth beyond it, has now improved. — Scott Aaronson Tags: mathematics , llms , ai , generative-ai",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-25T23:26:32+00:00",
+      "collectedAt": "2026-11-26T08:28:59.432019+00:00"
+    },
+    {
+      "id": "d44a29290b4311e2",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+      "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+      "excerpt": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood one of its most attractive characteristics. Normally, if you want to grab a snapshot copy of a SQLite database, you need to use either the backup API or VACUUM INTO . In both cases you need enough disk space to create a duplicate copy of your database, so if you're on a small instance and you already use more than half of the available disk you are plain out of luck. sqlite3_rsync can copy a snapshot of your database over an SSH connection to another machine, without first needing to create a full local copy! It's also good for synchronizing an existing copy of a database without re-transmitting the entire thing over the network. It works in a similar way to regular rsync: The core idea behind the protocol is that the replica sends cryptographic hashes for pages or groups of pages over to the origin side. The origin sends back page content that differs, or requests finer-grain hashes if a multi-page hash does not match. If the origin and replica start out being vastly different, the total network bandwidth can exceed the size of the entire database, due to the overhead of exchanging hashes, but the excess bandwidth is not great - a few percent at most. Update : Hah! Turns out I wrote about this application of sqlite_rsync back in October 2024 when the tool was first released. Tags: backups , sqlite",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-26T06:08:25+00:00",
+      "collectedAt": "2026-11-26T08:28:59.416575+00:00"
+    },
+    {
+      "id": "0077e07924e43bf7",
+      "sourceId": "huggingface",
+      "source": "Hugging Face Blog",
+      "kind": "rss",
+      "title": "An Indic Voice Agent with CUGA",
+      "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+      "excerpt": "",
+      "author": "Hugging Face Blog",
+      "publishedAt": "2026-11-25T10:22:09+00:00",
+      "collectedAt": "2026-11-26T08:28:59.571151+00:00"
+    },
+    {
+      "id": "88bd06d7e0e9b82f",
+      "sourceId": "huggingface",
+      "source": "Hugging Face Blog",
+      "kind": "rss",
+      "title": "Where scientists draw the line on AI agents",
+      "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+      "excerpt": "",
+      "author": "Hugging Face Blog",
+      "publishedAt": "2026-11-25T18:52:55+00:00",
+      "collectedAt": "2026-11-26T08:28:59.571131+00:00"
+    },
+    {
+      "id": "3d2697b636d74b83",
+      "sourceId": "huggingface",
+      "source": "Hugging Face Blog",
+      "kind": "rss",
+      "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "excerpt": "",
+      "author": "Hugging Face Blog",
+      "publishedAt": "2026-11-26T05:05:36+00:00",
+      "collectedAt": "2026-11-26T08:28:59.571103+00:00"
+    },
     {
       "id": "58fd90693e61a1e3",
       "sourceId": "builders",
@@ -1425,11 +1789,11 @@
       "enabled": true,
       "status": "ok",
       "count": 12,
-      "lastCheckedAt": "2026-11-25T08:43:35.411213+00:00",
-      "message": "新增 12 条；跳过历史重复 0 条、上期前旧内容 1 条",
-      "fetchedCount": 34,
+      "lastCheckedAt": "2026-11-26T08:28:59.435527+00:00",
+      "message": "新增 12 条；跳过历史重复 0 条、上期前旧内容 2 条",
+      "fetchedCount": 42,
       "duplicateCount": 0,
-      "olderItemCount": 1
+      "olderItemCount": 2
     },
     {
       "id": "github",
@@ -1439,7 +1803,7 @@
       "enabled": true,
       "status": "empty",
       "count": 0,
-      "lastCheckedAt": "2026-11-25T08:43:35.758449+00:00",
+      "lastCheckedAt": "2026-11-26T08:29:00.895903+00:00",
       "message": "新增 0 条；跳过历史重复 16 条、上期前旧内容 0 条",
       "fetchedCount": 16,
       "duplicateCount": 16,
@@ -1452,11 +1816,11 @@
       "url": "https://simonwillison.net/atom/everything/",
       "enabled": true,
       "status": "ok",
-      "count": 2,
-      "lastCheckedAt": "2026-11-25T08:43:35.392946+00:00",
-      "message": "新增 2 条；跳过历史重复 5 条、上期前旧内容 1 条",
-      "fetchedCount": 8,
-      "duplicateCount": 5,
+      "count": 3,
+      "lastCheckedAt": "2026-11-26T08:28:59.460811+00:00",
+      "message": "新增 3 条；跳过历史重复 6 条、上期前旧内容 1 条",
+      "fetchedCount": 10,
+      "duplicateCount": 6,
       "olderItemCount": 1
     },
     {
@@ -1466,22 +1830,22 @@
       "url": "https://huggingface.co/blog/feed.xml",
       "enabled": true,
       "status": "ok",
-      "count": 1,
-      "lastCheckedAt": "2026-11-25T08:43:35.484394+00:00",
-      "message": "新增 1 条；跳过历史重复 1 条、上期前旧内容 1 条",
-      "fetchedCount": 3,
-      "duplicateCount": 1,
+      "count": 3,
+      "lastCheckedAt": "2026-11-26T08:28:59.586326+00:00",
+      "message": "新增 3 条；跳过历史重复 0 条、上期前旧内容 1 条",
+      "fetchedCount": 4,
+      "duplicateCount": 0,
       "olderItemCount": 1
     }
   ],
   "collection": {
     "status": "ok",
-    "message": "4/4 个来源完成采集；新增 15 条，跳过历史重复 22 条、上期前旧内容 3 条",
+    "message": "4/4 个来源完成采集；新增 18 条，跳过历史重复 22 条、上期前旧内容 4 条",
     "aiEnabled": true,
-    "lastAttemptAt": "2026-11-25T08:43:35.759197+00:00",
-    "date": "2026-11-25",
-    "newItemCount": 15,
+    "lastAttemptAt": "2026-11-26T08:29:00.896589+00:00",
+    "date": "2026-11-26",
+    "newItemCount": 18,
     "duplicateCount": 22,
-    "olderItemCount": 3
+    "olderItemCount": 4
   }
 }
