@@ -1,8 +1,108 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-26T08:29:00.896573+00:00",
+  "updatedAt": "2026-11-27T08:42:56.634190+00:00",
   "repository": "xiaoxiaoqing-win/ai-daily",
   "digests": [
+    {
+      "id": "daily-2026-11-27",
+      "date": "2026-11-27",
+      "createdAt": "2026-11-27T08:43:26.088019+00:00",
+      "collectedAt": "2026-11-27T08:42:47.872340+00:00",
+      "mode": "ai",
+      "itemCount": 14,
+      "sourceCount": 3,
+      "references": [
+        {
+          "id": "S1",
+          "title": "Huge opportunity right now to build new services firms from the ground up, or transform existing ones, with ag",
+          "url": "https://x.com/levie/status/2125983542475894821"
+        },
+        {
+          "id": "S2",
+          "title": "I am thankful for a lot of things in life, but my family is the best thing that has ever happened to me.",
+          "url": "https://x.com/sama/status/2125983591389974980"
+        },
+        {
+          "id": "S3",
+          "title": "Oh, one thing about kids:",
+          "url": "https://x.com/sama/status/2125984053119836399"
+        },
+        {
+          "id": "S4",
+          "title": "Ven was one of the earliest believers that we could use our then-current model to solve millenium prize proble",
+          "url": "https://x.com/sama/status/2125990371897557278"
+        },
+        {
+          "id": "S5",
+          "title": "Google really cooked with Gemini 4.",
+          "url": "https://x.com/amasad/status/2126018746884243652"
+        },
+        {
+          "id": "S6",
+          "title": "Things to teach your kids during the holidays:",
+          "url": "https://x.com/petergyang/status/2126021289102230008"
+        },
+        {
+          "id": "S7",
+          "title": "I'm thankful for all the optimists. Americans are a profoundly optimistic bunch, and I think it's one of the t",
+          "url": "https://x.com/rauchg/status/2126037393241424065"
+        },
+        {
+          "id": "S8",
+          "title": "This is awesome I just set up Trump accounts for my kids, thank you @elonmusk!",
+          "url": "https://x.com/petergyang/status/2126042318793064914"
+        },
+        {
+          "id": "S9",
+          "title": "Hey look @elonmusk is giving a SpaceX share to every kid in America I wonder whether NY Times covered this: ht",
+          "url": "https://x.com/petergyang/status/2126046533904896077"
+        },
+        {
+          "id": "S10",
+          "title": "12 tips for people who posted on LinkedIn but now wanna post on X",
+          "url": "https://x.com/zarazhangrui/status/2126055939749118294"
+        },
+        {
+          "id": "S11",
+          "title": "\"Thankful to VCs for their thought leadership, podcasts and market maps\"",
+          "url": "https://x.com/mattturck/status/2126068708527198482"
+        },
+        {
+          "id": "S12",
+          "title": "i think agentic payments is one of the most divisive yet important themes to get right for 2028. no real in be",
+          "url": "https://x.com/swyx/status/2126106139582677088"
+        },
+        {
+          "id": "S13",
+          "title": "Quoting Jack Despain Zhou",
+          "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/"
+        },
+        {
+          "id": "S14",
+          "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+          "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+        }
+      ],
+      "itemIds": [
+        "d90332e5a3b6bf9f",
+        "87165bc6ce57648b",
+        "0d04ffbb75b4d1be",
+        "280c4d5fd9301b96",
+        "f5a0c70bbc357709",
+        "17b6e73ebf372e52",
+        "5cc65231116f1b76",
+        "5fb73671b8b69e72",
+        "b734ef1c4937ba20",
+        "24b3709287e8c6e2",
+        "a486a92207ec62da",
+        "b5d79d6afdcf9509",
+        "dbe542754cd16121",
+        "a734da9d3a1d8760"
+      ],
+      "title": "AI 日报：Agent 服务商机会、支付争议与本地推理基准",
+      "summary": "本期关注以 Agent 重构服务公司的商业判断、Replit 上的 Gemini 4 体验线索，以及面向 AMD 硬件的 llama.cpp 基准看板；另观察 Agent 支付与 AI 内容同质化讨论。[S1][S5][S12][S13][S14]",
+      "content": "## 今日重点\n\n### Agent 的商业机会：重构服务公司，而不只是销售工具\n\nAaron Levie 提出，以 Agent 为中心新建或改造服务公司，可能成为广告、IT 转型、管理咨询、金融等领域的机会。他认为，深厚的领域知识仍然重要，而 Agent 有望扩大项目交付能力，让服务商争取更多客户、覆盖原本不经济的小客户，或提供过去难以实现的成果。[S1]\n\n**这是一项商业判断，而非已验证的行业结果。** 原文所称交付能力获得“10 倍”放大，没有附带测量依据。值得关注的推论是：竞争优势可能来自“专业知识、客户信任与 Agent 交付流程”的组合，而不只是使用模型本身；既有服务商的客户关系也可能成为转型优势。[S1]\n\n## Builder 动态\n\n### Replit 出现 Gemini 4 体验线索\n\nAmjad Masad 发帖称赞 Gemini 4，并邀请读者到 Replit 体验。该条目提供了产品体验入口的线索，但没有说明具体模型版本、可用范围、价格或评测结果，不能据此认定 Gemini 4 在本期正式发布，也不足以判断其能力提升幅度。[S5]\n\n## 开源趋势\n\n### llama.cpp 面向 AMD 硬件的基准看板\n\nHugging Face 博客新增条目的标题为《Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon》，主题是面向 AMD Ryzen 与 Radeon 的 llama.cpp 基准看板。[S14]\n\n本次资料只有标题与元数据，没有正文或测试数据。因此可以将其列为本地推理性能评估的关注入口，但尚不能比较具体硬件、模型或推理配置的表现。[S14]\n\n## 值得阅读与观察\n\n- **Agent 支付：有争议的前瞻议题。** swyx 将其视为面向 2028 年的重要方向，并形容讨论立场高度分化。这反映的是作者对趋势与分歧的判断；条目没有提供交易规模、采用率或具体落地案例，不能据此判断市场已经成熟。[S12]\n- **AI 内容是否正在抹平个人表达？** Simon Willison 摘引 Jack Despain Zhou 的批评：从视频、会议演讲到邮件，越来越多内容呈现出可辨识的 Claude 式表达。其阅读价值在于提醒创作者审视 AI 辅助写作后的个人声音与署名责任；这属于文化批评和个人观察，而非对内容同质化程度的量化研究。[S13]"
+    },
     {
       "id": "daily-2026-11-26",
       "date": "2026-11-26",
@@ -607,6 +707,198 @@
   ],
   "reports": [],
   "items": [
+    {
+      "id": "d90332e5a3b6bf9f",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Huge opportunity right now to build new services firms from the ground up, or transform existing ones, with ag",
+      "url": "https://x.com/levie/status/2125983542475894821",
+      "excerpt": "Huge opportunity right now to build new services firms from the ground up, or transform existing ones, with agents at the center. \n\nThe expertise that services firms in theory should have is as important as ever because you still need deep domain understanding to get the most out of agents. But now the ability to deliver on projects has a 10X multiplier. This means that you can make clients happier, compete to win more of them, go after smaller customers not in the TAM before, or deliver outcomes that weren’t really conceivable.\n\nThis is going to happen in advertising, IT transformation, management consulting, finance, and a number of other fields that historically are just fully constrained by the speed of their workforce for output. \n\nThis is a huge opportunity right now for those starting these firms. I wouldn’t count out existing players that commit to the transformation either as existing customer trust goes a long way. But they have to move quickly to make it work.",
+      "author": "Aaron Levie",
+      "publishedAt": "2026-11-26T16:02:30.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961571+00:00",
+      "likes": 883,
+      "handle": "levie"
+    },
+    {
+      "id": "87165bc6ce57648b",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "I am thankful for a lot of things in life, but my family is the best thing that has ever happened to me.",
+      "url": "https://x.com/sama/status/2125983591389974980",
+      "excerpt": "I am thankful for a lot of things in life, but my family is the best thing that has ever happened to me.\n\nThe two most common things people said to me before having kids is that it's better than anyone can explain to you and it goes very fast; these are both true and I don't have much to add. But I am very grateful and I love them more than there is any way to explain.\n\nAlso I cannot really imagine life without Ollie and I think without his unwavering support and great advice I would have gone crazy by now.\n\n🦃",
+      "author": "Sam Altman",
+      "publishedAt": "2026-11-26T16:02:41.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961689+00:00",
+      "likes": 13315,
+      "handle": "sama"
+    },
+    {
+      "id": "0d04ffbb75b4d1be",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Oh, one thing about kids:",
+      "url": "https://x.com/sama/status/2125984053119836399",
+      "excerpt": "Oh, one thing about kids:\n\nMost good things get a little less satisfying the 100th time you do them.\n\nA quiet evening hanging out with your kids, even doing very mundane stuff, is in the rare category of something repetitive just getting better and better.",
+      "author": "Sam Altman",
+      "publishedAt": "2026-11-26T16:04:31.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961674+00:00",
+      "likes": 2123,
+      "handle": "sama"
+    },
+    {
+      "id": "280c4d5fd9301b96",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Ven was one of the earliest believers that we could use our then-current model to solve millenium prize proble",
+      "url": "https://x.com/sama/status/2125990371897557278",
+      "excerpt": "Ven was one of the earliest believers that we could use our then-current model to solve millenium prize problems.\n\nThere are a lot of brilliant people in the world, but being brilliant and also having correctly-placed confidence and courage to keep pushing on something that others don't think is possible is a very valuable thing and fairly rare.\n\nI am grateful so many people at OpenAI have this combination.",
+      "author": "Sam Altman",
+      "publishedAt": "2026-11-26T16:29:38.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961661+00:00",
+      "likes": 6775,
+      "handle": "sama"
+    },
+    {
+      "id": "f5a0c70bbc357709",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Google really cooked with Gemini 4.",
+      "url": "https://x.com/amasad/status/2126018746884243652",
+      "excerpt": "Google really cooked with Gemini 4.\n\nTake them for a ride on Replit! https://t.co/RqvuIxh3lZ",
+      "author": "Amjad Masad",
+      "publishedAt": "2026-11-26T18:22:23.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961529+00:00",
+      "likes": 448,
+      "handle": "amasad"
+    },
+    {
+      "id": "17b6e73ebf372e52",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Things to teach your kids during the holidays:",
+      "url": "https://x.com/petergyang/status/2126021289102230008",
+      "excerpt": "Things to teach your kids during the holidays:\n\n- Reading\n- Math\n- How to rob a bank by masking up, going through the backdoor, using a snap gun to pick the locks, removing the security tape, and threatening the staff for the safe code courtesy of GTA VI",
+      "author": "Peter Yang",
+      "publishedAt": "2026-11-26T18:32:29.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961474+00:00",
+      "likes": 41,
+      "handle": "petergyang"
+    },
+    {
+      "id": "5cc65231116f1b76",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "I'm thankful for all the optimists. Americans are a profoundly optimistic bunch, and I think it's one of the t",
+      "url": "https://x.com/rauchg/status/2126037393241424065",
+      "excerpt": "I'm thankful for all the optimists. Americans are a profoundly optimistic bunch, and I think it's one of the things you really appreciate and are drawn to as an immigrant.\n\nIn order to define the future and lead the world, you must possess a positive vision of what's to come.\n\nThese days many people speak in terms of a future we must blindly accept and capitulate to. Instead, we must use our, yes, agency to build and project the amazing future we want for our grandchildren and loved ones. Happy thanksgiving!",
+      "author": "Guillermo Rauch",
+      "publishedAt": "2026-11-26T19:36:29.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961545+00:00",
+      "likes": 744,
+      "handle": "rauchg"
+    },
+    {
+      "id": "5fb73671b8b69e72",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "This is awesome I just set up Trump accounts for my kids, thank you @elonmusk!",
+      "url": "https://x.com/petergyang/status/2126042318793064914",
+      "excerpt": "This is awesome I just set up Trump accounts for my kids, thank you @elonmusk! \n\nOne day I hope to take them to see a Starship launch. https://t.co/FQJctoRzzH",
+      "author": "Peter Yang",
+      "publishedAt": "2026-11-26T19:56:03.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961459+00:00",
+      "likes": 194,
+      "handle": "petergyang"
+    },
+    {
+      "id": "b734ef1c4937ba20",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Hey look @elonmusk is giving a SpaceX share to every kid in America I wonder whether NY Times covered this: ht",
+      "url": "https://x.com/petergyang/status/2126046533904896077",
+      "excerpt": "Hey look @elonmusk is giving a SpaceX share to every kid in America I wonder whether NY Times covered this: https://t.co/GfgcssTSBR https://t.co/cGuTqBPpRO",
+      "author": "Peter Yang",
+      "publishedAt": "2026-11-26T20:12:48.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961443+00:00",
+      "likes": 261,
+      "handle": "petergyang"
+    },
+    {
+      "id": "24b3709287e8c6e2",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "12 tips for people who posted on LinkedIn but now wanna post on X",
+      "url": "https://x.com/zarazhangrui/status/2126055939749118294",
+      "excerpt": "12 tips for people who posted on LinkedIn but now wanna post on X\n\nA lot of people I know are moving their posting from LinkedIn to X. When they ask me how I grew 80k followers on X in one year, here’s what I tell them:\n\n1. LinkedIn is a stage. X is a party. First you find your crowd, then you listen to what they're already talking about. Don't start talking until you get it\n\n2. You can't reach the C-suite directly. LinkedIn is a professional network, so you can go straight to decision makers. X doesn't work like that. You have to get mass attention first, and then the right people notice you\n\n3. Post way more than you think. On LinkedIn, 3-5 posts a week counts as a lot. I posted 3 times a day on X for 6 months. Some founders I follow post 5 times a day. It's not that they're on X all day. They just don't overthink it\n\n4. Make posting a reflex. If you spend too long on a post, you won't post. Whenever a thought comes up, post it right there. No planning, no scheduling, no waiting for the right time\n\n5. It's a numbers game. Most posts won't do well. Maybe 1 in 10 will. Maybe 1 in 50 goes viral. That's normal\n\n6. Half your posts should be reactions. LinkedIn is mostly “proactive content”. On X, at least at the start, half of what you post should be “reactive content”: replies, quote tweets, commentary on what others already said\n\n7. Know the difference between a reply and a quote tweet. A reply is like a LinkedIn DM. It says \"notice me.\" A quote tweet uses someone else's content to grow your own account\n\n8. Fix your feed first. If you wanna talk about cybersecurity and your feed is all politics, you can't join the right conversations. Pick a few big names in your niche. See who they follow and who they engage with, and follow those people too. Like, bookmark and comment.",
+      "author": "Zara Zhang",
+      "publishedAt": "2026-11-26T20:50:10.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961610+00:00",
+      "likes": 341,
+      "handle": "zarazhangrui"
+    },
+    {
+      "id": "a486a92207ec62da",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "\"Thankful to VCs for their thought leadership, podcasts and market maps\"",
+      "url": "https://x.com/mattturck/status/2126068708527198482",
+      "excerpt": "\"Thankful to VCs for their thought leadership, podcasts and market maps\"\n\n-- no founder yet (but it's still early on Thanksgiving day)",
+      "author": "Matt Turck",
+      "publishedAt": "2026-11-26T21:40:55.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961587+00:00",
+      "likes": 62,
+      "handle": "mattturck"
+    },
+    {
+      "id": "b5d79d6afdcf9509",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "i think agentic payments is one of the most divisive yet important themes to get right for 2028. no real in be",
+      "url": "https://x.com/swyx/status/2126106139582677088",
+      "excerpt": "i think agentic payments is one of the most divisive yet important themes to get right for 2028. no real in between, either you get in early or you declare its basically never gonna happen https://t.co/p6dDMMMvZ5 https://t.co/7eUeZpn97a",
+      "author": "Swyx",
+      "publishedAt": "2026-11-27T00:09:39.000Z",
+      "collectedAt": "2026-11-27T08:42:47.961385+00:00",
+      "likes": 81,
+      "handle": "swyx"
+    },
+    {
+      "id": "dbe542754cd16121",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "Quoting Jack Despain Zhou",
+      "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+      "excerpt": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly serious people with ostensibly serious credentials attached to ostensibly serious institutions who want to publish things attached to their reputations and mine, and I see Claude . — Jack Despain Zhou , Spitting in the Face of Glaude Tags: ai-misuse , claude , generative-ai , ai , llms",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-26T15:09:31+00:00",
+      "collectedAt": "2026-11-27T08:42:48.071429+00:00"
+    },
+    {
+      "id": "a734da9d3a1d8760",
+      "sourceId": "huggingface",
+      "source": "Hugging Face Blog",
+      "kind": "rss",
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+      "excerpt": "",
+      "author": "Hugging Face Blog",
+      "publishedAt": "2026-11-26T11:37:17+00:00",
+      "collectedAt": "2026-11-27T08:42:48.318991+00:00"
+    },
     {
       "id": "5e6034bffec91371",
       "sourceId": "builders",
@@ -1789,11 +2081,11 @@
       "enabled": true,
       "status": "ok",
       "count": 12,
-      "lastCheckedAt": "2026-11-26T08:28:59.435527+00:00",
-      "message": "新增 12 条；跳过历史重复 0 条、上期前旧内容 2 条",
-      "fetchedCount": 42,
+      "lastCheckedAt": "2026-11-27T08:42:47.961727+00:00",
+      "message": "新增 12 条；跳过历史重复 0 条、上期前旧内容 1 条",
+      "fetchedCount": 18,
       "duplicateCount": 0,
-      "olderItemCount": 2
+      "olderItemCount": 1
     },
     {
       "id": "github",
@@ -1803,7 +2095,7 @@
       "enabled": true,
       "status": "empty",
       "count": 0,
-      "lastCheckedAt": "2026-11-26T08:29:00.895903+00:00",
+      "lastCheckedAt": "2026-11-27T08:42:56.633478+00:00",
       "message": "新增 0 条；跳过历史重复 16 条、上期前旧内容 0 条",
       "fetchedCount": 16,
       "duplicateCount": 16,
@@ -1816,11 +2108,11 @@
       "url": "https://simonwillison.net/atom/everything/",
       "enabled": true,
       "status": "ok",
-      "count": 3,
-      "lastCheckedAt": "2026-11-26T08:28:59.460811+00:00",
-      "message": "新增 3 条；跳过历史重复 6 条、上期前旧内容 1 条",
-      "fetchedCount": 10,
-      "duplicateCount": 6,
+      "count": 1,
+      "lastCheckedAt": "2026-11-27T08:42:48.111682+00:00",
+      "message": "新增 1 条；跳过历史重复 5 条、上期前旧内容 1 条",
+      "fetchedCount": 7,
+      "duplicateCount": 5,
       "olderItemCount": 1
     },
     {
@@ -1830,22 +2122,22 @@
       "url": "https://huggingface.co/blog/feed.xml",
       "enabled": true,
       "status": "ok",
-      "count": 3,
-      "lastCheckedAt": "2026-11-26T08:28:59.586326+00:00",
-      "message": "新增 3 条；跳过历史重复 0 条、上期前旧内容 1 条",
-      "fetchedCount": 4,
-      "duplicateCount": 0,
-      "olderItemCount": 1
+      "count": 1,
+      "lastCheckedAt": "2026-11-27T08:42:48.341900+00:00",
+      "message": "新增 1 条；跳过历史重复 3 条、上期前旧内容 2 条",
+      "fetchedCount": 6,
+      "duplicateCount": 3,
+      "olderItemCount": 2
     }
   ],
   "collection": {
     "status": "ok",
-    "message": "4/4 个来源完成采集；新增 18 条，跳过历史重复 22 条、上期前旧内容 4 条",
+    "message": "4/4 个来源完成采集；新增 14 条，跳过历史重复 24 条、上期前旧内容 4 条",
     "aiEnabled": true,
-    "lastAttemptAt": "2026-11-26T08:29:00.896589+00:00",
-    "date": "2026-11-26",
-    "newItemCount": 18,
-    "duplicateCount": 22,
+    "lastAttemptAt": "2026-11-27T08:42:56.634207+00:00",
+    "date": "2026-11-27",
+    "newItemCount": 14,
+    "duplicateCount": 24,
     "olderItemCount": 4
   }
 }
