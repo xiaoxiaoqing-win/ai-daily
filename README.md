@@ -31,6 +31,8 @@ AI 日报 + 有来源的深度调研。前端部署到 **GitHub Pages**，**GitH
 
 如果写回内容时报 403，在 **Settings → Actions → General → Workflow permissions** 检查仓库是否允许工作流写入内容（组织策略也可能限制）。Daily 和 Research 工作流显式调用 Pages 部署，因为 `GITHUB_TOKEN` 生成的提交不会再次触发 push 工作流。
 
+Pages 发布最多尝试 3 次，首次失败后分别等待 10 秒、30 秒再试，以应对构建产物刚上传后暂时不可见的情况。重试只发布同一份静态构建，不重新采集或调用模型；连续失败仍会使任务失败并通知。需要手动恢复网站时，单独运行 **Deploy Pages**，无需强制重跑日报。
+
 ## 配置信息源
 
 编辑 [`config/sources.json`](config/sources.json)：

@@ -17,7 +17,7 @@ jobs:
     timeout-minutes: 10
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url || steps.deployment_final.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -37,6 +37,25 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-      - name: Publish
+      # The artifact service can briefly return no files immediately after upload.
+      # Retry publication in this run so collection/model generation is never repeated.
+      - name: Publish (attempt 1 of 3)
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - name: Wait before retrying publication
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 10
+      - name: Publish (attempt 2 of 3)
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - name: Wait before the final publication attempt
+        if: steps.deployment_retry.outcome == 'failure'
+        run: sleep 30
+      # Keep the final attempt blocking: persistent failures must still notify us.
+      - name: Publish (attempt 3 of 3)
+        id: deployment_final
+        if: steps.deployment_retry.outcome == 'failure'
         uses: actions/deploy-pages@v4
