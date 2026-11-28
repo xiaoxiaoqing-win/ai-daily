@@ -1,8 +1,102 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-27T08:42:56.634190+00:00",
+  "updatedAt": "2026-11-28T07:56:12.135499+00:00",
   "repository": "xiaoxiaoqing-win/ai-daily",
   "digests": [
+    {
+      "id": "daily-2026-11-28",
+      "date": "2026-11-28",
+      "createdAt": "2026-11-28T07:56:34.007464+00:00",
+      "collectedAt": "2026-11-28T07:56:11.335008+00:00",
+      "mode": "ai",
+      "itemCount": 13,
+      "sourceCount": 2,
+      "references": [
+        {
+          "id": "S1",
+          "title": "The greatest tragedy right now in Silicon Valley that NO one wants to talk about is how some startups are \"res",
+          "url": "https://x.com/nikunj/status/2126326428522442812"
+        },
+        {
+          "id": "S2",
+          "title": "the race is not inevitable",
+          "url": "https://x.com/ryolu_/status/2126382660780167304"
+        },
+        {
+          "id": "S3",
+          "title": "Models should be scored more like an RPG stat sheet than a leaderboard. https://t.co/dVkFqXXgNE",
+          "url": "https://x.com/trq212/status/2126386932989210714"
+        },
+        {
+          "id": "S4",
+          "title": "for example I asked both Claude (left) and Codex (right) to generate images for this tweet",
+          "url": "https://x.com/trq212/status/2126386934918651919"
+        },
+        {
+          "id": "S5",
+          "title": "this is also a call for evals",
+          "url": "https://x.com/trq212/status/2126386936579600522"
+        },
+        {
+          "id": "S6",
+          "title": "This is the diffusion challenge and opportunity in a nutshell. Most people will probably get stuck with the us",
+          "url": "https://x.com/levie/status/2126389098227376238"
+        },
+        {
+          "id": "S7",
+          "title": "if you like me have looked at the exponential increase in AI capabilities you see in graphs with awe, fear, an",
+          "url": "https://x.com/danshipper/status/2126397711033438535"
+        },
+        {
+          "id": "S8",
+          "title": "I love asking agents to investigate and describe the never-seen-before simulated universe they're in. https://",
+          "url": "https://x.com/rauchg/status/2126416639344472142"
+        },
+        {
+          "id": "S9",
+          "title": "Wow! @floraai is incredible, so this is high praise https://t.co/w31uccw3hF",
+          "url": "https://x.com/rauchg/status/2126434620816384451"
+        },
+        {
+          "id": "S10",
+          "title": "GTA 6: Lucia is a much better character than Jason. Jason is boring as hell and feels like he was meant to be",
+          "url": "https://x.com/petergyang/status/2126483723759882600"
+        },
+        {
+          "id": "S11",
+          "title": "Everyday is breakthrough day",
+          "url": "https://x.com/rauchg/status/2126503317786530105"
+        },
+        {
+          "id": "S12",
+          "title": "worthwhile talk on whats going on with the neolab reinventions https://t.co/OHtWw6m1Vp https://t.co/gJ228bXl5V",
+          "url": "https://x.com/swyx/status/2126528882262348003"
+        },
+        {
+          "id": "S13",
+          "title": "datasette-charts 0.4a0",
+          "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/"
+        }
+      ],
+      "itemIds": [
+        "f60cfae7d1f1fd75",
+        "70919c5faad2d21a",
+        "4c782deeedd754e6",
+        "dae2d8a3a263ab8e",
+        "90e7d3e425909f16",
+        "7e388dc99994afc5",
+        "814b3a834d38d7dc",
+        "0e7084559ee0b782",
+        "1c927a96aa96113e",
+        "0d5daf60629a65b2",
+        "7bd92629e3a5ff62",
+        "713a24f92dd4cd01",
+        "9e4ae7f8dcf438b2"
+      ],
+      "title": "AI 日报｜11月28日：多维模型评估与 Agent 落地瓶颈",
+      "summary": "本期关注模型多维评估、Agent 集成与流程改造难题，以及 datasette-charts 0.4a0 的插件扩展改进。[S3][S6][S13]",
+      "content": "## 今日重点\n\n### 模型评估：从总榜排名转向能力画像\n\n一组帖子提出，模型评分应更像 RPG 的多属性面板，而不是单一排行榜。作者以让 Claude、Codex 为同一条推文生成图片为例：他认为 Claude 的结果更美观、思考更充分，而 Codex 更贴近自己的原始意图，并据此呼吁开发相应评测。[S3][S4][S5]\n\n**编辑判断：**这一例子提示，视觉质量、创造性与意图遵循可能需要分开衡量；但现有材料只是作者的个案主观评价，不能据此判定两款工具的整体能力高低。[S4]\n\n### Agent 落地：系统集成之外，还要重做工作流程\n\nAaron Levie 认为，个人和组织可能满足于最初带来惊喜的 AI 用法，尚未充分探索后台 Agent 或处理复杂问题的多 Agent 系统。他列出的实施难点包括系统架构、数据管道、MCP 和安全，以及技术部署完成后的工作流程重设计。[S6]\n\n**值得关注：**他据此看好实施服务与前线部署工程师（FDE）的机会。这是对市场需求的判断，而非已经得到订单或收入数据验证的结论。[S6]\n\n## Builder 动态\n\n### datasette-charts 0.4a0：用实验插件检验扩展接口\n\nSimon Willison 于 11 月 27 日记录了 datasette-charts 0.4a0 发布。该插件已有允许其他插件定义新图表类型的 hook；他让 Claude Opus 5.5 构建实验插件来试用接口，发现了一批设计摩擦点，本次版本针对这些问题作出改进。[S13]\n\n配套网站 charts.datasette.io 也已加入插件作者教程，以及核心图表和注释的展示页，每个示例均链接到 Datasette Lite 交互演示。对扩展开发者而言，这次更新的具体价值是接口易用性与学习材料的改善，而非新增模型能力。[S13]\n\n## 值得阅读与观察\n\n- **审视 AI 收入口径。**Nikunj 发帖质疑，部分非算力主营的初创公司把转售算力收入计入年化收入叙事，并将其与低毛利收入、负毛利推理业务混在一起讨论。材料未提供公司名称或财务证据，应视为待核实的行业指控；可提炼的尽调问题是：收入来源、毛利率和持续性是否被分别披露？[S1]\n- **能力曲线不等于工作替代时间表。**Dan Shipper 介绍文章时强调，实验室中的能力增长图表不宜直接用于预测人类工作的未来。本次仅提供文章导语，无法据此复述其完整论证或判断证据强弱。[S7]\n- **对“竞赛不可避免”的反思。**ryolu_ 的帖子将递归自我改进竞赛描述为预算、研发方向等一连串人为决策，而非不可改变的趋势。这是一篇立场性讨论；所提供文本末尾截断，其中关于失控和滥用的描述属于风险设想，不是已发生事件。[S2]"
+    },
     {
       "id": "daily-2026-11-27",
       "date": "2026-11-27",
@@ -707,6 +801,186 @@
   ],
   "reports": [],
   "items": [
+    {
+      "id": "f60cfae7d1f1fd75",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "The greatest tragedy right now in Silicon Valley that NO one wants to talk about is how some startups are \"res",
+      "url": "https://x.com/nikunj/status/2126326428522442812",
+      "excerpt": "The greatest tragedy right now in Silicon Valley that NO one wants to talk about is how some startups are \"reselling\" compute and calling it revenue.. not inference, just straight up selling compute to other companies. And, no their primary business is NOT selling compute. \n\nIn this era, where everyone wants to show high \"annualized run rate\" growth as that's the story that gets marked up, companies are now being even more creative in how to lump \"revenue\" into a month.\n\nIt started with GMV-like revenue with low margins, then inference at negative gross margins and now straight up reselling compute. All lumped into a tidy \"ARR\". \n\nNaive investors will lap it up since it allows them to pass deals through IC, and seed investors will celebrate their markups - but zero shot this ends well.",
+      "author": "Nikunj Kothari",
+      "publishedAt": "2026-11-27T14:45:00.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382821+00:00",
+      "likes": 711,
+      "handle": "nikunj"
+    },
+    {
+      "id": "70919c5faad2d21a",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "the race is not inevitable",
+      "url": "https://x.com/ryolu_/status/2126382660780167304",
+      "excerpt": "the race is not inevitable\n\nlast year was fun.\n\nthe models weren't that good yet, so i had to care about every detail. i pushed each thing until it had my thoughts and my designs. the tool helped. i did the driving.\n\nnow the roles have flipped. we describe and watch things come back finished. we used to drive our dreams. more and more, we just watch.\n\nwe set out to make things that give us more freedom. now we're racing toward something we might not be able to control.\n\nrecursive self-improvement. intelligence building more intelligence, until we're no longer the ones who understand what's happening.\n\nthat's the end game. the point where nobody is driving.\n\nthe big labs are racing to get there first. the same system that cures a disease could design a new virus, or find every hole in the internet all at once. only the selected few with access could do anything about it.\n\nand somehow the possibility of losing everything we love becomes an argument for going faster.\n\nbecause someone else might get there first, and they might be less careful.\nbecause the company needs to survive.\nbecause too much money is already committed.\n\neveryone has a good reason to keep going toward an outcome nobody wants. so we call it inevitable. then nobody has to answer for it.\n\nbut a race is made of decisions. someone approves the budget. someone decides the next model will help build the one after it.\n\nand we practice living inside the race long before we build it at the scale of civilization.\n\nsleep becomes recovery for work. friendship becomes a network. curiosity has to become a project before we let ourselves spend time on it.\n\nwe get very rational. we start acting like the machines we're building.\n\neven our feelings have to defend themselves.\nwhy are you sad? is that useful?\n\nsometimes th",
+      "author": "Ryo Lu",
+      "publishedAt": "2026-11-27T18:28:27.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382767+00:00",
+      "likes": 1744,
+      "handle": "ryolu_"
+    },
+    {
+      "id": "4c782deeedd754e6",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Models should be scored more like an RPG stat sheet than a leaderboard. https://t.co/dVkFqXXgNE",
+      "url": "https://x.com/trq212/status/2126386932989210714",
+      "excerpt": "Models should be scored more like an RPG stat sheet than a leaderboard. https://t.co/dVkFqXXgNE",
+      "author": "Thariq",
+      "publishedAt": "2026-11-27T18:45:25.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382668+00:00",
+      "likes": 4791,
+      "handle": "trq212"
+    },
+    {
+      "id": "dae2d8a3a263ab8e",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "for example I asked both Claude (left) and Codex (right) to generate images for this tweet",
+      "url": "https://x.com/trq212/status/2126386934918651919",
+      "excerpt": "for example I asked both Claude (left) and Codex (right) to generate images for this tweet \n\nClaude's looks better and has thought about the problem ore (+creativity, +endurance) but Codex sticks to the spirit of what I want more (+ wisdom, +alignment) https://t.co/RQVXsJ3R2O",
+      "author": "Thariq",
+      "publishedAt": "2026-11-27T18:45:26.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382655+00:00",
+      "likes": 482,
+      "handle": "trq212"
+    },
+    {
+      "id": "90e7d3e425909f16",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "this is also a call for evals",
+      "url": "https://x.com/trq212/status/2126386936579600522",
+      "excerpt": "this is also a call for evals",
+      "author": "Thariq",
+      "publishedAt": "2026-11-27T18:45:26.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382641+00:00",
+      "likes": 252,
+      "handle": "trq212"
+    },
+    {
+      "id": "7e388dc99994afc5",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "This is the diffusion challenge and opportunity in a nutshell. Most people will probably get stuck with the us",
+      "url": "https://x.com/levie/status/2126389098227376238",
+      "excerpt": "This is the diffusion challenge and opportunity in a nutshell. Most people will probably get stuck with the use-cases that initially wowed them with AI, and have little incentive to move onto the next thing that will unlock another level of productivity.\n\nEven a large number of organizations can get stuck by being “satisfied” with AI gains, well before having full blown agents that can do any amount of work in the background or agent swarms that can take on complex, ambiguous problems.\n\nMuch of this comes down to the technical complexity of implementing the architectures around this. Despite lots of effort to simplify the UXes, there’s still a lot of system work, data pipelines, MCPs, and security that needs to be worked through to get the most out of agents. But even when you’re done with that, you still need to redesign your workflow or process overall to get the full benefits from agents.\n\nThis is why there’s so much opportunity to be an organization that figures this out early. It’s also why there’s going to be massive services and FDE opportunities right now as well, since most companies can’t do this on their own.",
+      "author": "Aaron Levie",
+      "publishedAt": "2026-11-27T18:54:02.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382725+00:00",
+      "likes": 232,
+      "handle": "levie"
+    },
+    {
+      "id": "814b3a834d38d7dc",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "if you like me have looked at the exponential increase in AI capabilities you see in graphs with awe, fear, an",
+      "url": "https://x.com/danshipper/status/2126397711033438535",
+      "excerpt": "if you like me have looked at the exponential increase in AI capabilities you see in graphs with awe, fear, and foreboding\n\nI wrote about why they’re an effective way to measure AI capabilities in a lab. And why they’re nonsense when used to predict the future of human work: https://t.co/DTnGiO0SZs",
+      "author": "Dan Shipper",
+      "publishedAt": "2026-11-27T19:28:15.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382838+00:00",
+      "likes": 114,
+      "handle": "danshipper"
+    },
+    {
+      "id": "0e7084559ee0b782",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "I love asking agents to investigate and describe the never-seen-before simulated universe they're in. https://",
+      "url": "https://x.com/rauchg/status/2126416639344472142",
+      "excerpt": "I love asking agents to investigate and describe the never-seen-before simulated universe they're in. https://t.co/pLBfp8Mzxt",
+      "author": "Guillermo Rauch",
+      "publishedAt": "2026-11-27T20:43:28.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382707+00:00",
+      "likes": 140,
+      "handle": "rauchg"
+    },
+    {
+      "id": "1c927a96aa96113e",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Wow! @floraai is incredible, so this is high praise https://t.co/w31uccw3hF",
+      "url": "https://x.com/rauchg/status/2126434620816384451",
+      "excerpt": "Wow! @floraai is incredible, so this is high praise https://t.co/w31uccw3hF",
+      "author": "Guillermo Rauch",
+      "publishedAt": "2026-11-27T21:54:55.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382694+00:00",
+      "likes": 95,
+      "handle": "rauchg"
+    },
+    {
+      "id": "0d5daf60629a65b2",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "GTA 6: Lucia is a much better character than Jason. Jason is boring as hell and feels like he was meant to be",
+      "url": "https://x.com/petergyang/status/2126483723759882600",
+      "excerpt": "GTA 6: Lucia is a much better character than Jason. Jason is boring as hell and feels like he was meant to be a player avatar.",
+      "author": "Peter Yang",
+      "publishedAt": "2026-11-28T01:10:02.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382567+00:00",
+      "likes": 62,
+      "handle": "petergyang"
+    },
+    {
+      "id": "7bd92629e3a5ff62",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "Everyday is breakthrough day",
+      "url": "https://x.com/rauchg/status/2126503317786530105",
+      "excerpt": "Everyday is breakthrough day",
+      "author": "Guillermo Rauch",
+      "publishedAt": "2026-11-28T02:27:54.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382682+00:00",
+      "likes": 259,
+      "handle": "rauchg"
+    },
+    {
+      "id": "713a24f92dd4cd01",
+      "sourceId": "builders",
+      "source": "Follow Builders",
+      "kind": "builders",
+      "title": "worthwhile talk on whats going on with the neolab reinventions https://t.co/OHtWw6m1Vp https://t.co/gJ228bXl5V",
+      "url": "https://x.com/swyx/status/2126528882262348003",
+      "excerpt": "worthwhile talk on whats going on with the neolab reinventions https://t.co/OHtWw6m1Vp https://t.co/gJ228bXl5V",
+      "author": "Swyx",
+      "publishedAt": "2026-11-28T04:09:29.000Z",
+      "collectedAt": "2026-11-28T07:56:11.382514+00:00",
+      "likes": 114,
+      "handle": "swyx"
+    },
+    {
+      "id": "9e4ae7f8dcf438b2",
+      "sourceId": "simon",
+      "source": "Simon Willison",
+      "kind": "rss",
+      "title": "datasette-charts 0.4a0",
+      "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/",
+      "excerpt": "Release: datasette-charts 0.4a0 The new datasette-charts plugin has its own plugin hook to allow other plugins to define new chart types, but I hadn't actually used it for anything yet. I had Claude Opus 5.5 build an experimental plugins just to try out the hook and it came up with a bunch of friction points in the design. This release addresses those, which should make building additional chart plugins a whole lot more ergonomic. I've also added a website for the plugin, at charts.datasette.io . The new website includes a tutorial for plugin authors , and a gallery showing all of the core charts and annotations, each one linking to an interactive demo on Datasette Lite . Tags: datasette-charts , datasette , visualization , datasette-lite",
+      "author": "Simon Willison",
+      "publishedAt": "2026-11-27T23:57:17+00:00",
+      "collectedAt": "2026-11-28T07:56:11.633119+00:00"
+    },
     {
       "id": "d90332e5a3b6bf9f",
       "sourceId": "builders",
@@ -2081,11 +2355,11 @@
       "enabled": true,
       "status": "ok",
       "count": 12,
-      "lastCheckedAt": "2026-11-27T08:42:47.961727+00:00",
-      "message": "新增 12 条；跳过历史重复 0 条、上期前旧内容 1 条",
-      "fetchedCount": 18,
+      "lastCheckedAt": "2026-11-28T07:56:11.382879+00:00",
+      "message": "新增 12 条；跳过历史重复 0 条、上期前旧内容 0 条",
+      "fetchedCount": 22,
       "duplicateCount": 0,
-      "olderItemCount": 1
+      "olderItemCount": 0
     },
     {
       "id": "github",
@@ -2095,7 +2369,7 @@
       "enabled": true,
       "status": "empty",
       "count": 0,
-      "lastCheckedAt": "2026-11-27T08:42:56.633478+00:00",
+      "lastCheckedAt": "2026-11-28T07:56:12.134652+00:00",
       "message": "新增 0 条；跳过历史重复 16 条、上期前旧内容 0 条",
       "fetchedCount": 16,
       "duplicateCount": 16,
@@ -2109,11 +2383,11 @@
       "enabled": true,
       "status": "ok",
       "count": 1,
-      "lastCheckedAt": "2026-11-27T08:42:48.111682+00:00",
-      "message": "新增 1 条；跳过历史重复 5 条、上期前旧内容 1 条",
+      "lastCheckedAt": "2026-11-28T07:56:11.754343+00:00",
+      "message": "新增 1 条；跳过历史重复 4 条、上期前旧内容 2 条",
       "fetchedCount": 7,
-      "duplicateCount": 5,
-      "olderItemCount": 1
+      "duplicateCount": 4,
+      "olderItemCount": 2
     },
     {
       "id": "huggingface",
@@ -2121,22 +2395,22 @@
       "kind": "rss",
       "url": "https://huggingface.co/blog/feed.xml",
       "enabled": true,
-      "status": "ok",
-      "count": 1,
-      "lastCheckedAt": "2026-11-27T08:42:48.341900+00:00",
-      "message": "新增 1 条；跳过历史重复 3 条、上期前旧内容 2 条",
+      "status": "empty",
+      "count": 0,
+      "lastCheckedAt": "2026-11-28T07:56:11.836224+00:00",
+      "message": "新增 0 条；跳过历史重复 4 条、上期前旧内容 2 条",
       "fetchedCount": 6,
-      "duplicateCount": 3,
+      "duplicateCount": 4,
       "olderItemCount": 2
     }
   ],
   "collection": {
     "status": "ok",
-    "message": "4/4 个来源完成采集；新增 14 条，跳过历史重复 24 条、上期前旧内容 4 条",
+    "message": "4/4 个来源完成采集；新增 13 条，跳过历史重复 24 条、上期前旧内容 4 条",
     "aiEnabled": true,
-    "lastAttemptAt": "2026-11-27T08:42:56.634207+00:00",
-    "date": "2026-11-27",
-    "newItemCount": 14,
+    "lastAttemptAt": "2026-11-28T07:56:12.135516+00:00",
+    "date": "2026-11-28",
+    "newItemCount": 13,
     "duplicateCount": 24,
     "olderItemCount": 4
   }
